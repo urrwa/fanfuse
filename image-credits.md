@@ -11,3 +11,52 @@ These stock photographs illustrate the creator process. The people shown are not
 | women-paid.jpg | Anna Shvets | https://www.pexels.com/photo/woman-in-black-and-white-striped-long-sleeve-shirt-sitting-on-chair-in-front-of-macbook-12663193/ | https://www.pexels.com/license/ |
 
 women-production.jpg is also used as the services section background. Photos were obtained from the official image CDNs at 1600 pixels wide in full colour.
+
+
+## Updated Process gallery
+
+# Process photo replacements: steps 01-03
+
+These stock photos illustrate the creator journey; the models are not presented as Fanfuse clients or staff. All three official Pexels pages mark the images free to use under the Pexels License: https://www.pexels.com/license/ .
+
+| File | Photographer | Official source | Crop focus |
+| --- | --- | --- | --- |
+| process-apply.jpg | Gustavo Fring | https://www.pexels.com/photo/cheerful-young-woman-with-laptop-and-notebook-in-cafe-3874631/ | 50% 35%; smiling adult woman at laptop, warm cafe |
+| process-shoot.jpg | Inna Mykytas | https://www.pexels.com/photo/portrait-of-beautiful-woman-8510231/ | 50% 20%; adult brunette fashion portrait with jewelry |
+| process-strategy.jpg | Pavel Danilyuk | https://www.pexels.com/photo/beautiful-woman-looking-afar-while-carrying-her-silver-laptop-7518993/ | 50% 20%; smiling adult woman carrying laptop in warm interior |
+
+Downloaded as full-color JPEGs at 1600px width from the official images.pexels.com CDN. Portrait originals need the stated vertical object-position to keep the complete face in a landscape card.
+
+
+# Process gallery image credits — steps 04–05
+
+Selected and visually reviewed on 2026-11-19. Both photographs show adult fashion models in full color. These are illustrative stock photographs, not evidence of FanFuse clients, production credits, partnerships, or earnings.
+
+## Step 04 — Production
+
+- Local asset: `work/fanfuse/process-production.jpg`
+- Photographer: Mikael Padeiro
+- Title: A woman in a black velvet strapless dress with a sequined flower detail
+- Source: https://unsplash.com/photos/woman-in-black-velvet-dress-nYs3W75YvhA
+- Image: https://images.unsplash.com/photo-1790669672294-d22545c26711?auto=format&fit=max&fm=jpg&w=1600&h=1600&q=82
+- Location described by photographer: Place Vendôme, Paris, France
+- License: Unsplash License; source page explicitly marks the photo free to use under that license.
+- Download: JPEG, RGB, 1067 × 1600, 239,934 bytes.
+- Suggested alt: Adult fashion model wearing a black evening dress and jewelry in Paris.
+- Suggested CSS `object-position: 50% 25%` for portrait desktop and landscape mobile. Her face remains within the upper-middle crop.
+
+## Step 05 — Get Paid
+
+- Local asset: `work/fanfuse/process-paid.jpg`
+- Photographer: ola szkolda
+- Title: Elegant woman in patterned dress and coat in ornate room
+- Source: https://unsplash.com/photos/elegant-woman-in-patterned-dress-and-coat-in-ornate-room-SXPTn6LCdlw
+- Image: https://images.unsplash.com/photo-1779405949264-a44d50a14315?auto=format&fit=max&fm=jpg&w=1600&h=1600&q=82
+- License: Unsplash License; source page explicitly marks the photo free to use under that license.
+- Download: JPEG, RGB, 1600 × 1006, 365,839 bytes.
+- Suggested alt: Adult woman posing in an ornate gold-toned interior during a fashion shoot.
+- Suggested CSS `object-position: 50% 35%` for desktop landscape and mobile. Face is near horizontal center and high in the frame; avoid bottom-biased crops.
+
+## License reference
+
+https://unsplash.com/license — permits free download and commercial or non-commercial image use. Attribution is appreciated; do not sell unmodified images or compile them into a competing image service. People pictured are not asserted to endorse FanFuse.
