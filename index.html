@@ -352,14 +352,53 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
 .prob-title{font-family:'Syne',sans-serif;font-size:19px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#fff;margin-bottom:10px}
 .prob-desc{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.62)}
 /* ── SIGNATURE SPOTS ── */
-.spots-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}
-.spot-card{position:relative;overflow:hidden;cursor:pointer}
-.spot-img{width:100%;aspect-ratio:4/3;background:#050505;overflow:hidden}
-.spot-img svg{width:100%;height:100%;transition:transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94)}
-.spot-card:hover .spot-img svg{transform:scale(1.04)}
-.spot-info{padding:16px 0 0}
-.spot-name{font-family:'Syne',sans-serif;font-size:20px;font-weight:400;line-height:1.3;letter-spacing:-0.02em;color:#fff;margin-bottom:6px}
-.spot-tag{font-size:12px;line-height:1.65;letter-spacing:0.02em;color:rgba(255,255,255,0.6)}
+#spots{position:relative;background:#000;padding:88px 0 28px;isolation:isolate}
+#spots::before{display:none}
+#spots .spots-header{text-align:center;max-width:900px;margin:0 auto 40px;padding:0 24px}
+#spots .spots-heading{font-family:'Syne',sans-serif;font-size:clamp(22px,2.5vw,32px);font-weight:400;line-height:1.25;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+#spots .spots-subtitle{font-size:15px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;text-wrap:balance}
+#spots .spots-viewport{position:relative;width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-y}
+#spots.spots-ready .spots-viewport{overflow:hidden;overflow:clip}
+#spots .spots-track{display:flex;align-items:stretch;width:100%;gap:0;transform:translate3d(0,0,0)}
+#spots .spots-track.is-sliding{will-change:transform}
+#spots .spot-film{position:relative;display:block;flex:0 0 25%;min-width:0;aspect-ratio:3/4;border:0;border-radius:0;padding:0;background:#171717;color:#fff;overflow:hidden;cursor:pointer;text-align:center;font:inherit;appearance:none;-webkit-appearance:none}
+#spots .spot-film img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;filter:none;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+#spots .spot-film::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.31),rgba(0,0,0,.48) 55%,rgba(0,0,0,.54));pointer-events:none}
+#spots .spot-film-content{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:25px;padding:24px}
+#spots .spot-play{display:flex;align-items:center;justify-content:center;width:68px;height:68px;border:1px solid var(--accent);border-radius:50%;color:var(--accent);transition:background .25s,transform .25s}
+#spots .spot-play svg{display:block;width:18px;height:22px;fill:currentColor;transform:translateX(2px)}
+#spots .spot-film-name{font-family:'Syne',sans-serif;font-size:clamp(12px,1.15vw,16px);font-weight:500;line-height:1.5;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+#spots .spot-film:hover img{transform:scale(1.04)}
+#spots .spot-film:hover .spot-play{background:rgba(212,175,122,.15);transform:scale(1.06)}
+#spots .spots-controls{display:none}
+#spots.spots-ready .spots-controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:24px;padding:22px 24px 0}
+#spots .spots-direction-controls{display:flex;gap:8px}
+#spots .spots-arrow,#spots .spots-autoplay{display:inline-flex;justify-content:center;align-items:center;height:40px;border:1px solid rgba(255,255,255,.23);border-radius:0;background:transparent;color:rgba(255,255,255,.8);cursor:pointer}
+#spots .spots-arrow{width:40px;padding:0}
+#spots .spots-arrow svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#spots .spots-autoplay{min-width:88px;padding:0 14px;font-size:11px;line-height:1.4;letter-spacing:.04em}
+#spots .spots-autoplay:disabled{cursor:default;color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.13)}
+#spots .spots-arrow:hover,#spots .spots-autoplay:not(:disabled):hover{color:var(--accent);border-color:var(--accent)}
+#spots .spots-dots{display:flex;justify-content:center;align-items:center;gap:0}
+#spots .spots-dot{display:flex;justify-content:center;align-items:center;flex:0 0 22px;width:22px;height:40px;border:0;border-radius:0;padding:0;background:transparent;cursor:pointer}
+#spots .spots-dot::after{content:'';display:block;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.38);transition:background .2s,transform .2s}
+#spots .spots-dot[aria-current="true"]::after{background:var(--accent);transform:scale(1.5)}
+#spots .spots-dot:hover::after{background:#fff}
+#spots .spot-film:focus-visible{outline:2px solid var(--accent);outline-offset:-5px;z-index:2}
+#spots .spots-arrow:focus-visible,#spots .spots-autoplay:focus-visible,#spots .spots-dot:focus-visible,#spots .spots-viewport:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#spots .spots-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#spots .spots-player{position:fixed;inset:0;margin:auto;width:min(1100px,calc(100vw - 48px));max-width:none;max-height:calc(100svh - 48px);padding:0;border:1px solid rgba(255,255,255,.2);border-radius:0;background:#080a0c;color:#fff;overflow:auto}
+#spots .spots-player::backdrop{background:rgba(0,0,0,.9);backdrop-filter:blur(8px)}
+#spots .spots-player-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.14)}
+#spots .spots-player-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:.04em}
+#spots .spots-player-close{display:flex;align-items:center;justify-content:center;width:40px;height:40px;flex:0 0 40px;border:1px solid rgba(255,255,255,.25);padding:0;border-radius:0;background:none;color:#fff;font-size:26px;font-weight:300;cursor:pointer}
+#spots .spots-player-close:focus-visible,#spots .spots-player-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#spots .spots-player-frame{position:relative;aspect-ratio:16/9;width:100%;background:#000}
+#spots .spots-player-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+#spots .spots-player-link{display:inline-block;color:var(--accent);font-size:12px;line-height:1.7;text-decoration:underline;text-underline-offset:3px;margin:14px 18px 18px}
+@media(max-width:1000px){#spots .spot-film{flex-basis:50%}#spots .spot-film-name{font-size:16px}}
+@media(max-width:600px){#spots{padding:64px 0 24px}#spots .spots-header{margin-bottom:32px}#spots .spots-heading{font-size:22px;letter-spacing:.12em;margin-bottom:16px}#spots .spots-subtitle{font-size:14px;max-width:33ch;margin:auto}#spots .spot-film{flex-basis:86.956522%}#spots .spot-film-content{gap:24px;padding:24px 20px}#spots .spot-film-name{font-size:15px}#spots .spot-play{width:64px;height:64px}#spots.spots-ready .spots-controls{gap:10px 20px;padding:16px 16px 0}#spots .spots-dots{order:-1;width:100%}#spots .spots-dot{height:32px}#spots .spots-player{width:calc(100vw - 24px);max-height:calc(100svh - 24px)}#spots .spots-player-header{padding:10px 12px}#spots .spots-player-title{font-size:14px}#spots .spots-player-frame{aspect-ratio:3/4;max-height:calc(100svh - 170px)}}
+@media(prefers-reduced-motion:reduce){#spots .spot-film img,#spots .spot-play,#spots .spots-dot::after{transition:none}}
 /* ── THE LIFESTYLE ── */
 .lifestyle-wrap{max-width:var(--content);margin:0 auto;padding:104px 48px}
 .lifestyle-heading{font-family:'Syne',sans-serif;font-size:var(--display);font-weight:400;text-transform:none;line-height:1.12;letter-spacing:-0.035em;color:#fff;margin:0 0 40px;max-width:20ch;text-wrap:balance}
@@ -850,44 +889,99 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 </section>
 
 <!-- ── 7. SIGNATURE SPOTS ── -->
-<section id="spots" class="section-dark">
-  <div class="section-inner">
-    <p class="eyebrow reveal">Signature Spots</p>
-    <div class="split-layout section-heading-row">
-      <div>
-        <h2 class="display-heading curtain-wrap"><span class="curtain">The world.<br><em>Your studio.</em></span></h2>
-      </div>
-      <div>
-        <p class="body-copy reveal" style="max-width:380px">A few favourite destinations for cinematic travel content.</p>
-      </div>
-    </div>
-    <div class="spots-grid">
-      <div class="spot-card reveal">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#060810"/><rect x="0" y="200" width="400" height="80" fill="#0a0c16"/><rect x="155" y="50" width="10" height="150" fill="#111520"/><rect x="165" y="70" width="8" height="130" fill="#161c2a"/><rect x="173" y="90" width="6" height="110" fill="#111520"/><rect x="145" y="115" width="35" height="85" fill="#0e121e"/><ellipse cx="160" cy="48" rx="8" ry="14" fill="#111520"/><rect x="75" y="165" width="25" height="35" fill="#0e1018"/><rect x="295" y="155" width="20" height="45" fill="#0e1018"/><circle cx="200" cy="28" r="5" fill="#D4AF7A" opacity="0.5"/><circle cx="50" cy="18" r="2" fill="#fff" opacity="0.25"/><circle cx="350" cy="35" r="2" fill="#fff" opacity="0.25"/><circle cx="290" cy="12" r="1.5" fill="#fff" opacity="0.2"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Dubai, UAE</div><div class="spot-tag">Architecture · Luxury · Desert</div></div>
-      </div>
-      <div class="spot-card reveal" style="transition-delay:0.08s">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#040c10"/><rect x="0" y="210" width="400" height="70" fill="#061018"/><path d="M0 210 Q100 190 200 200 Q300 210 400 205" stroke="#0a1a28" stroke-width="2" fill="none"/><path d="M110 210 L135 95 L118 55 L100 95 Z" fill="#091820"/><path d="M95 95 Q115 75 135 95" fill="none" stroke="#0d2030" stroke-width="8"/><path d="M200 210 L235 85 L215 42 L195 85 Z" fill="#071428"/><path d="M185 85 Q215 62 245 85" fill="none" stroke="#0d2030" stroke-width="8"/><path d="M310 210 L340 135 L324 102 L308 135 Z" fill="#091820"/><circle cx="200" cy="18" r="22" fill="#D4AF7A" opacity="0.1"/><circle cx="200" cy="18" r="9" fill="#D4AF7A" opacity="0.2"/><circle cx="80" cy="28" r="2" fill="#fff" opacity="0.35"/><circle cx="330" cy="14" r="2" fill="#fff" opacity="0.35"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Bali, Indonesia</div><div class="spot-tag">Temples · Rice Fields · Ocean</div></div>
-      </div>
-      <div class="spot-card reveal" style="transition-delay:0.16s">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#08060a"/><rect x="0" y="195" width="400" height="85" fill="#0e080e"/><path d="M0 195 Q200 165 400 195" fill="#120a12"/><circle cx="150" cy="75" r="42" fill="#D4AF7A" opacity="0.07"/><circle cx="150" cy="75" r="22" fill="#D4AF7A" opacity="0.1"/><path d="M138 118 L144 195 L157 195 L163 118 Z" fill="#160c16"/><path d="M105 195 L195 195 L188 175 L112 175 Z" fill="#1c0e1c"/><rect x="118" y="190" width="22" height="12" fill="#160c16"/><rect x="158" y="190" width="22" height="12" fill="#160c16"/><circle cx="310" cy="38" r="2" fill="#fff" opacity="0.3"/><circle cx="48" cy="22" r="2" fill="#fff" opacity="0.3"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Santorini, Greece</div><div class="spot-tag">Cliffs · Sunsets · Aegean</div></div>
-      </div>
-      <div class="spot-card reveal" style="transition-delay:0.08s">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#040e08"/><rect x="0" y="215" width="400" height="65" fill="#040c06"/><path d="M0 215 Q100 198 200 208 Q300 218 400 212" fill="#040e08"/><path d="M55 215 L88 102 L70 58 L48 102 Z" fill="#071808"/><path d="M76 102 Q96 80 116 102" fill="none" stroke="#0a2010" stroke-width="7"/><path d="M198 215 L238 78 L216 36 L196 78 Z" fill="#081c0a"/><path d="M182 78 Q218 54 254 78" fill="none" stroke="#0a2010" stroke-width="7"/><path d="M318 215 L348 128 L332 96 L316 128 Z" fill="#071808"/><rect x="0" y="213" width="400" height="4" fill="#D4AF7A" opacity="0.07"/><circle cx="200" cy="18" r="3.5" fill="#fff" opacity="0.5"/><circle cx="100" cy="30" r="2" fill="#fff" opacity="0.3"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Maldives</div><div class="spot-tag">Overwater · Crystal Blue · Remote</div></div>
-      </div>
-      <div class="spot-card reveal" style="transition-delay:0.16s">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#08060a"/><rect x="0" y="195" width="400" height="85" fill="#0c080c"/><path d="M0 195 Q200 175 400 195" fill="#120a12"/><path d="M75 195 L98 158 L121 195 Z" fill="#160c16"/><path d="M198 195 L228 148 L258 195 Z" fill="#1c0e1c"/><path d="M318 195 L340 168 L362 195 Z" fill="#160c16"/><circle cx="138" cy="118" r="32" fill="#1c0e1c"/><circle cx="138" cy="118" r="16" fill="#240f24"/><rect x="0" y="193" width="400" height="4" fill="#D4AF7A" opacity="0.09"/><circle cx="50" cy="28" r="2" fill="#fff" opacity="0.3"/><circle cx="355" cy="18" r="2" fill="#fff" opacity="0.3"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Marrakech, Morocco</div><div class="spot-tag">Medinas · Desert · Culture</div></div>
-      </div>
-      <div class="spot-card reveal" style="transition-delay:0.24s">
-        <div class="spot-img"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#060810"/><rect x="0" y="195" width="400" height="85" fill="#080c14"/><rect x="55" y="178" width="44" height="17" fill="#0c1018"/><rect x="60" y="158" width="34" height="20" fill="#101520"/><rect x="64" y="138" width="26" height="20" fill="#0c1018"/><rect x="158" y="168" width="84" height="27" fill="#0a0e18"/><rect x="166" y="128" width="68" height="40" fill="#101520"/><rect x="172" y="88" width="56" height="40" fill="#0c1018"/><rect x="178" y="56" width="44" height="32" fill="#101520"/><rect x="298" y="172" width="54" height="23" fill="#0c1018"/><rect x="305" y="152" width="40" height="20" fill="#101520"/><circle cx="100" cy="28" r="2" fill="#fff" opacity="0.3"/><circle cx="308" cy="18" r="2" fill="#fff" opacity="0.3"/></svg></div>
-        <div class="spot-info"><div class="spot-name">Tokyo, Japan</div><div class="spot-tag">Neon · Culture · Precision</div></div>
-      </div>
+<section id="spots" class="section-dark" aria-labelledby="spots-heading" aria-roledescription="carousel">
+  <header class="spots-header">
+    <h2 class="spots-heading" id="spots-heading">Signature Spots</h2>
+    <p class="spots-subtitle">Iconic places that elevate your brand into a global statement.</p>
+  </header>
+  <div class="spots-viewport" tabindex="0" aria-label="Destination films" aria-describedby="spots-help">
+    <div class="spots-track">
+      <button class="spot-film" type="button" data-spot-index="0" data-spot-name="Dubai" data-drive-id="1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy" aria-label="Play Dubai film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-dubai.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Dubai</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="1" data-spot-name="Miami" data-drive-id="1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2" aria-label="Play Miami film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-miami.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Miami</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="2" data-spot-name="Bali" data-drive-id="14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM" aria-label="Play Bali film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-bali.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bali</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="3" data-spot-name="Marbella" data-drive-id="1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_" aria-label="Play Marbella film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-marbella.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Marbella</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="4" data-spot-name="Barcelona" data-drive-id="1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1" aria-label="Play Barcelona film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-barcelona.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Barcelona</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="5" data-spot-name="Costa Rica" data-drive-id="1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1" aria-label="Play Costa Rica film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-costa-rica.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Costa Rica</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="6" data-spot-name="Puerto Vallarta" data-drive-id="1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_" aria-label="Play Puerto Vallarta film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-puerto-vallarta.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Puerto Vallarta</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="7" data-spot-name="Mallorca" data-drive-id="1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7" aria-label="Play Mallorca film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-mallorca.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Mallorca</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="8" data-spot-name="Elenite" data-drive-id="1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1" aria-label="Play Elenite film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-elenite.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Elenite</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="9" data-spot-name="Ibiza" data-drive-id="1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih" aria-label="Play Ibiza film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-ibiza.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Ibiza</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="10" data-spot-name="Bodrum" data-drive-id="1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ" aria-label="Play Bodrum film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-bodrum.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bodrum</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="11" data-spot-name="St Tropez" data-drive-id="1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM" aria-label="Play St Tropez film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-st-tropez.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">St Tropez</span></span>
+      </button>
+      <button class="spot-film" type="button" data-spot-index="12" data-spot-name="Valencia" data-drive-id="1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08" aria-label="Play Valencia film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="spot-valencia.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+        <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Valencia</span></span>
+      </button>
     </div>
   </div>
+  <div class="spots-controls">
+    <div class="spots-direction-controls">
+      <button class="spots-arrow" type="button" data-spot-direction="-1" aria-label="Previous destination"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+      <button class="spots-arrow" type="button" data-spot-direction="1" aria-label="Next destination"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+    </div>
+    <div class="spots-dots" role="group" aria-label="Choose a destination">
+      <button class="spots-dot" type="button" data-spot-dot="0" aria-label="Show Dubai" aria-current="true" tabindex="0"></button>
+      <button class="spots-dot" type="button" data-spot-dot="1" aria-label="Show Miami" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="2" aria-label="Show Bali" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="3" aria-label="Show Marbella" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="4" aria-label="Show Barcelona" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="5" aria-label="Show Costa Rica" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="6" aria-label="Show Puerto Vallarta" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="7" aria-label="Show Mallorca" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="8" aria-label="Show Elenite" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="9" aria-label="Show Ibiza" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="10" aria-label="Show Bodrum" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="11" aria-label="Show St Tropez" aria-current="false" tabindex="-1"></button>
+      <button class="spots-dot" type="button" data-spot-dot="12" aria-label="Show Valencia" aria-current="false" tabindex="-1"></button>
+    </div>
+    <button class="spots-autoplay" type="button" aria-label="Pause automatic sliding">Pause</button>
+  </div>
+  <p class="spots-sr" id="spots-help">Use the left and right arrow keys to explore destinations. Select a film to play it.</p>
+  <p class="spots-sr spots-status" aria-live="off" aria-atomic="true">Dubai, destination 1 of 13</p>
+  <dialog class="spots-player" id="spots-player" aria-labelledby="spots-player-title">
+    <div class="spots-player-header">
+      <h3 class="spots-player-title" id="spots-player-title">Destination film</h3>
+      <button class="spots-player-close" type="button" aria-label="Close destination film">&#215;</button>
+    </div>
+    <div class="spots-player-frame"></div>
+    <a class="spots-player-link" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">Open film in a new tab</a>
+  </dialog>
 </section>
 
 <!-- ── 8. THE LIFESTYLE ── -->
@@ -1490,6 +1584,226 @@ document.querySelectorAll('.fq').forEach(function(btn){
     },{rootMargin:'-20% 0px -55% 0px',threshold:0});
     destinations.forEach(function(section){if(section)observer.observe(section);});
   }
+})();
+</script>
+<script id="spots-interaction">
+// One set of destination cards, rotated after each step for a seamless, clone-free loop.
+(function(){
+  var section=document.getElementById('spots');
+  if(!section)return;
+  var viewport=section.querySelector('.spots-viewport');
+  var track=section.querySelector('.spots-track');
+  var cards=Array.prototype.slice.call(section.querySelectorAll('.spot-film'));
+  var dots=Array.prototype.slice.call(section.querySelectorAll('.spots-dot'));
+  var autoplayButton=section.querySelector('.spots-autoplay');
+  var status=section.querySelector('.spots-status');
+  var dialog=section.querySelector('.spots-player');
+  var closeButton=section.querySelector('.spots-player-close');
+  var frameHost=section.querySelector('.spots-player-frame');
+  var playerTitle=section.querySelector('.spots-player-title');
+  var playerLink=section.querySelector('.spots-player-link');
+  if(!viewport||!track||cards.length!==dots.length||!cards.length||!dialog)return;
+  var reduced=window.matchMedia('(prefers-reduced-motion:reduce)');
+  var active=0,target=0,busy=false,direction=0,autoTimer=0,finishTimer=0,startFrame=0;
+  var userPaused=false,hovered=false,focused=false,inView=false,pointerHeld=false,modalOpen=false;
+  var pointer=null,suppressClickUntil=0,opener=null,openerIndex=0,savedScroll=null,savedStyles=null;
+  function wrap(index){return (index%cards.length+cards.length)%cards.length;}
+  function cardWidth(){return cards[0].getBoundingClientRect().width||viewport.clientWidth/4;}
+  function stopAuto(){window.clearTimeout(autoTimer);autoTimer=0;}
+  function isPaused(){return userPaused||reduced.matches||hovered||focused||!inView||document.hidden||pointerHeld||modalOpen;}
+  function scheduleAuto(){
+    stopAuto();
+    if(!busy&&!isPaused())autoTimer=window.setTimeout(function(){request(wrap(active+1));},3800);
+  }
+  function updateAutoplay(){
+    autoplayButton.disabled=reduced.matches;
+    autoplayButton.textContent=reduced.matches?'Autoplay off':userPaused?'Resume':'Pause';
+    autoplayButton.setAttribute('aria-label',reduced.matches?'Automatic sliding is off for reduced motion':userPaused?'Resume automatic sliding':'Pause automatic sliding');
+    status.setAttribute('aria-live',isPaused()?'polite':'off');
+    scheduleAuto();
+  }
+  function updateCards(){
+    var visibleCount=Math.min(cards.length,Math.ceil(viewport.clientWidth/cardWidth()-.01));
+    var visible=Array.prototype.slice.call(track.children,0,visibleCount);
+    var restoreCardFocus=null;
+    cards.forEach(function(card){
+      var show=visible.indexOf(card)!==-1;
+      if(!show&&card.contains(document.activeElement)&&!modalOpen)restoreCardFocus=visible[0];
+      card.tabIndex=show?0:-1;
+      card.setAttribute('aria-hidden',String(!show));
+      card.inert=!show;
+    });
+    dots.forEach(function(dot,index){dot.setAttribute('aria-current',String(index===active));dot.tabIndex=index===active?0:-1;});
+    status.textContent=cards[active].getAttribute('data-spot-name')+', destination '+(active+1)+' of '+cards.length;
+    if(restoreCardFocus)restoreCardFocus.focus({preventScroll:true});
+  }
+  function cancelMotion(){
+    window.clearTimeout(finishTimer);finishTimer=0;
+    if(startFrame)window.cancelAnimationFrame(startFrame);startFrame=0;
+    track.style.transition='none';track.style.transform='translate3d(0,0,0)';
+    track.classList.remove('is-sliding');busy=false;
+  }
+  function jumpTo(index){
+    var previousFocus=document.activeElement;
+    var hadCardFocus=!modalOpen&&cards.some(function(card){return card.contains(previousFocus);});
+    cancelMotion();active=target=wrap(index);
+    for(var i=0;i<cards.length;i++)track.appendChild(cards[wrap(active+i)]);
+    updateCards();
+    if(hadCardFocus)(previousFocus.inert?track.firstElementChild:previousFocus).focus({preventScroll:true});
+    scheduleAuto();
+  }
+  function shortestDirection(from,to){return wrap(to-from)<=cards.length/2?1:-1;}
+  function finishStep(){
+    if(!busy)return;
+    var previousFocus=document.activeElement;
+    var hadCardFocus=!modalOpen&&cards.some(function(card){return card.contains(previousFocus);});
+    window.clearTimeout(finishTimer);finishTimer=0;
+    if(startFrame)window.cancelAnimationFrame(startFrame);startFrame=0;
+    track.style.transition='none';
+    if(direction>0)track.appendChild(track.firstElementChild);
+    active=wrap(active+direction);
+    track.style.transform='translate3d(0,0,0)';
+    track.classList.remove('is-sliding');busy=false;
+    updateCards();
+    if(hadCardFocus&&(document.activeElement!==previousFocus||previousFocus.inert))track.firstElementChild.focus({preventScroll:true});
+    if(active!==target)step(shortestDirection(active,target));
+    else scheduleAuto();
+  }
+  function step(nextDirection){
+    if(busy)return;
+    busy=true;direction=nextDirection;
+    stopAuto();
+    var distance=cardWidth();
+    track.style.transition='none';
+    if(direction<0){
+      track.insertBefore(track.lastElementChild,track.firstElementChild);
+      track.style.transform='translate3d('+(-distance)+'px,0,0)';
+    }else track.style.transform='translate3d(0,0,0)';
+    track.getBoundingClientRect();
+    track.classList.add('is-sliding');
+    startFrame=window.requestAnimationFrame(function(){
+      startFrame=0;
+      if(!busy)return;
+      track.style.transition='transform 500ms cubic-bezier(.22,.61,.36,1)';
+      track.style.transform=direction<0?'translate3d(0,0,0)':'translate3d('+(-distance)+'px,0,0)';
+      finishTimer=window.setTimeout(finishStep,560);
+    });
+  }
+  function request(index){
+    target=wrap(index);stopAuto();
+    if(reduced.matches){jumpTo(target);return;}
+    if(!busy&&active!==target)step(shortestDirection(active,target));
+    else if(!busy)scheduleAuto();
+  }
+  track.addEventListener('transitionend',function(event){if(event.target===track&&event.propertyName==='transform')finishStep();});
+  section.querySelectorAll('[data-spot-direction]').forEach(function(button){
+    button.addEventListener('click',function(){request(target+Number(button.getAttribute('data-spot-direction')));});
+  });
+  dots.forEach(function(dot,index){dot.addEventListener('click',function(){request(index);});});
+  autoplayButton.addEventListener('click',function(){userPaused=!userPaused;updateAutoplay();});
+  section.addEventListener('keydown',function(event){
+    if(modalOpen||event.altKey||event.ctrlKey||event.metaKey)return;
+    var destination;
+    if(event.key==='ArrowRight')destination=wrap(target+1);
+    else if(event.key==='ArrowLeft')destination=wrap(target-1);
+    else if(event.key==='Home')destination=0;
+    else if(event.key==='End')destination=cards.length-1;
+    else return;
+    event.preventDefault();request(destination);
+    if(event.target.classList.contains('spots-dot'))dots[destination].focus({preventScroll:true});
+  });
+  section.addEventListener('pointerenter',function(event){if(event.pointerType==='mouse'){hovered=true;updateAutoplay();}});
+  section.addEventListener('pointerleave',function(event){if(event.pointerType==='mouse'){hovered=false;updateAutoplay();}});
+  section.addEventListener('focusin',function(){focused=true;updateAutoplay();});
+  section.addEventListener('focusout',function(){window.setTimeout(function(){focused=section.contains(document.activeElement);updateAutoplay();},0);});
+  document.addEventListener('visibilitychange',function(){if(document.hidden&&busy)jumpTo(target);updateAutoplay();});
+  function measure(){if(busy)jumpTo(target);else updateCards();updateAutoplay();}
+  window.addEventListener('resize',measure);
+  if(reduced.addEventListener)reduced.addEventListener('change',function(){jumpTo(target);updateAutoplay();});
+  function updateVisibility(){var rect=section.getBoundingClientRect();inView=rect.bottom>0&&rect.top<window.innerHeight;updateAutoplay();}
+  if('IntersectionObserver' in window){
+    var observer=new IntersectionObserver(function(entries){inView=entries[0].isIntersecting;updateAutoplay();},{threshold:.15});
+    observer.observe(section);
+  }else window.addEventListener('scroll',updateVisibility,{passive:true});
+  viewport.addEventListener('pointerdown',function(event){
+    if(event.isPrimary===false||event.button>0)return;
+    pointer={id:event.pointerId,x:event.clientX,y:event.clientY,horizontal:false};pointerHeld=true;stopAuto();
+  });
+  viewport.addEventListener('pointermove',function(event){
+    if(!pointer||pointer.id!==event.pointerId)return;
+    var dx=event.clientX-pointer.x,dy=event.clientY-pointer.y;
+    if(Math.abs(dy)>Math.abs(dx)&&Math.abs(dy)>12){pointer=null;pointerHeld=false;scheduleAuto();return;}
+    if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*1.25){
+      pointer.horizontal=true;
+      if(viewport.setPointerCapture)viewport.setPointerCapture(event.pointerId);
+      if(event.cancelable)event.preventDefault();
+    }
+  },{passive:false});
+  function endPointer(event){
+    if(!pointer||pointer.id!==event.pointerId){pointerHeld=false;scheduleAuto();return;}
+    var dx=event.clientX-pointer.x,dy=event.clientY-pointer.y;
+    if(pointer.horizontal&&Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.25){
+      suppressClickUntil=Date.now()+450;request(target+(dx<0?1:-1));
+    }
+    pointer=null;pointerHeld=false;scheduleAuto();
+  }
+  viewport.addEventListener('pointerup',endPointer);
+  viewport.addEventListener('pointercancel',function(){pointer=null;pointerHeld=false;scheduleAuto();});
+  window.addEventListener('pointerup',endPointer);
+  window.addEventListener('pointercancel',function(){pointer=null;pointerHeld=false;scheduleAuto();});
+  function finishPlayer(){
+    if(!modalOpen)return;
+    modalOpen=false;
+    frameHost.replaceChildren();
+    document.documentElement.style.overflow=savedStyles.rootOverflow;
+    document.body.style.overflow=savedStyles.bodyOverflow;
+    document.body.style.paddingRight=savedStyles.bodyPadding;
+    var behavior=document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior='auto';
+    window.scrollTo(savedScroll.x,savedScroll.y);
+    document.documentElement.style.scrollBehavior=behavior;
+    jumpTo(openerIndex);
+    if(opener&&opener.isConnected)opener.focus({preventScroll:true});
+    updateAutoplay();
+  }
+  function closePlayer(){if(dialog.open)dialog.close();finishPlayer();}
+  function openPlayer(card){
+    if(modalOpen)return;
+    var label=card.getAttribute('data-spot-name');
+    var url='https://drive.google.com/file/d/'+card.getAttribute('data-drive-id')+'/preview';
+    if(typeof dialog.showModal!=='function'){window.open(url,'_blank','noopener');return;}
+    opener=card;openerIndex=Number(card.getAttribute('data-spot-index'));
+    savedScroll={x:window.scrollX,y:window.scrollY};
+    savedStyles={rootOverflow:document.documentElement.style.overflow,bodyOverflow:document.body.style.overflow,bodyPadding:document.body.style.paddingRight};
+    var scrollbar=Math.max(0,window.innerWidth-document.documentElement.clientWidth);
+    var padding=parseFloat(window.getComputedStyle(document.body).paddingRight)||0;
+    modalOpen=true;jumpTo(openerIndex);stopAuto();
+    playerTitle.textContent=label;
+    playerLink.href=url;
+    var iframe=document.createElement('iframe');
+    iframe.title=label+' destination film';iframe.src=url;
+    iframe.allow='autoplay; fullscreen; picture-in-picture';iframe.allowFullscreen=true;
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    frameHost.replaceChildren(iframe);
+    dialog.showModal();
+    document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden';
+    if(scrollbar)document.body.style.paddingRight=(padding+scrollbar)+'px';
+    closeButton.focus({preventScroll:true});updateAutoplay();
+  }
+  cards.forEach(function(card){card.addEventListener('click',function(event){
+    if(Date.now()<suppressClickUntil){event.preventDefault();return;}
+    openPlayer(card);
+  });});
+  closeButton.addEventListener('click',closePlayer);
+  dialog.addEventListener('cancel',function(event){event.preventDefault();closePlayer();});
+  dialog.addEventListener('close',finishPlayer);
+  dialog.addEventListener('click',function(event){
+    if(event.target!==dialog)return;
+    var rect=dialog.getBoundingClientRect();
+    if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closePlayer();
+  });
+  section.classList.add('spots-ready');
+  jumpTo(0);updateVisibility();updateAutoplay();
 })();
 </script>
 </body>
