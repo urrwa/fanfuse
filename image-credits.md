@@ -60,3 +60,60 @@ Selected and visually reviewed on 2026-11-19. Both photographs show adult fashio
 ## License reference
 
 https://unsplash.com/license — permits free download and commercial or non-commercial image use. Attribution is appreciated; do not sell unmodified images or compile them into a competing image service. People pictured are not asserted to endorse FanFuse.
+
+
+## Current Germany and Dubai Process gallery
+
+# Process imagery: Germany and Dubai (steps 01-03)
+
+These photographs illustrate destinations and travel; people shown are not presented as Fanfuse clients or staff. The official Pexels source captions explicitly identify the locations. All three are free under the Pexels License: https://www.pexels.com/license/ .
+
+| Local file | Location and subject | Photographer | Official source | Crop focus |
+| --- | --- | --- | --- | --- |
+| region-apply.jpg | Woman at Brandenburg Gate, Berlin, Germany, at golden hour | Linh Tran | https://www.pexels.com/photo/woman-at-brandenburg-gate-during-golden-hour-30044678/ | 50% 55%; keep woman and gate centered |
+| region-shoot.jpg | Stylish woman with Burj Khalifa, Dubai, UAE | Zakaria HANIF | https://www.pexels.com/photo/stylish-woman-in-dubai-with-burj-khalifa-tower-32977465/ | 50% 20%; retain face and recognizable tower silhouette at left |
+| region-strategy.jpg | Marienplatz square and Old Town Hall, Munich, Germany | IsMo | https://www.pexels.com/photo/town-square-in-munich-germany-18263230/ | 50% 45%; keep central red-roof clock tower visible |
+
+Downloaded in full colour as 1600px-wide JPEGs from official images.pexels.com URLs. The Dubai source is a portrait; landscape crops preserve the woman's face and tower silhouette, but not the tower's entire height.
+
+# Regional Process gallery credits — steps 04–05
+
+Both photos are actual photographs, downloaded and visually inspected on 2026-11-19. Location is established by the photographer's official Unsplash page, not guessed from appearance. These are illustrative destination photographs; they do not establish FanFuse client relationships, campaigns or earnings.
+
+## Step 04 — Production: Dubai desert
+
+- Local file: `work/fanfuse/region-production.jpg`
+- Photographer: Nicolai Berntsen
+- Title: a woman in a red dress walking across a desert
+- Official source: https://unsplash.com/photos/a-woman-in-a-red-dress-walking-across-a-desert-l2Irncl-PMA
+- Place evidence: source states that the photograph is in Dubai, United Arab Emirates and lists location “Dubai - United Arab Emirates”. Published October 23, 2023.
+- Source image: https://images.unsplash.com/photo-1698071408770-eb61b392d8a7?auto=format&fit=max&fm=jpg&w=1600&h=1600&q=82
+- Photo page explicitly marks it free to use under the Unsplash License.
+- JPEG, RGB, 1067 × 1600, 118,608 bytes.
+- Visual: adult woman in a long red dress standing on sand dunes at warm sunset; visible smiling face.
+- Suggested alt: Woman in a red dress on Dubai desert dunes at sunset.
+- Suggested `object-position: 50% 20%` on desktop and mobile. Keeps her face, dress and dune ridge in the frame.
+
+## Step 05 — Get Paid: Dubai Marina
+
+- Local file: `work/fanfuse/region-paid.jpg`
+- Photographer: Olga Nayda
+- Title: a woman standing on a bridge in front of a city
+- Official source: https://unsplash.com/photos/a-woman-standing-on-a-bridge-in-front-of-a-city-T5AkqGX67is
+- Place evidence: source explicitly lists “Dubai Marina - Dubai - United Arab Emirates” and describes the portrait as in Dubai, United Arab Emirates. Published September 5, 2023.
+- Source image: https://images.unsplash.com/photo-1693929189397-57d09da0dc36?auto=format&fit=max&fm=jpg&w=1600&h=1600&q=82
+- Photo page explicitly marks it free to use under the Unsplash License.
+- JPEG, RGB, 1067 × 1600, 325,404 bytes.
+- Visual: adult woman in a white blouse in profile on the Dubai Marina waterfront, with illuminated high-rises and reflections behind her.
+- Suggested alt: Woman overlooking illuminated Dubai Marina towers and waterfront at night.
+- Suggested `object-position: 50% 58%` for landscape desktop and mobile crops. Keeps her face and the Marina building lights together; avoid default top-biased crops.
+
+## License
+
+https://unsplash.com/license permits free commercial or non-commercial image use. Attribution is appreciated. Neither woman is asserted to endorse FanFuse or to be a FanFuse creator.
+
+## Optional wider Dubai alternative (not selected)
+
+- Downloaded candidate: `work/process-candidates/dubai-boat.jpg`, 1600 × 1200, 239,919 bytes.
+- Photographer Dawid Tkocz; https://unsplash.com/photos/woman-on-boat-overlooking-city-skyline-at-sunset-MQfDZmBkLe8 explicitly lists Dubai - United Arab Emirates and the free Unsplash License.
+- Warm golden Dubai waterfront and woman on boat, but she faces away. Selected the Marina photograph instead so a woman's face remains visible.
