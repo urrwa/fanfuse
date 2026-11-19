@@ -117,3 +117,23 @@ https://unsplash.com/license permits free commercial or non-commercial image use
 - Downloaded candidate: `work/process-candidates/dubai-boat.jpg`, 1600 × 1200, 239,919 bytes.
 - Photographer Dawid Tkocz; https://unsplash.com/photos/woman-on-boat-overlooking-city-skyline-at-sunset-MQfDZmBkLe8 explicitly lists Dubai - United Arab Emirates and the free Unsplash License.
 - Warm golden Dubai waterfront and woman on boat, but she faces away. Selected the Marina photograph instead so a woman's face remains visible.
+
+
+## Current services portrait
+
+# Editorial Services image
+
+- Local asset: `work/fanfuse/editorial-services.jpg`
+- Photographer: Denys Gromov
+- Official source: https://www.pexels.com/photo/woman-holding-her-hair-up-8002646/
+- Official page title: Woman Holding her Hair Up
+- Official location: Dubai, Dubai, United Arab Emirates
+- The source explicitly tags the subject as a young adult. It describes an elegant woman posing outdoors in Dubai.
+- License: https://www.pexels.com/license/ — the source page marks the image free to use; Pexels permits commercial website use and editing. Do not imply that the pictured model endorses FanFuse.
+- Download URL: https://images.pexels.com/photos/8002646/pexels-photo-8002646.jpeg?auto=compress&cs=srgb&w=1600&q=85
+- Format: full-color JPEG, RGB, 1600 x 1067, 143,408 bytes.
+- Visual inspection: adult brunette fashion model wearing a white halter dress, looking at the camera outdoors, both hands at her hair. Her face is clear at approximately 51% horizontal / 35% vertical. No camera or other people obscure the face.
+- Suggested alt: Adult fashion model in a white dress during an outdoor editorial shoot in Dubai.
+- Suggested crop: `object-position: 50% 32%` or `background-position: 50% 32%`. A right-side image panel can keep the face clear beside copy. Avoid covering the face with a foreground text box; check the final desktop/mobile crop.
+
+This is illustrative stock photography, not a claim about the actual FanFuse team, clients, production history, or earnings.
