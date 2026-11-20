@@ -1,0 +1,1154 @@
+{
+  "date": "2026-11-20",
+  "photos": 32,
+  "unique_pixel_hashes": 32,
+  "duplicate_placements": 0,
+  "photos_data": [
+    {
+      "file": "unique-q-about.webp",
+      "bytes": 183542,
+      "sha256": "91f2fca4489e4e38134fe0ed99cbedae727f96b6b760cabfe53bacb4572fecf3",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-process-apply.webp",
+      "bytes": 196358,
+      "sha256": "1acc44a08398a422bc2ee2342dfe93517442d62fc964a6bc4c1049bb20c2bdd5",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-process-test-shoot.webp",
+      "bytes": 280146,
+      "sha256": "a0d1b1b832b696062e423ec18c71a3f986e4af53c1594dec270f4186b5e9a6ab",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-process-strategy.webp",
+      "bytes": 166892,
+      "sha256": "59d9ef9159658511c1f7c3fc14c96868ad193df25bc39f5a98bac125b9c17c6f",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-process-production.webp",
+      "bytes": 245976,
+      "sha256": "aae245361905d7dc571cde0d7a67f1113804ba00ba8b4fc6edfae657c23b7a26",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-process-partnership.webp",
+      "bytes": 288774,
+      "sha256": "045b5cc95301c9ae3d06d622d3f0c6da637103e139fc94da96c9a391752e00c4",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-dubai.webp",
+      "bytes": 135922,
+      "sha256": "91368b42946583d3ab70c3afe6576994e92f83c88895e340e9afe7ead1df927d",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-miami.webp",
+      "bytes": 257440,
+      "sha256": "36f68ca73f4e74ec2c35ba809c2d54710448f011e2c7ef656dc34e38ac0fef04",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-bali.webp",
+      "bytes": 198668,
+      "sha256": "7537fa64ef1df779919f34715bac175823698b28ffafa8597ee29ce345557d52",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-marbella.webp",
+      "bytes": 270498,
+      "sha256": "25d47e2aa9c83109699e7940b26fff1b9d1dfe249b0380871d3696675713bbf0",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-barcelona.webp",
+      "bytes": 179734,
+      "sha256": "6c2cb39fd3fd6c73cab96b7f06ad1f70a18f8ff587ae02c0434ba55e2af5e926",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-costa-rica.webp",
+      "bytes": 120292,
+      "sha256": "eec08a0c2dd2e75250da909553f7b397f168415d41d05f44625b8d2fc9360a85",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "unique-q-spot-puerto-vallarta.webp",
+      "bytes": 193728,
+      "sha256": "04f5f979e54672c848a41cb0f6beae0f961027b3921b048289496371b22bfb1b",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-mallorca.webp",
+      "bytes": 187434,
+      "sha256": "a1061ec8dc760606e1ff556cc47424c67eb2ca3dc187bb166d56847b8840e6a1",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-elenite.webp",
+      "bytes": 344666,
+      "sha256": "c62d4fee93be93f9704c3f64a7b62ff97f6e3fb78c34a26de4136ebe5ed11765",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-ibiza.webp",
+      "bytes": 160004,
+      "sha256": "963fbf813f857ca70ed283a12e9b86db436861ff284bfcb10f2df22d709f9e83",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-bodrum.webp",
+      "bytes": 261344,
+      "sha256": "e49fb41970bf3699a9db84373f9c170912fa29d4e96cbfae5559607eb29a6633",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-st-tropez.webp",
+      "bytes": 250238,
+      "sha256": "d810fcfcda088a441001ebeb7c8f5541e77ace8ceb14baf86570f59a4707e2bd",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-spot-valencia.webp",
+      "bytes": 372150,
+      "sha256": "c8893c0812fe64282bad1242759409a002286eae4e6712a728e0065eb84f090c",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-feature-1.webp",
+      "bytes": 180320,
+      "sha256": "b0a54f2afe9114b4b56f88f9f0c26d8811fa77c3dbba19ab5b5a1e8b38770c00",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-feature-2.webp",
+      "bytes": 166740,
+      "sha256": "729a0dd37c6f58d69075716be29d091e96e9f8df08a06ac9f49dff5f584d76e7",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-feature-3.webp",
+      "bytes": 257442,
+      "sha256": "8c1e3cbb42056af971aa7faae4b3a7fe002e60ffaf3fc8ffcfc429132ced7b97",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-film-dubai.webp",
+      "bytes": 222962,
+      "sha256": "a07bd4e0a822ca69cc3d9cd780da2129ab084db56f3ef144a04aec4f85bbaff9",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-film-bali.webp",
+      "bytes": 271184,
+      "sha256": "23c7a2be580587356a5a5eace60979b5dbdcbe97b07dbd2e22b2bc9d71a2d936",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-film-marbella.webp",
+      "bytes": 212214,
+      "sha256": "a73ef2b510a0d314be3c688ff7c2529ccacb6cc2b6f7b86c7e9654c94c03e046",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-service-1.webp",
+      "bytes": 444486,
+      "sha256": "268ba8e746da639c821a94235aa1968b2c02daaf85f84356a77aba899fd3f9fb",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-service-2.webp",
+      "bytes": 354158,
+      "sha256": "cccd6d0ef6629695d5cf2239d757ec963b6c052ec61f61709899727da6446378",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-service-3.webp",
+      "bytes": 515028,
+      "sha256": "d9fb8b5c69c643f28eeafb80ff9352ef355b77e9162fc6189535c02fc3453c74",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-service-4.webp",
+      "bytes": 335722,
+      "sha256": "408fe7a48ffee03a7b469564e763639bc0bdbf97414fc8314d13fbd2140a7ada",
+      "dimensions": [
+        2048,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-service-5.webp",
+      "bytes": 266646,
+      "sha256": "c13fc73ed0ad997b954bf4dc6bca22f0c33d1717050834cdfaa4076057f6c503",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-hero.webp",
+      "bytes": 1190722,
+      "sha256": "52a57260d04a618d860b773bf975bbd7224cc7631c46bd11cba3b9b3cc638669",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "unique-q-footer.webp",
+      "bytes": 168580,
+      "sha256": "ea41296345a770b836f7e7b66451a32ade77d71c95ffebcb6d871aaad7799ca0",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "new_selections": [
+    {
+      "role": "about",
+      "file": "unique-q-about.webp",
+      "source_file": "original-film-puerto-vallarta.mp4",
+      "seconds": 39.64,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 183542,
+      "sha256": "91f2fca4489e4e38134fe0ed99cbedae727f96b6b760cabfe53bacb4572fecf3",
+      "object_position": "50% 50%",
+      "alt": "Fashion portrait framed by tropical leaves",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "service-1",
+      "file": "unique-q-service-1.webp",
+      "source_file": "original-film-mallorca.mp4",
+      "seconds": 5.51,
+      "width": 2048,
+      "height": 1080,
+      "bytes": 444486,
+      "sha256": "268ba8e746da639c821a94235aa1968b2c02daaf85f84356a77aba899fd3f9fb",
+      "object_position": "50% 50%",
+      "alt": "Model seated on seaside rocks with the coast behind her",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "service-2",
+      "file": "unique-q-service-2.webp",
+      "source_file": "original-film-elenite.mp4",
+      "seconds": 20,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 354158,
+      "sha256": "cccd6d0ef6629695d5cf2239d757ec963b6c052ec61f61709899727da6446378",
+      "object_position": "50% 50%",
+      "alt": "Group of models beside the patterned resort pool",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "service-3",
+      "file": "unique-q-service-3.webp",
+      "source_file": "original-film-ibiza.mp4",
+      "seconds": 10.01,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 515028,
+      "sha256": "d9fb8b5c69c643f28eeafb80ff9352ef355b77e9162fc6189535c02fc3453c74",
+      "object_position": "65% 45%",
+      "alt": "Model at a rocky Mediterranean cove",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "service-4",
+      "file": "unique-q-service-4.webp",
+      "source_file": "original-film-bodrum.mp4",
+      "seconds": 12.02,
+      "width": 2048,
+      "height": 1080,
+      "bytes": 335722,
+      "sha256": "408fe7a48ffee03a7b469564e763639bc0bdbf97414fc8314d13fbd2140a7ada",
+      "object_position": "50% 45%",
+      "alt": "Model at an infinity pool overlooking the coast",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "service-5",
+      "file": "unique-q-service-5.webp",
+      "source_file": "original-film-barcelona.mp4",
+      "seconds": 9.7,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 266646,
+      "sha256": "c13fc73ed0ad997b954bf4dc6bca22f0c33d1717050834cdfaa4076057f6c503",
+      "object_position": "50% 50%",
+      "alt": "Model in red resort styling seated on a beach rock",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "feature-1",
+      "file": "unique-q-feature-1.webp",
+      "source_file": "original-film-bali.mp4",
+      "seconds": 6.006,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 180320,
+      "sha256": "b0a54f2afe9114b4b56f88f9f0c26d8811fa77c3dbba19ab5b5a1e8b38770c00",
+      "object_position": "50% 50%",
+      "alt": "Aerial view of a group riding along a tropical beach",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "feature-2",
+      "file": "unique-q-feature-2.webp",
+      "source_file": "original-film-dubai.mp4",
+      "seconds": 4.004,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 166740,
+      "sha256": "729a0dd37c6f58d69075716be29d091e96e9f8df08a06ac9f49dff5f584d76e7",
+      "object_position": "75% 50%",
+      "alt": "Dubai towers rising into the blue sky",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "feature-3",
+      "file": "unique-q-feature-3.webp",
+      "source_file": "original-film-ibiza.mp4",
+      "seconds": 14.014,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 257442,
+      "sha256": "8c1e3cbb42056af971aa7faae4b3a7fe002e60ffaf3fc8ffcfc429132ced7b97",
+      "object_position": "50% 50%",
+      "alt": "Sailboats across a turquoise Mediterranean cove",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "film-dubai",
+      "file": "unique-q-film-dubai.webp",
+      "source_file": "original-film-dubai.mp4",
+      "seconds": 42.042,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 222962,
+      "sha256": "a07bd4e0a822ca69cc3d9cd780da2129ab084db56f3ef144a04aec4f85bbaff9",
+      "object_position": "50% 50%",
+      "alt": "Models in black resort styling beside palms",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "film-bali",
+      "file": "unique-q-film-bali.webp",
+      "source_file": "original-film-bali.mp4",
+      "seconds": 8.008,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 271184,
+      "sha256": "23c7a2be580587356a5a5eace60979b5dbdcbe97b07dbd2e22b2bc9d71a2d936",
+      "object_position": "50% 45%",
+      "alt": "Model in white resort styling at a tropical infinity pool",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "film-marbella",
+      "file": "unique-q-film-marbella.webp",
+      "source_file": "original-film-marbella.mp4",
+      "seconds": 40.02,
+      "width": 2048,
+      "height": 1080,
+      "bytes": 212214,
+      "sha256": "a73ef2b510a0d314be3c688ff7c2529ccacb6cc2b6f7b86c7e9654c94c03e046",
+      "object_position": "63% 50%",
+      "alt": "Model resting beside turquoise pool tiles",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    },
+    {
+      "role": "footer",
+      "file": "unique-q-footer.webp",
+      "source_file": "original-film-st-tropez.mp4",
+      "seconds": 6.59,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 168580,
+      "sha256": "ea41296345a770b836f7e7b66451a32ade77d71c95ffebcb6d871aaad7799ca0",
+      "object_position": "50% 50%",
+      "alt": "Model in white knit resort styling on a quiet beach",
+      "upscaled": false,
+      "compression": {
+        "format": "WebP",
+        "quality": 95,
+        "method": 6
+      },
+      "notes": "Native-size frame from existing authorized destination film. No AI generation, no sharpening or generative upscaling."
+    }
+  ],
+  "original_sources": {
+    "core": [
+      {
+        "role": "hero",
+        "file": "real-hero.webp",
+        "width": 1440,
+        "height": 810,
+        "bytes": 102344,
+        "sha256": "52e831d658f4649eb005fac469ee09c8679ac750c5948b08a7ab467a6ee18ffd",
+        "source_film": "original-film-dubai.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+        "source_frame_zero_based": 576,
+        "source_time_seconds": 24.024,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": [
+          480,
+          0,
+          1920,
+          810
+        ],
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "50% 50%",
+          "mobile": "22% 42%"
+        },
+        "description": "Real filmed adult model in opaque swimwear standing in a pool; clean face/profile and open water on the right."
+      },
+      {
+        "role": "footer",
+        "file": "real-footer.webp",
+        "width": 1440,
+        "height": 810,
+        "bytes": 25564,
+        "sha256": "10d4b102129a68edefead78e53d07a92fae4d10a9f8198e08105d112f7cde9bb",
+        "source_film": "original-film-dubai.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+        "source_frame_zero_based": 240,
+        "source_time_seconds": 10.01,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": [
+          480,
+          0,
+          1920,
+          810
+        ],
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "50% 50%",
+          "mobile": "20% 40%"
+        },
+        "description": "Real filmed adult model in a flowing opaque neutral dress on a Dubai sand dune; left-third model, uncluttered right sky and dune for footer text."
+      },
+      {
+        "role": "apply",
+        "file": "real-apply.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 144448,
+        "sha256": "612a7cf095ada0826bba635c8883a44b85ae33593e4cd84a405c5ec74e210689",
+        "source_film": "original-film-valencia.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+        "source_sha256": "f293039d4fd98ca55cbef8ef699a4a7baed12d8e46be629fb44ca2af529160ff",
+        "source_frame_zero_based": 816,
+        "source_time_seconds": 34.034,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": null,
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "50% 45%",
+          "mobile": "50% 45%"
+        },
+        "description": "Real filmed adult model in an opaque mirrored halterneck resort costume, front-facing on a beach."
+      },
+      {
+        "role": "test-shoot",
+        "file": "real-test-shoot.webp",
+        "width": 2048,
+        "height": 1080,
+        "bytes": 196812,
+        "sha256": "217e764126cb44d0fa35e4b2e70d0cc636ecc4a0dea1c60bcb468f4b9294c387",
+        "source_film": "original-film-marbella.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+        "source_sha256": "cb34c1c1c11cd3ab6c7f6e899896decbb20b3a90b902480c25988fac725ef699",
+        "source_frame_zero_based": 336,
+        "source_time_seconds": 14.014,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          2048,
+          1080
+        ],
+        "crop_xyxy": null,
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "50% 45%",
+          "mobile": "52% 45%"
+        },
+        "description": "Real filmed adult model beauty portrait against turquoise pool tiles. A campaign still, not a documented test-shoot or behind-the-scenes activity."
+      },
+      {
+        "role": "strategy",
+        "file": "real-strategy.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 124728,
+        "sha256": "c813b1e851f5c42e2f33bbfd8f2d12b00ff5f05be8cf9c18c6f81dd2f426f61a",
+        "source_film": "original-film-dubai.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+        "source_frame_zero_based": 624,
+        "source_time_seconds": 26.026,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": null,
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "72% 48%",
+          "mobile": "75% 48%"
+        },
+        "description": "Real filmed adult model fashion profile by window blinds. A campaign still, not a claim of a strategy meeting."
+      },
+      {
+        "role": "production",
+        "file": "real-production.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 182970,
+        "sha256": "baddae6fc3563d6d3a125403b62f3b48d0c4acad7520aeedb4737fdf5c11018f",
+        "source_film": "original-film-dubai.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+        "source_frame_zero_based": 480,
+        "source_time_seconds": 20.02,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": null,
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "50% 30%",
+          "mobile": "43% 25%"
+        },
+        "description": "Real filmed group of adult women in flowing opaque colorful dresses during a desert fashion campaign."
+      },
+      {
+        "role": "partnership",
+        "file": "real-partnership.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 221610,
+        "sha256": "34ecfdcfffeded40c798985c17c04da2d5f6759e05e69a27a0f660f429cf33c0",
+        "source_film": "original-film-ibiza.mp4",
+        "source_url": "https://drive.google.com/uc?export=download&id=1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+        "source_sha256": "c1b55910e88a8259e24142d97965199312d9c6c9fbccf1fd977501bf7542d7fd",
+        "source_frame_zero_based": 144,
+        "source_time_seconds": 6.006,
+        "source_frame_rate": "24000/1001",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "crop_xyxy": null,
+        "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+        "object_position": {
+          "desktop": "60% 45%",
+          "mobile": "60% 45%"
+        },
+        "description": "Two real filmed adult models in opaque swimwear seated at a resort. A campaign still, not a documented business partnership meeting."
+      }
+    ],
+    "spots": [
+      {
+        "destination": "Dubai",
+        "slug": "dubai",
+        "file": "real-spot-dubai.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 83030,
+        "sha256": "d8563ea0fe7fc98db45e909e52791da8a9c368e593906c50b1081b4c794eba5f",
+        "source_file": "original-film-dubai.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 32890023,
+        "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+        "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "source_drive_id": "1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+        "timestamp_seconds": 15,
+        "source_frame_file": "real-destination-candidates\\dubai\\selected-15.00s.png",
+        "source_frame_sha256": "23b51f214395f8be565516173bacc8bea47bba8215476a55b7a06bc522c3e4a7",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "54% 50%",
+        "focal_x_percent": 54,
+        "visual_review": "Adult model in black swimwear top and trousers holding a flag on a boat; face and upper body clear.",
+        "contact_sheet": "real-destination-candidates\\dubai-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\dubai\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Miami",
+        "slug": "miami",
+        "file": "real-spot-miami.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 138820,
+        "sha256": "766b0eb4d4493235c4226c2a8841bb209a9f49e94af56679c3ac11c9331479af",
+        "source_file": "original-film-miami.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 14632309,
+        "source_sha256": "8e7f04523e3876ee50cd70d7967448346535089095f4b2724ed3318d41c6cbcf",
+        "source_url": "https://drive.google.com/uc?export=download&id=1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2",
+        "source_drive_id": "1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2",
+        "timestamp_seconds": 14.15,
+        "source_frame_file": "real-destination-candidates\\miami\\selected-14.15s.png",
+        "source_frame_sha256": "a639ec8949a2d31c77954e3270a35a0197410e4db4956757eb7a88f2a76d51fb",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "60% 50%",
+        "focal_x_percent": 60,
+        "visual_review": "Adult model portrait in patterned resort blouse and sunglasses beside infinity pool.",
+        "contact_sheet": "real-destination-candidates\\miami-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\miami\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Bali",
+        "slug": "bali",
+        "file": "real-spot-bali.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 109450,
+        "sha256": "9a7548b86f0b49ba2a5672b9589fc4e6964fde0d1fc32f808f7f488352e92023",
+        "source_file": "original-film-bali.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 15730037,
+        "source_sha256": "76363789595bedc4cdee5f9c96b5bae5104cfc7b13ea891f99f4e2024e4e15d8",
+        "source_url": "https://drive.google.com/uc?export=download&id=14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM",
+        "source_drive_id": "14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM",
+        "timestamp_seconds": 1.74,
+        "source_frame_file": "real-destination-candidates\\bali\\selected-1.74s.png",
+        "source_frame_sha256": "6e431eb8b1828affed7942c86e339dc02bf1f4997718c6b0405760ec0d6c6230",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "32% 50%",
+        "focal_x_percent": 32,
+        "visual_review": "Adult model shoulder-and-face profile at tropical infinity pool; no explicit nudity visible.",
+        "contact_sheet": "real-destination-candidates\\bali-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\bali\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Marbella",
+        "slug": "marbella",
+        "file": "real-spot-marbella.webp",
+        "width": 2048,
+        "height": 1080,
+        "bytes": 146030,
+        "sha256": "6896edc7c859f60171594d071f4bc12ad6b7d7c4dd1742e90692f0bc1f886998",
+        "source_file": "original-film-marbella.mp4",
+        "source_width": 2048,
+        "source_height": 1080,
+        "source_bytes": 30866225,
+        "source_sha256": "cb34c1c1c11cd3ab6c7f6e899896decbb20b3a90b902480c25988fac725ef699",
+        "source_url": "https://drive.google.com/uc?export=download&id=1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+        "source_drive_id": "1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+        "timestamp_seconds": 32.75,
+        "source_frame_file": "real-destination-candidates\\marbella\\selected-32.75s.png",
+        "source_frame_sha256": "4cb289f42f524cb3cccfaff74ae51397ce4fdfda72a4ce49a24caf3a3a50f697",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "50% 50%",
+        "focal_x_percent": 50,
+        "visual_review": "Upright adult model beauty portrait beside turquoise pool, complete face and eyes visible; no explicit nudity visible.",
+        "contact_sheet": "real-destination-candidates\\marbella-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\marbella\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Barcelona",
+        "slug": "barcelona",
+        "file": "real-spot-barcelona.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 101402,
+        "sha256": "6270049d54f7a9c120c6f9189f0e0cc3338613d89ada2fef5bcbdd8c99107735",
+        "source_file": "original-film-barcelona.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 25607426,
+        "source_sha256": "c0e3a38e7d56f7369a0f3480c08163bfc04a7fa75e20c5937df31dfca2f1d6de",
+        "source_url": "https://drive.google.com/uc?export=download&id=1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1",
+        "source_drive_id": "1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1",
+        "timestamp_seconds": 15,
+        "source_frame_file": "real-destination-candidates\\barcelona\\selected-15.00s.png",
+        "source_frame_sha256": "1a9e57468e4e02b4c3ef7cbc463fccd591530f31086dd17ef4dcb0750cf24e6d",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "76% 50%",
+        "focal_x_percent": 76,
+        "visual_review": "Clear adult model face with amber sunglasses; original beach campaign footage.",
+        "contact_sheet": "real-destination-candidates\\barcelona-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\barcelona\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Costa Rica",
+        "slug": "costa-rica",
+        "file": "real-spot-costa-rica.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 70108,
+        "sha256": "db60f9a5add41936455eadee02eab3c869c5d2900e3d3b748628a1f450d9a07d",
+        "source_file": "original-film-costa-rica.mp4",
+        "source_width": 1280,
+        "source_height": 720,
+        "source_bytes": 22712469,
+        "source_sha256": "ea2450cc5d94f72857c23acc0c8d6233b53e8778ac8eb02ae20b7c15082b5ec2",
+        "source_url": "https://drive.google.com/uc?export=download&id=1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1",
+        "source_drive_id": "1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1",
+        "timestamp_seconds": 14.42,
+        "source_frame_file": "real-destination-candidates\\costa-rica\\selected-14.42s.png",
+        "source_frame_sha256": "5cf62bb6bac8d0e52de40977fea877422df3b288715c61884a6efd7b0cc05f8e",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "62% 50%",
+        "focal_x_percent": 62,
+        "visual_review": "Adult model face and shoulder profile in metallic gold opaque campaign styling beside beach.",
+        "contact_sheet": "real-destination-candidates\\costa-rica-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\costa-rica\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Puerto Vallarta",
+        "slug": "puerto-vallarta",
+        "file": "real-spot-puerto-vallarta.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 104688,
+        "sha256": "4ede0baaf44907b583b90f464192ce17f6491c8fec8f951bc93de48ea4c850cc",
+        "source_file": "original-film-puerto-vallarta.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 38737558,
+        "source_sha256": "86db60a9ca56b45ba8fd9bd50a4d9472d366d2903cec461b6e5d8fd6edb8f8d0",
+        "source_url": "https://drive.google.com/uc?export=download&id=1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_",
+        "source_drive_id": "1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_",
+        "timestamp_seconds": 48.45,
+        "source_frame_file": "real-destination-candidates\\puerto-vallarta\\selected-48.45s.png",
+        "source_frame_sha256": "829c1821dd4ca4fdbd104bfe3f9e070c88ba2b5e2ed0ab424c0f7ecb692905ca",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "64% 50%",
+        "focal_x_percent": 64,
+        "visual_review": "Adult model looking toward camera amid tropical foliage; clear face and eye contact.",
+        "contact_sheet": "real-destination-candidates\\puerto-vallarta-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\puerto-vallarta\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Mallorca",
+        "slug": "mallorca",
+        "file": "real-spot-mallorca.webp",
+        "width": 2048,
+        "height": 1080,
+        "bytes": 97110,
+        "sha256": "500c8803e8c8096dae2b05df0d762f775ef270b6b57f728c20ff805ed3dd9c0e",
+        "source_file": "original-film-mallorca.mp4",
+        "source_width": 2048,
+        "source_height": 1080,
+        "source_bytes": 15887321,
+        "source_sha256": "4ee533989cbc30dd09105b703fd5dee21979b8960dbbf239be29d31b76a285fc",
+        "source_url": "https://drive.google.com/uc?export=download&id=1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7",
+        "source_drive_id": "1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7",
+        "timestamp_seconds": 16.52,
+        "source_frame_file": "real-destination-candidates\\mallorca\\selected-16.52s.png",
+        "source_frame_sha256": "4ce95ec983d777077fc98edd5277d0ac8079e4bfa94e27e8a78c50ec8fb6c576",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "40% 50%",
+        "focal_x_percent": 40,
+        "visual_review": "Adult model direct-gaze portrait in brown resort swimwear and aviator headwear.",
+        "contact_sheet": "real-destination-candidates\\mallorca-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\mallorca\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Elenite",
+        "slug": "elenite",
+        "file": "real-spot-elenite.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 186840,
+        "sha256": "6dd83c47bfad43a4a4c0f4127354d53a41dda7143861846c3b3d74f0f0988e5b",
+        "source_file": "original-film-elenite.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 31165655,
+        "source_sha256": "3108b2fb4fd7637198b543d22c4c8255b06775df9b07a220d358a89843c29b73",
+        "source_url": "https://drive.google.com/uc?export=download&id=1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1",
+        "source_drive_id": "1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1",
+        "timestamp_seconds": 32.5,
+        "source_frame_file": "real-destination-candidates\\elenite\\selected-32.50s.png",
+        "source_frame_sha256": "2b8a78ed40809c4861e6b641274729eb498580100837d094818ff4d8aa1bd4f0",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "37% 50%",
+        "focal_x_percent": 37,
+        "visual_review": "Adult model in opaque white swimwear at resort pool; clear front-facing portrait without smoking props.",
+        "contact_sheet": "real-destination-candidates\\elenite-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\elenite\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Ibiza",
+        "slug": "ibiza",
+        "file": "real-spot-ibiza.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 83420,
+        "sha256": "bc603789f8fa3975359e945eca40969ff8b21771a29a5bf4619e4ba09a312b52",
+        "source_file": "original-film-ibiza.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 37101082,
+        "source_sha256": "c1b55910e88a8259e24142d97965199312d9c6c9fbccf1fd977501bf7542d7fd",
+        "source_url": "https://drive.google.com/uc?export=download&id=1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+        "source_drive_id": "1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+        "timestamp_seconds": 37.72,
+        "source_frame_file": "real-destination-candidates\\ibiza\\selected-37.72s.png",
+        "source_frame_sha256": "57509e046ba171debd7f634b3c5c6dff0ef0fff2a3801630a9fc90b9eed53556",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "29% 50%",
+        "focal_x_percent": 29,
+        "visual_review": "Adult model in opaque black one-piece swimwear beside coastal railing; complete face.",
+        "contact_sheet": "real-destination-candidates\\ibiza-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\ibiza\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Bodrum",
+        "slug": "bodrum",
+        "file": "real-spot-bodrum.webp",
+        "width": 2048,
+        "height": 1080,
+        "bytes": 138346,
+        "sha256": "c1f16b2729c52108a2616681ace111bcbcf8bba6afdff82645a53360454b53c9",
+        "source_file": "original-film-bodrum.mp4",
+        "source_width": 2048,
+        "source_height": 1080,
+        "source_bytes": 35586145,
+        "source_sha256": "ade3c83acfaba71c8a95bafbda9f4397e2e0e25da043a68bac54a7afabbb69fc",
+        "source_url": "https://drive.google.com/uc?export=download&id=1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ",
+        "source_drive_id": "1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ",
+        "timestamp_seconds": 28.04,
+        "source_frame_file": "real-destination-candidates\\bodrum\\selected-28.04s.png",
+        "source_frame_sha256": "858a024a9011b80d7b7c88ef24ddcae25da0b70a1b3202b2820f0c757520f6ff",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "40% 50%",
+        "focal_x_percent": 40,
+        "visual_review": "Adult model looking over shoulder at infinity pool; face fully visible, no rear-body focus.",
+        "contact_sheet": "real-destination-candidates\\bodrum-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\bodrum\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "St Tropez",
+        "slug": "st-tropez",
+        "file": "real-spot-st-tropez.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 133718,
+        "sha256": "72598dd29c3827627b2a0b326018e8218f4beb0bc70d9a1a55326220321c00c8",
+        "source_file": "original-film-st-tropez.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 16986956,
+        "source_sha256": "15bd48045a3306358fef1b78f1a33c11b8d7e23115043fe0a7f314e557e234a6",
+        "source_url": "https://drive.google.com/uc?export=download&id=1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM",
+        "source_drive_id": "1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM",
+        "timestamp_seconds": 10.98,
+        "source_frame_file": "real-destination-candidates\\st-tropez\\selected-10.98s.png",
+        "source_frame_sha256": "b1cc4bb8faba160ac3193cf43c9c31ccd778a0f6a12f3d876e0d2e2ddeb6eb39",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "45% 50%",
+        "focal_x_percent": 45,
+        "visual_review": "Adult model in white knit resort cover-up beside beach; clear expressive face.",
+        "contact_sheet": "real-destination-candidates\\st-tropez-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\st-tropez\\selected-card-crop.jpg"
+      },
+      {
+        "destination": "Valencia",
+        "slug": "valencia",
+        "file": "real-spot-valencia.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 194516,
+        "sha256": "3d2c7e3a8784953d7f89a5cbbe640665d72db1d410cd6a98b6e88adde37f485e",
+        "source_file": "original-film-valencia.mp4",
+        "source_width": 1920,
+        "source_height": 1080,
+        "source_bytes": 37888682,
+        "source_sha256": "f293039d4fd98ca55cbef8ef699a4a7baed12d8e46be629fb44ca2af529160ff",
+        "source_url": "https://drive.google.com/uc?export=download&id=1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+        "source_drive_id": "1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+        "timestamp_seconds": 1,
+        "source_frame_file": "real-destination-candidates\\valencia\\selected-1.00s.png",
+        "source_frame_sha256": "941e9f8da89ba380151e58c1358b27c0ff5fab15b2a6da4afa08141cbe5c95a2",
+        "provenance": "Still frame extracted from the original brand-reference destination film requested by the user. No generated model or AI image processing used.",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false,
+          "upscaled": false
+        },
+        "object_position": "52% 50%",
+        "focal_x_percent": 52,
+        "visual_review": "Adult model in opaque turquoise geometric campaign styling on beach; complete face in soft sun.",
+        "contact_sheet": "real-destination-candidates\\valencia-contact-sheet.jpg",
+        "preview_crop": "real-destination-candidates\\valencia\\selected-card-crop.jpg"
+      }
+    ]
+  },
+  "quality_note": "Native-size video stills, WebP95 without upscaling. Hero now uncropped1920x1080,H264CRF18. CostaRicaoriginal1280x720; otherphotos1920/2048x1080. Collection has1080p source detail, not4Kphotography.",
+  "provenance": "Existing user-requested destination film collection; real filmed models. Someoriginalfilms have stock-video titlecards; no claim of commissioned/exclusivephotos."
+}
