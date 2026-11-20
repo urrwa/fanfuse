@@ -1,0 +1,97 @@
+{
+  "project": "FanFuse",
+  "collection": "Onevia-inspired destination editorials",
+  "created_date": "2026-11-20",
+  "generator": "OpenAI image_gen",
+  "image_count": 5,
+  "output_format": "PNG",
+  "aspect_ratio": "3:4",
+  "note": "Original AI resort and travel model portraits. No stock source files or real-person identity references used.",
+  "images": [
+    {
+      "destination": "bali",
+      "file": "ai-editorial-bali.png",
+      "dimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "prompt": "Create one original, photorealistic luxury travel-model editorial photograph. Vertical portrait 3:4, showing the complete face with generous headroom and a thoughtful mid-thigh or full-body composition. Clearly adult woman aged 26-30, natural skin pores, realistic hands and anatomy, candid relaxed expression, beautiful but believable. Premium professional resort campaign quality, natural warm light, sophisticated colour, subtle film texture. Tasteful opaque swimwear with linen or knit cover-ups, fully covered intimate areas, no nudity, no erotic pose, no emphasis on breasts or buttocks. A genuine model-career editorial setting, not a stiff stock-business pose or heavily airbrushed AI face. No text, no logos, no watermarks, no collage. The entire image is one coherent photograph. A clearly adult 26-year-old woman with natural brunette hair wearing an emerald one-piece swimsuit and an open ivory knit cover-up beside an Ubud villa pool. Lush palms, bamboo architecture, layered tropical planting and soft turquoise pool water. She rests one hand lightly on a wooden railing, looks toward the photographer with a relaxed genuine smile. Calm eye-level lens, natural body language and believable Balinese environment.",
+      "provenance": {
+        "kind": "AI-generated",
+        "generator": "OpenAI image_gen",
+        "created_date": "2026-11-20",
+        "source_references": [],
+        "stock_photography": false,
+        "subject": "Fictional adult woman aged 26–30"
+      }
+    },
+    {
+      "destination": "ibiza",
+      "file": "ai-editorial-ibiza.png",
+      "dimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "prompt": "Create one original, photorealistic luxury travel-model editorial photograph. Vertical portrait 3:4, showing the complete face with generous headroom and a thoughtful mid-thigh or full-body composition. Clearly adult woman aged 26-30, natural skin pores, realistic hands and anatomy, candid relaxed expression, beautiful but believable. Premium professional resort campaign quality, natural warm light, sophisticated colour, subtle film texture. Tasteful opaque swimwear with linen or knit cover-ups, fully covered intimate areas, no nudity, no erotic pose, no emphasis on breasts or buttocks. A genuine model-career editorial setting, not a stiff stock-business pose or heavily airbrushed AI face. No text, no logos, no watermarks, no collage. The entire image is one coherent photograph. A clearly adult 28-year-old woman with long natural dark hair in tasteful black bikini swimwear and an open long white linen button-down cover-up, on an Ibiza whitewashed villa terrace overlooking the blue Mediterranean coast. Bare feet on pale stone, natural confident posture, one hand brushing hair from face, candid relaxed expression. Bougainvillea and distant white buildings establish the Balearic setting. Understated luxury, warm morning light, realistic linen and skin.",
+      "provenance": {
+        "kind": "AI-generated",
+        "generator": "OpenAI image_gen",
+        "created_date": "2026-11-20",
+        "source_references": [],
+        "stock_photography": false,
+        "subject": "Fictional adult woman aged 26–30"
+      }
+    },
+    {
+      "destination": "marbella",
+      "file": "ai-editorial-marbella.png",
+      "dimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "prompt": "Create one original, photorealistic luxury travel-model editorial photograph. Vertical portrait 3:4, showing the complete face with generous headroom and a thoughtful mid-thigh or full-body composition. Clearly adult woman aged 26-30, natural skin pores, realistic hands and anatomy, candid relaxed expression, beautiful but believable. Premium professional resort campaign quality, natural warm light, sophisticated colour, subtle film texture. Tasteful opaque swimwear with linen or knit cover-ups, fully covered intimate areas, no nudity, no erotic pose, no emphasis on breasts or buttocks. A genuine model-career editorial setting, not a stiff stock-business pose or heavily airbrushed AI face. No text, no logos, no watermarks, no collage. The entire image is one coherent photograph. A clearly adult 27-year-old naturally curly-haired brunette woman in a classic black one-piece swimsuit and cream linen wrap skirt at a Spanish luxury villa terrace on Marbella's Golden Mile. Warm confident eye contact, genuinely friendly slight smile, natural body proportions and visible skin texture. Bougainvillea, Andalusian arches, a glimpse of the sea and a calm landscaped pool. Sophisticated afternoon editorial light, no red-carpet gown, authentic resort campaign mood.",
+      "provenance": {
+        "kind": "AI-generated",
+        "generator": "OpenAI image_gen",
+        "created_date": "2026-11-20",
+        "source_references": [],
+        "stock_photography": false,
+        "subject": "Fictional adult woman aged 26–30"
+      }
+    },
+    {
+      "destination": "bodrum",
+      "file": "ai-editorial-bodrum.png",
+      "dimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "prompt": "Create one original, photorealistic luxury travel-model editorial photograph. Vertical portrait 3:4, showing the complete face with generous headroom and a thoughtful mid-thigh or full-body composition. Clearly adult woman aged 26-30, natural skin pores, realistic hands and anatomy, candid relaxed expression, beautiful but believable. Premium professional resort campaign quality, natural warm light, sophisticated colour, subtle film texture. Tasteful opaque swimwear with linen or knit cover-ups, fully covered intimate areas, no nudity, no erotic pose, no emphasis on breasts or buttocks. A genuine model-career editorial setting, not a stiff stock-business pose or heavily airbrushed AI face. No text, no logos, no watermarks, no collage. The entire image is one coherent photograph. A clearly adult 29-year-old brunette woman in a classic navy one-piece swimsuit and open ivory linen shirt on the warm wooden deck of a beautiful yacht. Turquoise Aegean water, Bodrum's white coastal houses and harbour hills in the soft background. Natural casual stance with her hand on the varnished rail, elegant but friendly expression, realistic ocean reflections and clothing. Daylight luxury nautical editorial, no satin gown, no intimate pose.",
+      "provenance": {
+        "kind": "AI-generated",
+        "generator": "OpenAI image_gen",
+        "created_date": "2026-11-20",
+        "source_references": [],
+        "stock_photography": false,
+        "subject": "Fictional adult woman aged 26–30"
+      }
+    },
+    {
+      "destination": "st-tropez",
+      "file": "ai-editorial-st-tropez.png",
+      "dimensions": {
+        "width": 1086,
+        "height": 1448
+      },
+      "prompt": "Create one original, photorealistic luxury travel-model editorial photograph. Vertical portrait 3:4, showing the complete face with generous headroom and a thoughtful mid-thigh or full-body composition. Clearly adult woman aged 26-30, natural skin pores, realistic hands and anatomy, candid relaxed expression, beautiful but believable. Premium professional resort campaign quality, natural warm light, sophisticated colour, subtle film texture. Tasteful opaque swimwear with linen or knit cover-ups, fully covered intimate areas, no nudity, no erotic pose, no emphasis on breasts or buttocks. A genuine model-career editorial setting, not a stiff stock-business pose or heavily airbrushed AI face. No text, no logos, no watermarks, no collage. The entire image is one coherent photograph. A clearly adult 28-year-old blonde woman with natural loose waves wearing ivory halterneck one-piece swimwear and a tasteful navy linen wrap skirt, standing on a yacht beside Saint-Tropez harbour. Warm casual expression, realistic natural complexion, an unforced elegant pose. Pastel French Riviera harbour facades, classic boats and soft golden late-afternoon sunlight. Nautical luxury campaign photography with a believable sense of place and everyday natural model energy.",
+      "provenance": {
+        "kind": "AI-generated",
+        "generator": "OpenAI image_gen",
+        "created_date": "2026-11-20",
+        "source_references": [],
+        "stock_photography": false,
+        "subject": "Fictional adult woman aged 26–30"
+      }
+    }
+  ]
+}

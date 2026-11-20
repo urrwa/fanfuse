@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fanfuse Studios</title>
+<title>Fanfuse Studios — Cinematic Travel & Creator Development</title>
+<meta name="description" content="Cinematic travel content, personal brand development and partnership support for women creators. Explore Fanfuse Studios and apply for your next chapter.">
+<meta name="theme-color" content="#090909">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fanfuse Studios — Your world. Your next chapter.">
+<meta property="og:description" content="Cinematic production, intentional positioning and meaningful partnerships for women creators.">
+<meta property="og:image" content="https://fanfusee.vercel.app/ai-hero.webp">
+<meta property="og:url" content="https://fanfusee.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="ai-hero.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -500,13 +512,34 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
   footer{padding:40px 24px}
 }
 </style>
+<link rel="stylesheet" href="studio-polish.css?v=20261120-footer">
+<link rel="stylesheet" href="studio-footer.css?v=20261120">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="studio-editorial.css?v=20261120">
+<style id="studio-safety">
+html:not(.motion-ready) .reveal,html:not(.motion-ready) .reveal-scale,html:not(.motion-ready) .curtain{opacity:1;transform:none}
+html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
+.bg-vid-wrap{background:#15120e url('ai-hero.webp') center/cover no-repeat}
+.bg-vid{opacity:0;transition:opacity .6s}.bg-vid.video-playing{opacity:1}
+.hero-motion-toggle{position:absolute;right:max(24px,calc((100vw - 1104px)/2));bottom:30px;z-index:3;min-height:44px;padding:9px 14px;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.4);font:500 12px/1.4 'Inter',sans-serif;cursor:pointer;backdrop-filter:blur(8px)}
+.hero-motion-toggle[hidden]{display:none}.hero-motion-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.studio-earnings-note{max-width:70ch;margin:28px auto 0;font-size:13px;line-height:1.75;color:#b9b9b9}
+.studio-disclosure{display:block;margin-top:28px;font-size:12px;line-height:1.8;color:#a7a7a7}
+.fa[hidden]{display:none}.fitem.open .fa{max-height:none}.fa{transition:none}
+.skip-link{position:fixed;left:16px;top:12px;transform:translateY(-160%);padding:12px 20px;z-index:300;background:var(--accent);color:#111;text-decoration:none}.skip-link:focus{transform:none}
+.studio-sectors{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.studio-sectors span{border:1px solid var(--border);padding:12px 18px;color:#d9d3c9;font-size:14px}
+.foot-links{flex-wrap:wrap;row-gap:14px}.studio-trust-note{font-size:13px;color:#bbb;max-width:55ch;margin-top:20px}
+@media(max-width:600px){.hero-motion-toggle{bottom:24px;right:24px}.hero-bottom{padding-bottom:92px}.studio-earnings-note{text-align:left}.hero-cta-label{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html,body{scroll-behavior:auto!important}.reveal,.reveal-scale,.curtain{opacity:1!important;transform:none!important;transition:none!important}.bg-vid{transition:none}.bsl-t,.btn-primary-arr{transition:none!important}}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#about">Skip to content</a>
 
 <!-- FIXED VIDEO BG -->
 <div class="bg-vid-wrap">
-  <video class="bg-vid" id="heroVid" autoplay muted loop playsinline preload="auto">
-    <source src="hero.mp4" type="video/mp4">
+  <video class="bg-vid" id="heroVid" autoplay muted loop playsinline preload="metadata" poster="ai-hero.webp" aria-hidden="true">
+    <source src="hero-web.mp4" type="video/mp4">
   </video>
   <div class="bg-vid-scrim"></div>
 </div>
@@ -534,6 +567,7 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
           <li><a class="nav-overlay-link" href="#services"><span>What we do</span></a></li>
           <li><a class="nav-overlay-link" href="#how"><span>The process</span></a></li>
           <li><a class="nav-overlay-link" href="#tiers"><span>Creator tiers</span></a></li>
+          <li><a class="nav-overlay-link" href="#spots"><span>Signature spots</span></a></li>
           <li><a class="nav-overlay-link" href="#faq"><span>FAQ</span></a></li>
           <li><a class="nav-overlay-link" href="#cta"><span>Apply now</span></a></li>
       </ul>
@@ -556,42 +590,25 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
     <div class="hero-top-right">
       <p class="hero-desc">Cinematic travel content. A stronger personal brand. Paid partnerships that take you further.</p>
       <a href="#cta" class="hero-cta" style="margin-left:auto;display:inline-flex">
-        <span class="hero-cta-label">Apply Now — Limited Spots</span>
+        <span class="hero-cta-label">Explore your next chapter</span>
         <span class="hero-cta-arr"><span class="hero-cta-arr-glyph" aria-hidden="true">↗</span></span>
       </a>
     </div>
   </div>
   <div class="hero-bottom">
     <h1 class="hero-headline">Travel the world.<br>Build something <em>real.</em></h1>
-    <p class="hero-scroll-hint">↓  Scroll to Explore</p>
+    <p class="hero-scroll-hint">Scroll to explore</p>
   </div>
+<button class="hero-motion-toggle" type="button" aria-label="Pause background video" hidden>Pause film</button>
 </section>
 
 <!-- ── 2. STATS ── -->
-<section id="stats" class="section-dark">
-  <div class="stats-grid">
-    <div class="stat-cell">
-      <div class="stat-num">50<span>+</span></div>
-      <div class="stat-label">Creators on Platform</div>
-      <div class="stat-desc">Female travel creators building real income</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">30<span>+</span></div>
-      <div class="stat-label">Countries Explored</div>
-      <div class="stat-desc">Destinations across 6 continents</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">120<span>+</span></div>
-      <div class="stat-label">Brand Deals Closed</div>
-      <div class="stat-desc">With top travel and lifestyle brands</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">8M<span>+</span></div>
-      <div class="stat-label">Views Generated</div>
-      <div class="stat-desc">Cinematic content that actually converts</div>
-    </div>
-  </div>
-</section>
+<section id="stats" class="section-dark" aria-label="The Fanfuse approach"><div class="stats-grid">
+    <div class="stat-cell"><div class="stat-num">Create.</div><div class="stat-label">Cinematic production</div><div class="stat-desc">A considered story, beautifully filmed.</div></div>
+    <div class="stat-cell"><div class="stat-num">Define.</div><div class="stat-label">Personal positioning</div><div class="stat-desc">A brand identity that feels like you.</div></div>
+    <div class="stat-cell"><div class="stat-num">Connect.</div><div class="stat-label">Brand partnerships</div><div class="stat-desc">Opportunities aligned with your world.</div></div>
+    <div class="stat-cell"><div class="stat-num">Grow.</div><div class="stat-label">Creator development</div><div class="stat-desc">A clearer direction for your next chapter.</div></div>
+  </div></section>
 
 <!-- ── 3. PROBLEM ── -->
 <section id="problem" class="section-dark">
@@ -624,35 +641,20 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
 </section>
 
 <!-- ── 4. ABOUT ── -->
-<section id="about" class="section-dark">
-  <div class="section-inner">
-    <p class="eyebrow">The Problem</p>
-    <div class="split-layout">
-      <div>
-        <h2 class="display-heading">Posting more isn't<br><em>the answer.</em></h2>
-      </div>
-      <div>
-        <p class="section-body">
-Brands look for a clear identity and content that feels <em>premium.</em> We help you build both.
-        </p>
-        <a href="#cta" class="outlined-btn">
-          <span class="outlined-btn-txt">See If You Qualify</span>
-          <span class="outlined-btn-arr">→</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="about" class="section-dark"><div class="section-inner studio-editorial-grid">
+    <figure class="studio-visual"><img src="ai-editorial-test-shoot.webp" alt="Adult fashion model and female photographer during a poolside Dubai shoot" width="1536" height="1024" loading="lazy" decoding="async"><figcaption class="studio-caption">Cinematic production. A more intentional presence.</figcaption></figure>
+    <div><p class="eyebrow">The studio</p><h2 class="display-heading">A world of possibility.<br><em>A brand that is yours.</em></h2><p class="section-body" style="margin-top:24px">We bring production, positioning and partnerships together for women ready to take their content further.</p><p class="body-copy" style="margin-top:20px">From a first test shoot to a carefully planned destination campaign, you bring your personality. We help shape the story.</p><a href="#services" class="outlined-btn"><span class="outlined-btn-txt">Discover the studio</span></a></div>
+  </div></section>
 
 <!-- ── 4. WHAT WE DO ── -->
 <section id="services" class="section-dark" aria-labelledby="services-heading">
   <div class="services-scene">
     <div class="services-backdrops" aria-hidden="true">
-      <div class="services-backdrop" style="background-image:url('editorial-services.jpg')"></div>
-      <div class="services-backdrop" style="background-image:url('region-shoot.jpg')"></div>
-      <div class="services-backdrop" style="background-image:url('region-apply.jpg')"></div>
-      <div class="services-backdrop" style="background-image:url('region-production.jpg')"></div>
-      <div class="services-backdrop" style="background-image:url('region-paid.jpg')"></div>
+      <div class="services-backdrop" style="background-image:url('ai-editorial-test-shoot.webp')"></div>
+      <div class="services-backdrop" style="background-image:url('ai-apply.webp')"></div>
+      <div class="services-backdrop" style="background-image:url('ai-strategy.webp')"></div>
+      <div class="services-backdrop" style="background-image:url('ai-editorial-partnership.webp')"></div>
+      <div class="services-backdrop" style="background-image:url('ai-editorial-production.webp')"></div>
     </div>
     <header class="services-header">
       <p class="eyebrow">What we do</p>
@@ -734,13 +736,13 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
   <div class="how-sticky-title" id="how-title-block">
     <p class="how-heading-eyebrow">The Process</p>
     <h2 class="how-title">Five Steps.<br><em>One New Career.</em></h2>
-    <p class="how-intro">From your first application to your first paid deal.</p>
+    <p class="how-intro">From your first application to a thoughtfully produced campaign.</p>
   </div>
   <div class="how-gallery">
 
     <article id="how-01" class="how-card">
       <div class="how-card-img">
-        <img src="region-apply.jpg" alt="Woman at Brandenburg Gate in Berlin, Germany, at golden hour" loading="lazy" style="object-position:50% 55%">
+        <img src="ai-apply.webp" alt="AI-created editorial of an adult creator preparing her application at a Berlin cafe" loading="lazy" style="object-position:50% 55%">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -755,7 +757,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 
     <article id="how-02" class="how-card">
       <div class="how-card-img">
-        <img src="region-shoot.jpg" alt="Woman in Dubai with the Burj Khalifa in the background" loading="lazy" style="object-position:50% 20%">
+        <img src="ai-editorial-test-shoot.webp" alt="Adult fashion model and film crew at a Dubai villa pool" loading="lazy" style="object-position:50% 20%">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -770,7 +772,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 
     <article id="how-03" class="how-card">
       <div class="how-card-img">
-        <img src="region-strategy.jpg" alt="Marienplatz square and Old Town Hall in Munich, Germany" loading="lazy" style="object-position:50% 45%">
+        <img src="ai-strategy.webp" alt="AI-created editorial of two adult women planning content together in Munich" loading="lazy" style="object-position:50% 45%">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -785,7 +787,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 
     <article id="how-04" class="how-card">
       <div class="how-card-img">
-        <img src="region-production.jpg" alt="Woman in a red dress on Dubai desert dunes at sunset" loading="lazy" style="object-position:50% 20%">
+        <img src="ai-editorial-production.webp" alt="Two adult models and a professional production crew at a Dubai villa pool" loading="lazy" style="object-position:50% 20%">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -800,14 +802,14 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 
     <article id="how-05" class="how-card">
       <div class="how-card-img">
-        <img src="region-paid.jpg" alt="Woman overlooking illuminated Dubai Marina towers and waterfront at night" loading="lazy" style="object-position:50% 58%">
+        <img src="ai-editorial-partnership.webp" alt="Adult models reviewing a content plan together beside a villa pool" loading="lazy" style="object-position:50% 58%">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
       <div class="how-meta">
-        <div class="how-tags"><span class="how-tag">Deal</span><span class="how-tag">Income</span></div>
+        <div class="how-tags"><span class="how-tag">Partnerships</span><span class="how-tag">Growth</span></div>
         <div class="how-bottom">
-          <div><span class="how-step-num">05</span><div class="how-name">Get Paid</div></div>
+          <div><span class="how-step-num">05</span><div class="how-name">Build Partnerships</div></div>
           <span class="how-arr">↗</span>
         </div>
       </div>
@@ -824,7 +826,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
         <h2 class="display-heading">What creators<br><em>can earn.</em></h2>
       </div>
       <div style="padding-top:14px">
-        <p class="section-body">Explore the income ranges across our creator tiers.</p>
+        <p class="section-body">An ambition to grow, with a level of support that fits your stage.</p>
       </div>
     </div>
     <div class="tiers-grid">
@@ -835,7 +837,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
         <div class="tier-period">First brand deals</div>
         <div class="tier-divider"></div>
         <ul class="tier-perks">
-          <li>First brand deals secured</li>
+          <li>Support for first brand partnerships</li>
           <li>Niche positioning locked in</li>
           <li>Audience growth plan</li>
           <li>Community access</li>
@@ -853,7 +855,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
         <div class="tier-period">Consistent income</div>
         <div class="tier-divider"></div>
         <ul class="tier-perks">
-          <li>Multiple brand deals active</li>
+          <li>A plan for recurring partnerships</li>
           <li>Cinematic productions included</li>
           <li>Direct brand introductions</li>
           <li>Deal negotiation support</li>
@@ -885,6 +887,7 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
         </a>
       </div>
     </div>
+<p class="studio-earnings-note">Illustrative earning ranges, as presented by Fanfuse. Results vary with your niche, audience, consistency and individual brand agreements. These figures are not guaranteed income.</p>
   </div>
 </section>
 
@@ -896,56 +899,56 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
   </header>
   <div class="spots-viewport" tabindex="0" aria-label="Destination films" aria-describedby="spots-help">
     <div class="spots-track">
-      <button class="spot-film" type="button" data-spot-index="0" data-spot-name="Dubai" data-drive-id="1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy" aria-label="Play Dubai film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-dubai.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="0" data-spot-name="Dubai" data-local-src="film-dubai.mp4" data-drive-id="1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy" aria-label="Play Dubai film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-dubai.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Dubai</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="1" data-spot-name="Miami" data-drive-id="1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2" aria-label="Play Miami film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-miami.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="1" data-spot-name="Miami" data-local-src="film-miami.mp4" data-drive-id="1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2" aria-label="Play Miami film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-miami.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Miami</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="2" data-spot-name="Bali" data-drive-id="14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM" aria-label="Play Bali film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-bali.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="2" data-spot-name="Bali" data-local-src="film-bali.mp4" data-drive-id="14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM" aria-label="Play Bali film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-bali.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bali</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="3" data-spot-name="Marbella" data-drive-id="1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_" aria-label="Play Marbella film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-marbella.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="3" data-spot-name="Marbella" data-local-src="film-marbella.mp4" data-drive-id="1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_" aria-label="Play Marbella film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-marbella.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Marbella</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="4" data-spot-name="Barcelona" data-drive-id="1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1" aria-label="Play Barcelona film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-barcelona.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="4" data-spot-name="Barcelona" data-local-src="film-barcelona.mp4" data-drive-id="1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1" aria-label="Play Barcelona film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-barcelona.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Barcelona</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="5" data-spot-name="Costa Rica" data-drive-id="1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1" aria-label="Play Costa Rica film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-costa-rica.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="5" data-spot-name="Costa Rica" data-local-src="film-costa-rica.mp4" data-drive-id="1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1" aria-label="Play Costa Rica film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-costa-rica.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Costa Rica</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="6" data-spot-name="Puerto Vallarta" data-drive-id="1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_" aria-label="Play Puerto Vallarta film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-puerto-vallarta.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="6" data-spot-name="Puerto Vallarta" data-local-src="film-puerto-vallarta.mp4" data-drive-id="1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_" aria-label="Play Puerto Vallarta film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-puerto-vallarta.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Puerto Vallarta</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="7" data-spot-name="Mallorca" data-drive-id="1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7" aria-label="Play Mallorca film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-mallorca.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="7" data-spot-name="Mallorca" data-local-src="film-mallorca.mp4" data-drive-id="1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7" aria-label="Play Mallorca film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-mallorca.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Mallorca</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="8" data-spot-name="Elenite" data-drive-id="1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1" aria-label="Play Elenite film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-elenite.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="8" data-spot-name="Elenite" data-local-src="film-elenite.mp4" data-drive-id="1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1" aria-label="Play Elenite film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-elenite.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Elenite</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="9" data-spot-name="Ibiza" data-drive-id="1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih" aria-label="Play Ibiza film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-ibiza.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="9" data-spot-name="Ibiza" data-local-src="film-ibiza.mp4" data-drive-id="1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih" aria-label="Play Ibiza film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-ibiza.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Ibiza</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="10" data-spot-name="Bodrum" data-drive-id="1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ" aria-label="Play Bodrum film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-bodrum.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="10" data-spot-name="Bodrum" data-local-src="film-bodrum.mp4" data-drive-id="1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ" aria-label="Play Bodrum film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-bodrum.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bodrum</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="11" data-spot-name="St Tropez" data-drive-id="1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM" aria-label="Play St Tropez film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-st-tropez.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="11" data-spot-name="St Tropez" data-local-src="film-st-tropez.mp4" data-drive-id="1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM" aria-label="Play St Tropez film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-editorial-st-tropez.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">St Tropez</span></span>
       </button>
-      <button class="spot-film" type="button" data-spot-index="12" data-spot-name="Valencia" data-drive-id="1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08" aria-label="Play Valencia film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="spot-valencia.jpg" alt="" width="720" height="960" loading="lazy" decoding="async">
+      <button class="spot-film" type="button" data-spot-index="12" data-spot-name="Valencia" data-local-src="film-valencia.mp4" data-drive-id="1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08" aria-label="Play Valencia film" aria-haspopup="dialog" aria-controls="spots-player">
+        <img src="ai-spot-valencia.webp" alt="" width="720" height="960" loading="lazy" decoding="async">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Valencia</span></span>
       </button>
     </div>
@@ -980,59 +983,19 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
       <button class="spots-player-close" type="button" aria-label="Close destination film">&#215;</button>
     </div>
     <div class="spots-player-frame"></div>
-    <a class="spots-player-link" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">Open film in a new tab</a>
+    <a class="spots-player-link" href="film-dubai.mp4" target="_blank" rel="noopener noreferrer">Open film in a new tab</a>
   </dialog>
 </section>
 
 <!-- ── 8. THE LIFESTYLE ── -->
-<section id="lifestyle" class="section-dark">
-  <div class="lifestyle-wrap">
-    <p class="eyebrow reveal">The Lifestyle</p>
-    <h2 class="lifestyle-heading curtain-wrap"><span class="curtain">This is your<br><em>new normal.</em></span></h2>
-    <div class="life-grid">
-      <div class="life-card life-card-lg reveal">
-        <div class="life-bg" style="background:linear-gradient(135deg,#0d1a0d,#040c04)"></div>
-        <div class="life-cnt">
-          <span class="life-ico">✈</span>
-          <div class="life-ttl">Business Class, Always</div>
-          <p class="life-dsc">Flights, stays and transfers handled for every shoot.</p>
-        </div>
-      </div>
-      <div class="life-card reveal" style="transition-delay:0.1s">
-        <div class="life-bg" style="background:linear-gradient(135deg,#1a0d08,#0e0806)"></div>
-        <div class="life-cnt">
-          <span class="life-ico">🎬</span>
-          <div class="life-ttl">Pro Crew on Every Trip</div>
-          <p class="life-dsc">Your director, camera crew and editor, on location.</p>
-        </div>
-      </div>
-      <div class="life-card reveal" style="transition-delay:0.15s">
-        <div class="life-bg" style="background:linear-gradient(135deg,#0d0d1a,#06060e)"></div>
-        <div class="life-cnt">
-          <span class="life-ico">💰</span>
-          <div class="life-ttl">€10K+ Monthly</div>
-          <p class="life-dsc">Guaranteed brand deal revenue, not tips or hoping for virality.</p>
-        </div>
-      </div>
-      <div class="life-card reveal" style="transition-delay:0.2s">
-        <div class="life-bg" style="background:linear-gradient(135deg,#1a0d1a,#0e060e)"></div>
-        <div class="life-cnt">
-          <span class="life-ico">🌍</span>
-          <div class="life-ttl">3–4 Trips Per Year</div>
-          <p class="life-dsc">Minimum 3 international productions annually. The world is your studio.</p>
-        </div>
-      </div>
-      <div class="life-card life-card-lg reveal" style="transition-delay:0.1s">
-        <div class="life-bg" style="background:linear-gradient(135deg,#0d1a16,#060e0a)"></div>
-        <div class="life-cnt">
-          <span class="life-ico">📱</span>
-          <div class="life-ttl">Content That Converts</div>
-          <p class="life-dsc">Cinematic content made to attract the right brands.</p>
-        </div>
-      </div>
+<section id="lifestyle" class="section-dark"><div class="section-inner">
+    <div class="split-layout section-heading-row"><div><p class="eyebrow">The creator life</p><h2 class="display-heading">Go somewhere new.<br><em>Make it your own.</em></h2></div><p class="section-body">Beautiful places. A considered production. More space to be yourself on camera.</p></div>
+    <div class="studio-feature-grid">
+      <article class="studio-feature"><img src="ai-editorial-bali.webp" alt="AI-created adult fashion model in a lush Bali setting" width="1024" height="1365" loading="lazy" decoding="async"><div class="studio-feature-copy"><p class="studio-kicker">On location</p><h3>A world beyond your feed.</h3><p>Destination shoots shaped around your identity and creative direction.</p></div></article>
+      <article class="studio-feature"><img src="ai-editorial-production.webp" alt="Professional poolside fashion production with adult models in Dubai" width="1536" height="1024" loading="lazy" decoding="async"><div class="studio-feature-copy"><p class="studio-kicker">In good hands</p><h3>Show up as yourself.</h3><p>Direction, camera and editing brought together around your story.</p></div></article>
+      <article class="studio-feature"><img src="ai-editorial-partnership.webp" alt="Adult models collaborating on a content plan at a villa pool" width="1536" height="1024" loading="lazy" decoding="async"><div class="studio-feature-copy"><p class="studio-kicker">With intention</p><h3>Build something lasting.</h3><p>Positioning and partnership support that look beyond a single post.</p></div></article>
     </div>
-  </div>
-</section>
+  </div></section>
 
 <!-- ── 9. TESTIMONIALS ── -->
 <section id="testimonials" class="section-dark">
@@ -1041,24 +1004,21 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
     <h2 class="display-heading">Let creators<br><em>tell the story.</em></h2>
     <div class="testi-grid">
       <div class="tcard">
-        <div class="tstars">★★★★★</div>
-        <p class="tquote">"The quality of the content completely changed how brands saw me. They started coming to me — I stopped chasing them entirely."</p>
+        <p class="tquote">“The cinematic clips changed everything — brands started reaching out.”</p>
         <div>
           <div class="tauthor">Ava M.</div>
           <div class="trole">Travel Creator</div>
         </div>
       </div>
       <div class="tcard">
-        <div class="tstars">★★★★★</div>
-        <p class="tquote">"I turned every single trip into income. This is a full career now. I genuinely can't imagine going back."</p>
+        <p class="tquote">“I now earn from every trip. This is a real career now.”</p>
         <div>
           <div class="tauthor">Sofia L.</div>
           <div class="trole">Travel Creator</div>
         </div>
       </div>
       <div class="tcard">
-        <div class="tstars">★★★★★</div>
-        <p class="tquote">"I used to accept free products and call it a collab. Now I charge real money and brands say yes. The difference is the content."</p>
+        <p class="tquote">“I stopped chasing free collabs and started getting paid.”</p>
         <div>
           <div class="tauthor">Mia R.</div>
           <div class="trole">Travel Creator</div>
@@ -1069,85 +1029,19 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 </section>
 
 <!-- ── 10. VIDEO SHOWCASE ── -->
-<section id="showcase" class="section-dark">
-  <div class="section-inner">
-    <p class="eyebrow reveal">Video Showcase</p>
-    <div class="split-layout section-heading-row">
-      <div>
-        <h2 class="display-heading curtain-wrap"><span class="curtain">Content that<br><em>gets noticed.</em></span></h2>
-      </div>
+<section id="showcase" class="section-dark"><div class="section-inner">
+    <div class="split-layout section-heading-row"><div><p class="eyebrow">Selected films</p><h2 class="display-heading">A feeling.<br><em>Beautifully captured.</em></h2></div><p class="section-body">Explore destination films from the original Fanfuse collection.</p></div>
+    <div class="film-grid">
+      <button class="film-card" type="button" data-film-spot="Dubai" aria-label="Play selected Dubai film"><img src="ai-editorial-dubai.webp" width="1024" height="1365" alt="AI-created Dubai campaign portrait" loading="lazy" decoding="async"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Dubai</span><strong>Golden hour, elevated.</strong><small>Watch destination film</small></span></button>
+      <button class="film-card" type="button" data-film-spot="Bali" aria-label="Play selected Bali film"><img src="ai-editorial-bali.webp" width="1024" height="1365" alt="AI-created Bali campaign portrait" loading="lazy" decoding="async"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Bali</span><strong>A slower kind of story.</strong><small>Watch destination film</small></span></button>
+      <button class="film-card" type="button" data-film-spot="Marbella" aria-label="Play selected Marbella film"><img src="ai-editorial-marbella.webp" width="1344" height="768" alt="AI-created resort fashion portrait in Marbella" loading="lazy" decoding="async"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Marbella</span><strong>The Mediterranean mood.</strong><small>Watch destination film</small></span></button>
     </div>
-    <div class="showcase-grid reveal">
-      <div class="showcase-main">
-        <div class="showcase-player">
-          <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%"><defs><linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#08080f"/><stop offset="50%" stop-color="#040408"/><stop offset="100%" stop-color="#08060a"/></linearGradient></defs><rect width="800" height="450" fill="url(#sg1)"/><circle cx="400" cy="225" r="44" fill="rgba(212,175,122,0.12)" stroke="rgba(212,175,122,0.35)" stroke-width="1.5"/><polygon points="390,210 390,242 420,226" fill="#D4AF7A"/><text x="400" y="318" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="'Syne',sans-serif" font-size="11" font-weight="700" letter-spacing="5">REEL 2024</text></svg>
-        </div>
-      </div>
-      <div class="showcase-thumbs">
-        <div class="showcase-thumb">
-          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#0d0d1a"/><circle cx="150" cy="90" r="22" fill="rgba(212,175,122,0.15)" stroke="rgba(212,175,122,0.35)" stroke-width="1"/><polygon points="144,80 144,100 162,90" fill="#D4AF7A" opacity="0.9"/></svg>
-          <div class="thumb-lbl">Dubai Campaign · Luxury Hotels</div>
-        </div>
-        <div class="showcase-thumb">
-          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#071a0a"/><circle cx="150" cy="90" r="22" fill="rgba(212,175,122,0.15)" stroke="rgba(212,175,122,0.35)" stroke-width="1"/><polygon points="144,80 144,100 162,90" fill="#D4AF7A" opacity="0.9"/></svg>
-          <div class="thumb-lbl">Bali · Wellness Brand</div>
-        </div>
-        <div class="showcase-thumb">
-          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="180" fill="#180a0a"/><circle cx="150" cy="90" r="22" fill="rgba(212,175,122,0.15)" stroke="rgba(212,175,122,0.35)" stroke-width="1"/><polygon points="144,80 144,100 162,90" fill="#D4AF7A" opacity="0.9"/></svg>
-          <div class="thumb-lbl">Santorini · Fashion Week</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </div></section>
 
 <!-- ── 11. PARTNERS & AWARDS ── -->
-<section id="partners" class="section-dark">
-  <div class="section-inner">
-    <p class="eyebrow reveal">Partners & Awards</p>
-    <div class="split-layout section-heading-row">
-      <div>
-        <h2 class="display-heading curtain-wrap"><span class="curtain">In good<br><em>company.</em></span></h2>
-      </div>
-      <div>
-        <p class="body-copy reveal" style="max-width:380px">Connections across travel, hospitality and lifestyle.</p>
-      </div>
-    </div>
-    <div class="partners-grid reveal">
-      <div class="partner-card"><span>MARRIOTT</span></div>
-      <div class="partner-card"><span>ARMANI</span></div>
-      <div class="partner-card"><span>EMIRATES</span></div>
-      <div class="partner-card"><span>ROLEX</span></div>
-      <div class="partner-card"><span>BULGARI</span></div>
-      <div class="partner-card"><span>FOUR SEASONS</span></div>
-      <div class="partner-card"><span>DIOR</span></div>
-      <div class="partner-card"><span>RITZ-CARLTON</span></div>
-    </div>
-    <div class="awards-row reveal">
-      <div class="award-item">
-        <div class="award-ico">⭑</div>
-        <div>
-          <div class="award-ttl">Best Travel Creator Agency</div>
-          <div class="award-yr">Creator Economy Awards 2024</div>
-        </div>
-      </div>
-      <div class="award-item">
-        <div class="award-ico">⭑</div>
-        <div>
-          <div class="award-ttl">Top 10 Content Studios</div>
-          <div class="award-yr">Forbes Travel, 2024</div>
-        </div>
-      </div>
-      <div class="award-item">
-        <div class="award-ico">⭑</div>
-        <div>
-          <div class="award-ttl">€2M+ in Creator Earnings</div>
-          <div class="award-yr">Facilitated Since 2022</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="partners" class="section-dark"><div class="section-inner">
+    <div class="split-layout"><div><p class="eyebrow">Your brand, considered</p><h2 class="display-heading">Made for the world<br><em>you want to enter.</em></h2></div><div><p class="section-body">Your personality sets the direction. We help turn it into a distinctive visual identity and a clearer partnership story.</p><div class="studio-sectors" aria-label="Creative sectors"><span>Travel & hospitality</span><span>Fashion & lifestyle</span><span>Beauty & wellness</span></div><p class="studio-trust-note">Production. Positioning. Partnership support.</p></div></div>
+  </div></section>
 
 <!-- ── 12. FAQ ── -->
 <section id="faq" class="section-dark">
@@ -1184,41 +1078,56 @@ Brands look for a clear identity and content that feels <em>premium.</em> We hel
 </section>
 
 <!-- ── CTA ── -->
-<section id="cta">
-  <div class="cta-glow"></div>
-  <div class="cta-inner">
-    <h2 class="cta-heading">Your next chapter<br><em>starts here.</em></h2>
-    <p class="cta-sub">We work with a select group of creators. Apply to explore whether Fanfuse is the right fit.</p>
-    <div class="cta-btns">
-      <a href="#" class="btn-primary">
-        <span class="bsl"><span class="bsl-t">Apply Now</span><span class="bsl-t dup" aria-hidden="true">Apply Now</span></span>
-        <span class="btn-primary-arr">↗</span>
-      </a>
-      <a href="#" class="btn-secondary">
-        <span class="bsl"><span class="bsl-t">Book a Call First</span><span class="bsl-t dup" aria-hidden="true">Book a Call First</span></span>
-      </a>
-    </div>
-  </div>
-</section>
+
 
 <!-- ── FOOTER ── -->
-<footer>
-  <div class="foot-grid">
-    <div>
-      <div class="flogo">Fanfuse <b>Studios</b></div>
-      <div class="ftag">Cinematic Production · Selective Collaborations · International</div>
+<footer id="studio-footer" class="studio-footer" aria-label="Fanfuse Studios contact and navigation">
+  <div class="footer-scene-shade" aria-hidden="true"></div>
+  <section id="cta" class="footer-invitation" aria-labelledby="footer-invitation-title">
+    <h2 id="footer-invitation-title">Ready for your<br><em>next chapter?</em></h2>
+    <p class="footer-invitation-copy">Bring your personality. We'll bring the vision, the production and a world of possibilities.</p>
+    <a class="footer-apply" href="https://fanfuse.ai/apply"><span>Apply to Fanfuse</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+  </section>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a class="footer-wordmark" href="#hero" aria-label="Fanfuse Studios home">Fanfuse <span>Studios</span></a>
+      <p>Cinematic travel content.<br>A personal brand that feels like you.<br>Your next chapter, thoughtfully made.</p>
+      <span class="footer-location">Fully remote. Creating worldwide.</span>
     </div>
-    <div class="foot-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#tiers">Tiers</a>
+    <nav class="footer-column" aria-label="Explore Fanfuse">
+      <h3>Explore</h3>
+      <a href="#about">The studio</a>
+      <a href="#services">What we do</a>
+      <a href="#how">The process</a>
+      <a href="#tiers">Creator tiers</a>
       <a href="#faq">FAQ</a>
+    </nav>
+    <nav class="footer-column" aria-label="Featured destinations">
+      <h3>Destinations</h3>
+      <a href="#spots" data-footer-spot="Dubai">Dubai</a>
+      <a href="#spots" data-footer-spot="Bali">Bali</a>
+      <a href="#spots" data-footer-spot="Marbella">Marbella</a>
+      <a href="#spots" data-footer-spot="Ibiza">Ibiza</a>
+      <a href="#spots">All destinations</a>
+    </nav>
+    <div class="footer-column footer-contact">
+      <h3>Let's connect</h3>
+      <a href="mailto:fanfusestudios@gmail.com">fanfusestudios@gmail.com</a>
+      <a href="mailto:fanfusestudios@gmail.com?subject=Fanfuse%20strategy%20call%20request">Request a call</a>
+      <a href="https://fanfuse.ai/apply">Apply to the studio</a>
     </div>
-    <div class="foot-right">
-      <a href="mailto:fanfusestudios@gmail.com" class="foot-email">fanfusestudios@gmail.com</a>
-      <div class="foot-copy">© 2026 Fanfuse Studios. All rights reserved.</div>
-    </div>
+    <nav class="footer-column" aria-label="Follow Fanfuse">
+      <h3>Follow along</h3>
+      <a href="https://www.instagram.com/fanfuse1/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.instagram.com/lumeavoyage/" target="_blank" rel="noopener noreferrer">Lumea Voyage</a>
+      <span class="footer-partner-note">Production partner</span>
+    </nav>
   </div>
+  <div class="footer-bottom">
+    <p>© 2026 Fanfuse Studios. All rights reserved.</p>
+    <div><a href="mailto:fanfusestudios@gmail.com?subject=Privacy%20enquiry">Privacy enquiries</a><a href="#hero">Back to top</a></div>
+  </div>
+  <p class="footer-media-note">AI-created editorial imagery. Destination films from the original Fanfuse collection.</p>
 </footer>
 
 </div><!-- end page-wrap -->
@@ -1234,31 +1143,11 @@ window.addEventListener('scroll',function(){
   var progress = Math.min(1, Math.max(0, (scrollY - fadeStart) / (fadeEnd - fadeStart)));
   document.querySelector('.bg-fade').style.opacity = progress;
 });
-// FAQ accordion
-document.querySelectorAll('.fq').forEach(function(btn){
-  btn.addEventListener('click',function(){
-    var item=btn.closest('.fitem');
-    var wasOpen=item.classList.contains('open');
-    document.querySelectorAll('.fitem').forEach(function(f){f.classList.remove('open');});
-    if(!wasOpen)item.classList.add('open');
-  });
-});
-// Force video play
-(function(){
-  var v=document.getElementById('heroVid');
-  if(!v)return;
-  v.muted=true;
-  function playSilently(){
-    var p=v.play();
-    if(p && p.catch) p.catch(function(){});
-  }
-  playSilently();
-  v.addEventListener('canplay',playSilently,{once:true});
-  document.addEventListener('click',playSilently,{once:true});
-})();
 </script>
 <script>
 (function(){
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  document.documentElement.classList.add('motion-ready');
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){
@@ -1561,7 +1450,7 @@ document.querySelectorAll('.fq').forEach(function(btn){
   toggle.addEventListener('click',openMenu);
   closeButton.addEventListener('click',function(){closeMenu(true);});
   dialog.addEventListener('cancel',function(event){event.preventDefault();closeMenu(true);});
-  dialog.addEventListener('close',function(){finishClose(true);});
+  dialog.addEventListener('close',function(){if(!dialog.open)finishClose(true);});
   dialog.querySelectorAll('a[href]').forEach(function(link){
     link.addEventListener('click',function(){
       var href=link.getAttribute('href');
@@ -1754,6 +1643,7 @@ document.querySelectorAll('.fq').forEach(function(btn){
   function finishPlayer(){
     if(!modalOpen)return;
     modalOpen=false;
+    frameHost.querySelectorAll('video').forEach(function(v){v.pause();v.removeAttribute('src');v.load();});
     frameHost.replaceChildren();
     document.documentElement.style.overflow=savedStyles.rootOverflow;
     document.body.style.overflow=savedStyles.bodyOverflow;
@@ -1767,12 +1657,12 @@ document.querySelectorAll('.fq').forEach(function(btn){
     updateAutoplay();
   }
   function closePlayer(){if(dialog.open)dialog.close();finishPlayer();}
-  function openPlayer(card){
+  function openPlayer(card,trigger){
     if(modalOpen)return;
     var label=card.getAttribute('data-spot-name');
-    var url='https://drive.google.com/file/d/'+card.getAttribute('data-drive-id')+'/preview';
+    var url=card.getAttribute('data-local-src')||'https://drive.google.com/file/d/'+card.getAttribute('data-drive-id')+'/preview';
     if(typeof dialog.showModal!=='function'){window.open(url,'_blank','noopener');return;}
-    opener=card;openerIndex=Number(card.getAttribute('data-spot-index'));
+    opener=trigger||card;openerIndex=Number(card.getAttribute('data-spot-index'));
     savedScroll={x:window.scrollX,y:window.scrollY};
     savedStyles={rootOverflow:document.documentElement.style.overflow,bodyOverflow:document.body.style.overflow,bodyPadding:document.body.style.paddingRight};
     var scrollbar=Math.max(0,window.innerWidth-document.documentElement.clientWidth);
@@ -1780,11 +1670,16 @@ document.querySelectorAll('.fq').forEach(function(btn){
     modalOpen=true;jumpTo(openerIndex);stopAuto();
     playerTitle.textContent=label;
     playerLink.href=url;
-    var iframe=document.createElement('iframe');
-    iframe.title=label+' destination film';iframe.src=url;
-    iframe.allow='autoplay; fullscreen; picture-in-picture';iframe.allowFullscreen=true;
-    iframe.referrerPolicy='strict-origin-when-cross-origin';
-    frameHost.replaceChildren(iframe);
+    var film=document.createElement('video');
+    film.className='studio-native-film';film.controls=true;film.playsInline=true;film.preload='metadata';
+    film.setAttribute('aria-label',label+' destination film');
+    film.poster=card.querySelector('img').getAttribute('src');film.src=url;
+    film.addEventListener('playing',function(){film.setAttribute('data-playback','playing');});
+    var status=document.createElement('p');status.className='studio-player-status';status.hidden=true;status.setAttribute('role','status');
+    status.textContent='This film could not load. Please use the direct film link below.';
+    film.addEventListener('error',function(){status.hidden=false;});
+    frameHost.replaceChildren(film,status);
+    var playing=film.play();if(playing&&playing.catch)playing.catch(function(){});
     dialog.showModal();
     document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden';
     if(scrollbar)document.body.style.paddingRight=(padding+scrollbar)+'px';
@@ -1794,9 +1689,10 @@ document.querySelectorAll('.fq').forEach(function(btn){
     if(Date.now()<suppressClickUntil){event.preventDefault();return;}
     openPlayer(card);
   });});
+  document.querySelectorAll('[data-film-spot]').forEach(function(button){button.addEventListener('click',function(){var card=cards.find(function(item){return item.getAttribute('data-spot-name')===button.getAttribute('data-film-spot');});if(card)openPlayer(card,button);});});
   closeButton.addEventListener('click',closePlayer);
   dialog.addEventListener('cancel',function(event){event.preventDefault();closePlayer();});
-  dialog.addEventListener('close',finishPlayer);
+  dialog.addEventListener('close',function(){if(!dialog.open)finishPlayer();});
   dialog.addEventListener('click',function(event){
     if(event.target!==dialog)return;
     var rect=dialog.getBoundingClientRect();
@@ -1806,6 +1702,7 @@ document.querySelectorAll('.fq').forEach(function(btn){
   jumpTo(0);updateVisibility();updateAutoplay();
 })();
 </script>
+<script id="studio-review-behavior" src="studio-review.js?v=20261120-footer"></script>
 </body>
 </html>
 

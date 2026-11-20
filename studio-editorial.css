@@ -1,0 +1,19 @@
+/* Onevia-inspired editorial typography; FanFuse's own brand and composition. */
+body{font-family:'Manrope','Inter',sans-serif;line-height:1.8}
+.hero-headline,.display-heading,.services-main-title,#how .how-title,.lifestyle-heading,.cta-heading,.footer-invitation h2{font-family:'Bodoni Moda',Didot,'Times New Roman',serif;font-weight:400;letter-spacing:-.035em;line-height:1.1}
+.hero-headline{font-size:clamp(44px,5vw,68px);max-width:17ch;line-height:1.06;letter-spacing:-.035em}
+.hero-headline em,.display-heading em,.services-main-title em,#how .how-title em,.footer-invitation h2 em{font-style:italic;font-weight:400}
+.display-heading{font-size:clamp(38px,4.15vw,54px)}
+#services .services-main-title{font-family:'Bodoni Moda',Didot,serif;font-size:clamp(38px,3.7vw,50px);line-height:1.1;letter-spacing:-.025em}
+#services .services-panel-title{font-family:'Manrope','Inter',sans-serif;letter-spacing:-.035em;font-size:clamp(24px,2.5vw,32px)}
+#how .how-title{font-family:'Bodoni Moda',Didot,serif;font-size:clamp(42px,4.8vw,62px);line-height:1.08}
+.hero-desc,.body-copy,.section-body,.fa-inner,.footer-invitation-copy{font-family:'Manrope','Inter',sans-serif;text-wrap:pretty}
+.studio-visual img{object-position:68% 40%}
+#services .services-backdrop{background-position:68% center!important}
+.studio-footer{background-image:url('ai-editorial-footer.webp');background-position:center top}
+.footer-invitation h2{font-size:clamp(38px,4vw,52px);line-height:1.08}
+.footer-invitation-copy{max-width:49ch}
+.studio-footer .footer-scene-shade{background:linear-gradient(180deg,rgba(3,5,5,.33),rgba(3,5,5,.48) 30%,rgba(3,5,5,.83) 65%,rgba(3,5,5,.98) 95%,#050606)}
+.footer-wordmark{font-family:'Syne','Manrope',sans-serif}
+@media(max-width:900px){#how .how-title{font-size:clamp(38px,5.3vw,50px)}.footer-invitation h2{font-size:42px}}
+@media(max-width:600px){.hero-headline{font-size:clamp(38px,10.2vw,45px);max-width:16ch;line-height:1.08}.display-heading{font-size:clamp(34px,9vw,40px)}#services .services-main-title{font-size:34px}#how .how-title{font-size:clamp(36px,9vw,42px)}.footer-invitation h2{font-size:clamp(34px,9vw,40px)}.studio-footer{background-position:22% top}#services .services-backdrop{background-position:73% center!important}.hero-desc{font-size:15px;line-height:1.8}}

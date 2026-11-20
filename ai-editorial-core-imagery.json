@@ -1,0 +1,55 @@
+{
+  "generated_date": "2026-11-20",
+  "project": "FanFuse Studios",
+  "generator": "OpenAI image_gen imagegen",
+  "provenance": "Original AI-generated images depicting fictional adult models. No stock photos used.",
+  "direction": "Natural professional resort fashion and behind-the-scenes editorial photography inspired by the user-provided Onevia site; no reference image copies supplied to generation.",
+  "images": [
+    {
+      "file": "ai-editorial-test-shoot.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2444684,
+      "requested_aspect_ratio": "3:2",
+      "prompt": "Create one premium photorealistic editorial photograph for an adult women's luxury travel creator studio website. Landscape 3:2 composition. A clearly adult 28-year-old brunette woman, beautiful natural appearance and realistic skin pores, relaxed confident expression, wears a tasteful opaque black one-piece swimsuit with an open ivory linen shirt. She stands at a sophisticated Dubai infinity pool, face fully visible, model on the right third. At left, a clearly adult female photographer uses a believable professional camera with a real lens, with a simple reflector nearby. An authentic behind-the-scenes swimwear fashion shoot, not a sexual scene. Warm natural late-afternoon sunlight, turquoise water, subtle distant Dubai skyline. Genuine human posture and hands, subtle imperfections, premium magazine photography, restrained cinematic grade, elegant champagne and charcoal accents. Candid professional energy, eye-level 50mm lens, no plastic smoothing, no heavy gown, no text, watermark, logos or collage. Keep the complete head and face safely inside the frame.",
+      "visual_review": "Passed: faces inside frame, clear adult resort-fashion context, natural editorial color and plausible anatomy."
+    },
+    {
+      "file": "ai-editorial-production.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2452823,
+      "requested_aspect_ratio": "3:2",
+      "prompt": "Generate a photorealistic premium fashion production photograph, landscape 3:2. Two unmistakably adult models, a 26-year-old blonde and a 29-year-old brunette, during a professional poolside villa shoot in Dubai. One wears a tasteful opaque black one-piece swimsuit with a light linen cover-up; the other wears tasteful opaque burgundy swimwear and a relaxed linen shirt. Show front three-quarter views, beautiful natural faces fully visible, friendly confident candid expressions and realistic skin texture. A small professional crew and believable cinema camera on a tripod are at the left edge, models occupy the center-right, keeping their faces unobscured. This is polished resort fashion advertising, nonsexual posing, no rear or intimate body focus. Natural warm sun, sophisticated villa architecture, turquoise pool, a hint of palms. Realistic anatomy, hands, camera mechanics and proportions, observational behind-the-scenes energy, high-end editorial color and soft contrast, no airbrushed AI gloss. No text, logos, watermark or collage.",
+      "visual_review": "Passed: faces inside frame, clear adult resort-fashion context, natural editorial color and plausible anatomy."
+    },
+    {
+      "file": "ai-editorial-partnership.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2730505,
+      "requested_aspect_ratio": "3:2",
+      "prompt": "One original high-end photorealistic lifestyle editorial, landscape 3:2, for a women's creator career studio. Two clearly adult women aged 27 and 29 with natural beautiful model appearance, one brunette and one with warm dark-blonde hair, laughing genuinely while reviewing a tablet and simple mood board together at an outdoor villa table beside a beautiful pool. Dress them in elegant, practical summer linen cover-ups over opaque resort swimwear, no lingerie or sexual posing. Show natural skin pores, plausible hands, subtle relaxed facial expressions rather than stock corporate smiles. A lived-in creative content planning moment, coffee and a closed unbranded notebook, screen turned away with no legible text. Adult model faces clear, environment establishes an upscale Mediterranean-style Dubai villa. Warm soft daylight, natural green palms and turquoise water, refined champagne-neutral palette, magazine photography and 50mm realism. No plastic smoothing, heavy gowns, text, brands, watermarks or collage.",
+      "visual_review": "Passed: faces inside frame, clear adult resort-fashion context, natural editorial color and plausible anatomy."
+    },
+    {
+      "file": "ai-editorial-footer.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1973435,
+      "requested_aspect_ratio": "16:9",
+      "prompt": "Create a cinematic photorealistic luxury resort editorial website footer background in a very wide landscape 16:9 composition. A clearly adult 27-year-old brunette woman with beautiful natural face, healthy wavy hair and visible realistic skin texture stands gracefully at a Dubai infinity pool at golden sunset. She wears a tasteful opaque ivory one-piece swimsuit and an open lightweight cream linen robe, elegant professional swimwear campaign styling, no sexual pose. Place her FULL head and face clearly within the LEFT THIRD, with generous space above the head. She is standing naturally with a relaxed friendly confident expression, one hand lightly holding the linen lapel. Keep the center and right two-thirds relatively uncluttered, mostly darker pool water, distant subtle Dubai skyline and warm landscape, suitable behind centered white heading and footer links. A premium villa setting, soft amber highlights, charcoal and deep teal shadows. Real-world natural anatomy, hands and fabric, genuine magazine photography rather than airbrushed AI perfection. Not a collage. No text, no logos, no watermark.",
+      "visual_review": "Passed: faces inside frame, clear adult resort-fashion context, natural editorial color and plausible anatomy."
+    },
+    {
+      "file": "ai-editorial-dubai.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2392157,
+      "requested_aspect_ratio": "3:4",
+      "prompt": "Create a premium photorealistic vertical 3:4 resort fashion editorial portrait for an adult women's cinematic travel studio. Clearly adult beautiful 28-year-old brunette woman with natural warm skin texture and realistic facial details, understated makeup, healthy wavy hair and a confident relaxed gaze. Tasteful opaque white halterneck one-piece swimsuit with lightweight light linen trousers, a sophisticated swimwear campaign, nonsexual stance. She stands beside an elegant Dubai infinity pool, Burj Khalifa softly recognizable at a believable distance in a coherent skyline. Golden hour light, turquoise water, a warm neutral villa terrace, natural champagne highlights and deep teal shadows. Show her full head and face with safe margins and a natural three-quarter composition, realistic hands, believable fabric. Eye-level fashion photography, beautiful but authentic, polished and professional, not plastic or overly smoothed. No heavy ball gown, no text, no logo, no watermark, no collage.",
+      "visual_review": "Passed: faces inside frame, clear adult resort-fashion context, natural editorial color and plausible anatomy."
+    }
+  ]
+}
+

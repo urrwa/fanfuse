@@ -1,0 +1,646 @@
+{
+  "prepared_at": "2026-11-20T08:30:37.492Z",
+  "source": "Public destination films referenced by fanfuse.ai, reused at user request; no AI provenance claimed for original films.",
+  "encoding": "H.264/avc1, yuv420p, 1280px width preserving aspect ratio, CRF25, faststart; AAC128k soundtrack. Costa Rica uses CRF26 and maxrate900k to meet total delivery budget.",
+  "results": [
+    {
+      "destination": "Dubai",
+      "slug": "dubai",
+      "drive_id": "1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "file": "film-dubai.mp4",
+      "original_bytes": 32890023,
+      "source_metadata": {
+        "duration_seconds": 46.4,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5415 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 8332085,
+      "metadata": {
+        "duration_seconds": 46.42,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1304 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 126 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 32762
+        },
+        {
+          "type": "free",
+          "offset": 32794,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 32802,
+          "size": 8299283
+        }
+      ],
+      "faststart": true,
+      "sha256": "d79d395184c01c9f90c24cdcd591f528818c9ae9af41677957f9905135b298dc",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Miami",
+      "slug": "miami",
+      "drive_id": "1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2",
+      "source_url": "https://drive.google.com/uc?export=download&id=1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2",
+      "file": "film-miami.mp4",
+      "original_bytes": 14632309,
+      "source_metadata": {
+        "duration_seconds": 19.65,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5700 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 3721271,
+      "metadata": {
+        "duration_seconds": 19.67,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1379 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 130 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 14898
+        },
+        {
+          "type": "free",
+          "offset": 14930,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 14938,
+          "size": 3706333
+        }
+      ],
+      "faststart": true,
+      "sha256": "eced27f8a82e2f3662673dc21935e4296008c22ffcf68a5846dc79e26136af60",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Bali",
+      "slug": "bali",
+      "drive_id": "14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM",
+      "source_url": "https://drive.google.com/uc?export=download&id=14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM",
+      "file": "film-bali.mp4",
+      "original_bytes": 15730037,
+      "source_metadata": {
+        "duration_seconds": 21.78,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5521 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 4054138,
+      "metadata": {
+        "duration_seconds": 21.8,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1353 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 130 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 16070
+        },
+        {
+          "type": "free",
+          "offset": 16102,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 16110,
+          "size": 4038028
+        }
+      ],
+      "faststart": true,
+      "sha256": "87a90d695e38bb9a29757178ba1c23c4d208056f94c74a63ceb2876ac2463632",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Marbella",
+      "slug": "marbella",
+      "drive_id": "1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+      "source_url": "https://drive.google.com/uc?export=download&id=1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+      "file": "film-marbella.mp4",
+      "original_bytes": 30866225,
+      "source_metadata": {
+        "duration_seconds": 45.48,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 2048x1080, 5173 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 2048,
+        "height": 1080
+      },
+      "bytes": 5582805,
+      "metadata": {
+        "duration_seconds": 45.5,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x676, 847 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+        "width": 1280,
+        "height": 676
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 32823
+        },
+        {
+          "type": "free",
+          "offset": 32855,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 32863,
+          "size": 5549942
+        }
+      ],
+      "faststart": true,
+      "sha256": "19623a09574058d502cac55043c546db29403b913311276f7ca767478266d24e",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Barcelona",
+      "slug": "barcelona",
+      "drive_id": "1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1",
+      "source_url": "https://drive.google.com/uc?export=download&id=1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1",
+      "file": "film-barcelona.mp4",
+      "original_bytes": 25607426,
+      "source_metadata": {
+        "duration_seconds": 40.43,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 4811 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 3400422,
+      "metadata": {
+        "duration_seconds": 40.45,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 538 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 29318
+        },
+        {
+          "type": "free",
+          "offset": 29350,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 29358,
+          "size": 3371064
+        }
+      ],
+      "faststart": true,
+      "sha256": "8e055862609cb9ea694ed8a66add85c6a848faf0ec96422e5bb22a83c1a01db9",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Costa Rica",
+      "slug": "costa-rica",
+      "drive_id": "1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1",
+      "source_url": "https://drive.google.com/uc?export=download&id=1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1",
+      "file": "film-costa-rica.mp4",
+      "original_bytes": 22712469,
+      "source_metadata": {
+        "duration_seconds": 60.07,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1280x720, 2767 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "bytes": 7695836,
+      "metadata": {
+        "duration_seconds": 60.1,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 889 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 129 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 42734
+        },
+        {
+          "type": "free",
+          "offset": 42766,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 42774,
+          "size": 7653062
+        }
+      ],
+      "faststart": true,
+      "sha256": "9f2b2e9a534b7b7054b7b63a7aefd6ca02db7ed8c7526332c97589a33d3298e1",
+      "full_decode_passed": true,
+      "status": "ready",
+      "encoding_override": "H.264/avc1, 1280px width, CRF26, maxrate900k, AAC128k, faststart"
+    },
+    {
+      "destination": "Puerto Vallarta",
+      "slug": "puerto-vallarta",
+      "drive_id": "1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_",
+      "source_url": "https://drive.google.com/uc?export=download&id=1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_",
+      "file": "film-puerto-vallarta.mp4",
+      "original_bytes": 38737558,
+      "source_metadata": {
+        "duration_seconds": 55.06,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5371 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 8631007,
+      "metadata": {
+        "duration_seconds": 55.08,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1124 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 124 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 39182
+        },
+        {
+          "type": "free",
+          "offset": 39214,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 39222,
+          "size": 8591785
+        }
+      ],
+      "faststart": true,
+      "sha256": "278b6b9cb88fb14aa3130680168f92522c861260884cf78e047710f3935e9084",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Mallorca",
+      "slug": "mallorca",
+      "drive_id": "1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7",
+      "source_url": "https://drive.google.com/uc?export=download&id=1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7",
+      "file": "film-mallorca.mp4",
+      "original_bytes": 15887321,
+      "source_metadata": {
+        "duration_seconds": 22.95,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 2048x1080, 5282 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 2048,
+        "height": 1080
+      },
+      "bytes": 2542705,
+      "metadata": {
+        "duration_seconds": 22.98,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x676, 750 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 129 kb/s (default)",
+        "width": 1280,
+        "height": 676
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 17171
+        },
+        {
+          "type": "free",
+          "offset": 17203,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 17211,
+          "size": 2525494
+        }
+      ],
+      "faststart": true,
+      "sha256": "8d4afd66e0fe39e68f3f6954e42777761f98c890c342bd0553da41ea06a2653a",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Elenite",
+      "slug": "elenite",
+      "drive_id": "1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1",
+      "source_url": "https://drive.google.com/uc?export=download&id=1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1",
+      "file": "film-elenite.mp4",
+      "original_bytes": 31165655,
+      "source_metadata": {
+        "duration_seconds": 43.61,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5462 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 7095970,
+      "metadata": {
+        "duration_seconds": 43.63,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1167 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 31414
+        },
+        {
+          "type": "free",
+          "offset": 31446,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 31454,
+          "size": 7064516
+        }
+      ],
+      "faststart": true,
+      "sha256": "212c32cf21d7679ac2d52001a9aeb2310818d8c43ab595f51b177baab1cbef17",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Ibiza",
+      "slug": "ibiza",
+      "drive_id": "1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+      "source_url": "https://drive.google.com/uc?export=download&id=1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+      "file": "film-ibiza.mp4",
+      "original_bytes": 37101082,
+      "source_metadata": {
+        "duration_seconds": 52.39,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5408 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 7977630,
+      "metadata": {
+        "duration_seconds": 52.42,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1083 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 37494
+        },
+        {
+          "type": "free",
+          "offset": 37526,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 37534,
+          "size": 7940096
+        }
+      ],
+      "faststart": true,
+      "sha256": "92bc5bb3916b9f300acf03f76e1598560c46af7e1a3e81b5af66cabfb448d0ca",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Bodrum",
+      "slug": "bodrum",
+      "drive_id": "1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ",
+      "source_url": "https://drive.google.com/uc?export=download&id=1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ",
+      "file": "film-bodrum.mp4",
+      "original_bytes": 35586145,
+      "source_metadata": {
+        "duration_seconds": 50.07,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 2048x1080, 5430 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 2048,
+        "height": 1080
+      },
+      "bytes": 6949014,
+      "metadata": {
+        "duration_seconds": 50.09,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x676, 975 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 129 kb/s (default)",
+        "width": 1280,
+        "height": 676
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 35967
+        },
+        {
+          "type": "free",
+          "offset": 35999,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 36007,
+          "size": 6913007
+        }
+      ],
+      "faststart": true,
+      "sha256": "f2cc1552435559b0b743930184b8a17cfdc622c8836e734d2fcc4ab6d41db979",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "St Tropez",
+      "slug": "st-tropez",
+      "drive_id": "1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM",
+      "source_url": "https://drive.google.com/uc?export=download&id=1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM",
+      "file": "film-st-tropez.mp4",
+      "original_bytes": 16986956,
+      "source_metadata": {
+        "duration_seconds": 27.46,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 4693 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 2953371,
+      "metadata": {
+        "duration_seconds": 27.48,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 724 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 130 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 20354
+        },
+        {
+          "type": "free",
+          "offset": 20386,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 20394,
+          "size": 2932977
+        }
+      ],
+      "faststart": true,
+      "sha256": "33d676803b91b1b32fad281031c4244a200a1bb048cfef931cb65220b5ab1e06",
+      "full_decode_passed": true,
+      "status": "ready"
+    },
+    {
+      "destination": "Valencia",
+      "slug": "valencia",
+      "drive_id": "1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+      "source_url": "https://drive.google.com/uc?export=download&id=1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+      "file": "film-valencia.mp4",
+      "original_bytes": 37888682,
+      "source_metadata": {
+        "duration_seconds": 53.1,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080, 5451 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 48k tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 253 kb/s (default)",
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 8353296,
+      "metadata": {
+        "duration_seconds": 53.12,
+        "video": "h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 1122 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)",
+        "audio": "aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 129 kb/s (default)",
+        "width": 1280,
+        "height": 720
+      },
+      "atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "size": 37826
+        },
+        {
+          "type": "free",
+          "offset": 37858,
+          "size": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 37866,
+          "size": 8315430
+        }
+      ],
+      "faststart": true,
+      "sha256": "f241a78892b0de08a45548c3c70d51403eb631429d6baccd7bfedde36cb24256",
+      "full_decode_passed": true,
+      "status": "ready"
+    }
+  ],
+  "total_bytes": 77289550
+}
