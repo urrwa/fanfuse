@@ -548,6 +548,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 <link rel="stylesheet" href="studio-refresh-footer.css?v=266abc233d">
 <noscript><style>.reveal,.reveal-scale,.curtain{opacity:1!important;transform:none!important}.fa{max-height:none!important}.ftog{display:none}.bg-vid-wrap{background-image:url(fast-hero-models-sea-poster-v4.webp)!important}#services{height:auto!important}#services .services-pin{position:relative;top:auto}#services .services-scene{height:auto;min-height:0;overflow:visible}@media(max-width:600px){.bg-vid-wrap{background-image:url(fast-hero-models-sea-mobile-poster-v4.webp)!important}}</style></noscript>
 <link rel="stylesheet" href="studio-plum-gold.css?v=36d5592604">
+<link rel="stylesheet" href="studio-hero-opening.css?v=62b3db7a85">
 </head>
 <body>
 <a class="skip-link" href="#about">Skip to content</a>
@@ -557,7 +558,6 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   <video class="bg-vid" id="heroVid" muted loop playsinline preload="none" data-desktop-src="fast-hero-models-sea-desktop-v4.mp4" data-mobile-src="fast-hero-models-sea-mobile-v4.mp4" aria-hidden="true"></video>
   <div class="bg-vid-scrim"></div>
 </div>
-<div class="bg-fade"></div>
 
 <!-- NAV -->
 <nav id="nav" aria-label="Primary navigation">
@@ -598,13 +598,24 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 <div class="page-wrap">
 
 <!-- ── 1. HERO ── -->
+<div class="hero-opening">
+<div class="bg-fade" aria-hidden="true"></div>
 <section id="hero">
-  <div class="hero-top"><p class="hero-label">Cinematic travel. Creator careers.</p></div>
-  <div class="hero-bottom">
-    <h1 class="hero-headline">See the world.<br><em>Build your brand.</em></h1>
-    <div class="hero-intro-row"><p class="hero-desc">Cinematic content, personal positioning and brand partnerships. For women ready for their next chapter.</p><a href="#cta" class="hero-cta"><span class="hero-cta-label">Explore your next chapter</span></a></div>
+  <div class="hero-top">
+    <p class="hero-label">Cinematic Travel Production</p>
+    <div class="hero-top-right">
+      <p class="hero-desc">Cinematic travel content. A stronger personal brand. Paid partnerships that take you further.</p>
+      <a href="#cta" class="hero-cta" style="margin-left:auto;display:inline-flex">
+        <span class="hero-cta-label">Explore your next chapter</span>
+        <span class="hero-cta-arr"><span class="hero-cta-arr-glyph" aria-hidden="true">↗</span></span>
+      </a>
+    </div>
   </div>
-  <button class="hero-motion-toggle" type="button" aria-label="Pause background video" hidden>Pause film</button>
+  <div class="hero-bottom">
+    <h1 class="hero-headline">Travel the world.<br>Build something <em>real.</em></h1>
+    <p class="hero-scroll-hint">Scroll to explore</p>
+  </div>
+<button class="hero-motion-toggle" type="button" aria-label="Pause background video" hidden>Pause film</button>
 </section>
 
 <!-- ── 2. STATS ── -->
@@ -644,6 +655,8 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
     </div>
   </div>
 </section>
+
+</div><!-- end cinematic opening -->
 
 <!-- ── 4. ABOUT ── -->
 <section id="about" class="section-dark"><div class="section-inner studio-editorial-grid">
