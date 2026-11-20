@@ -1,34 +1,48 @@
 {
   "date": "2026-11-20",
-  "source": "hero.mp4",
-  "source_sha256": "e1324000391060e0b455f7e546b5ebb784fa260f8372767331edc15170987b55",
+  "scene": "Restored earlier real-models and sea/yacht montage",
+  "source": "original-film-dubai.mp4",
+  "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
   "source_dimensions": [
-    3840,
-    2160
+    1920,
+    1080
   ],
-  "restored_scene": "Original champagne-gold dress at Dubai infinity pool",
-  "encoding": "H264 High/yuv420p,24fps,no audio,faststart; direct downsample from original; no upscale",
+  "source_frame_range": [
+    576,
+    744
+  ],
+  "source_frame_range_end": "exclusive",
+  "source_fps": "24000/1001",
+  "duration_seconds": 7.007,
+  "verified_sea_shot": {
+    "source_frame": 636,
+    "output_frame": 60,
+    "output_seconds": 2.5025
+  },
   "desktop": {
-    "file": "fast-hero-dubai-desktop-v3.mp4",
+    "file": "fast-hero-models-sea-desktop-v4.mp4",
     "dimensions": [
-      2560,
-      1440
+      1920,
+      1080
     ],
-    "poster": "fast-hero-dubai-poster-v3.webp"
+    "poster": "fast-hero-models-sea-poster-v4.webp",
+    "bytes": 4845910
   },
   "mobile": {
-    "file": "fast-hero-dubai-mobile-v3.mp4",
+    "file": "fast-hero-models-sea-mobile-v4.mp4",
     "dimensions": [
-      1080,
-      1620
+      720,
+      1080
     ],
-    "source_crop_xywh": [
-      480,
+    "crop_xywh": [
+      600,
       0,
-      1440,
-      2160
+      720,
+      1080
     ],
-    "poster": "fast-hero-dubai-mobile-poster-v3.webp"
+    "poster": "fast-hero-models-sea-mobile-poster-v4.webp",
+    "bytes": 2431809
   },
-  "runtime": "Preserves lazy visible playback, offscreen pause, muted inline playback and motion/data-saving preference controls"
+  "encoding": "H264 High,yuv420p,CRF18,faststart,no audio; native source resolution, no upscale",
+  "runtime": "Existing visible-only playback, offscreen/hidden pause and manual play controls retained"
 }

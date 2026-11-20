@@ -36,7 +36,8 @@ body .bg-vid-wrap{background-position:50% 50%}
 
 /* A portrait source on phones avoids stretching a wide movie into a tall screen. */
 #heroVid{object-position:50% 50%!important}.bg-vid-wrap.media-dormant{visibility:hidden}
-@media(max-width:600px){body.hero-media-ready .bg-vid-wrap{background-image:url('fast-hero-dubai-mobile-poster-v3.webp');background-position:50% 50%!important}}
+@media(max-width:600px){body.hero-media-ready .bg-vid-wrap{background-image:url('fast-hero-models-sea-mobile-poster-v4.webp');background-position:50% 50%!important}}
 
-/* Keep the original Dubai subject and poster aligned on narrow screens. */
-@media (min-width:601px) and (max-width:900px), (min-width:601px) and (max-aspect-ratio:1/1){#heroVid{object-position:22% 42%!important}body.hero-media-ready .bg-vid-wrap{background-position:22% 42%!important}}
+
+/* The restored multi-shot film uses the same centered framing as its posters. */
+body.hero-media-ready .bg-vid-wrap{background-position:50% 50%!important}
