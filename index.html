@@ -18,7 +18,7 @@
 </script>
 <link rel="preload" as="font" href="font-manrope-latin.woff2" type="font/woff2" crossorigin>
 <link rel="preload" as="font" href="font-bodoni-moda-latin.woff2" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="studio-fonts.css?v=20261120-perf1">
+<link rel="stylesheet" href="studio-fonts.css?v=20261120-motion1">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--accent:#D4AF7A;--border:rgba(255,255,255,0.12);--content:1200px;--display:clamp(36px,4.2vw,56px)}
@@ -514,9 +514,10 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
   footer{padding:40px 24px}
 }
 </style>
-<link rel="stylesheet" href="studio-polish.css?v=20261120-perf1">
-<link rel="stylesheet" href="studio-footer.css?v=20261120-perf1">
-<link rel="stylesheet" href="studio-editorial.css?v=20261120-perf1">
+<link rel="stylesheet" href="studio-polish.css?v=20261120-motion1">
+<link rel="stylesheet" href="studio-footer.css?v=20261120-motion1">
+<link rel="stylesheet" href="studio-editorial.css?v=20261120-motion1">
+<link rel="stylesheet" href="studio-motion.css?v=20261120-motion1">
 <style id="studio-safety">
 html:not(.motion-ready) .reveal,html:not(.motion-ready) .reveal-scale,html:not(.motion-ready) .curtain{opacity:1;transform:none}
 html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
@@ -1159,57 +1160,61 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   paint();
 })();
 </script>
-<script>
+<script id="page-motion">
 (function(){
-  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  document.documentElement.classList.add('motion-ready');
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  },{threshold:0.07,rootMargin:'0px 0px -40px 0px'});
-
-  function observe(el,cls,delay){
-    if(!el) return;
-    el.classList.add(cls||'reveal');
-    if(delay) el.style.transitionDelay=delay+'s';
-    io.observe(el);
+  'use strict';
+  var root=document.documentElement;
+  var reduced=window.matchMedia('(prefers-reduced-motion:reduce)');
+  var selectors=[
+    '.hero-label','.hero-desc','.hero-cta','.stat-cell',
+    '#about .studio-visual','#about .studio-editorial-grid>div','#services .services-header',
+    '#how .how-heading-eyebrow','#how .how-title','#how .how-intro','#how .how-card',
+    '.section-inner>.eyebrow','.section-heading-row','#testimonials .display-heading',
+    '.tier','#spots .spots-header','.studio-feature','.tcard','.film-card',
+    '#partners .split-layout>div','.fitem',
+    '.footer-invitation h2','.footer-invitation-copy','.footer-apply','.footer-brand','.footer-column'
+  ];
+  var targets=Array.prototype.slice.call(document.querySelectorAll(selectors.join(',')));
+  var legacy=Array.prototype.slice.call(document.querySelectorAll('.reveal,.reveal-scale,.curtain-wrap'));
+  var observer=null;
+  var pending=[];
+  var frame=0;
+  function showAll(){
+    if(observer)observer.disconnect();
+    if(frame)cancelAnimationFrame(frame);
+    root.classList.remove('motion-ready');
+    targets.concat(legacy).forEach(function(element){element.classList.add('in');element.classList.remove('motion-animating');});
   }
-
-  document.querySelectorAll('.hiw-card').forEach(function(el,i){
-    observe(el,'reveal-scale', i*0.1);
-  });
-  document.querySelectorAll('.hiw-header').forEach(function(section){
-    var heading = section.querySelector('h1,h2,h3,h4,.hiw-heading-title');
-    if(heading){ observe(heading,'reveal',0); }
-    var subs = section.querySelectorAll('p');
-    subs.forEach(function(el,i){ observe(el,'reveal',0.18+i*0.1); });
-  });
-  document.querySelectorAll('.hero-eyebrow,.hero-title,.hero-sub,.hero-ctas').forEach(function(el,i){
-    observe(el,'reveal', i*0.08);
-  });
-  document.querySelectorAll('.stat-block,.stat-item').forEach(function(el,i){
-    observe(el,'reveal', i*0.07);
-  });
-  document.querySelectorAll('.section-label,.section-title,.section-desc').forEach(function(el,i){
-    observe(el,'reveal', i*0.06);
-  });
-  document.querySelectorAll('.brand-item,.partner-logo,.logo-item').forEach(function(el,i){
-    observe(el,'reveal', i*0.05);
-  });
-  document.querySelectorAll('.marquee-wrap,.marquee-track,.ticker').forEach(function(el){
-    observe(el,'reveal');
-  });
-  document.querySelectorAll('.cta-section,.cta-title,.cta-btn').forEach(function(el,i){
-    observe(el,'reveal', i*0.08);
-  });
-  document.querySelectorAll('.reveal,.reveal-scale,.curtain-wrap').forEach(function(el){
-    io.observe(el);
-  });
+  if(!('IntersectionObserver' in window)||reduced.matches){showAll();return;}
+  try{
+    targets.forEach(function(element,index){
+      element.classList.add('motion-enter');
+      element.style.setProperty('--motion-delay',(index%3*45)+'ms');
+    });
+    root.classList.add('motion-ready');
+    function flush(){
+      frame=0;
+      pending.splice(0).forEach(function(element){
+        element.classList.add('in');
+        element.classList.add('motion-animating');
+        var clear=function(){element.classList.remove('motion-animating');};
+        element.addEventListener('transitionend',clear,{once:true});
+        setTimeout(clear,850);
+      });
+    }
+    observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(!entry.isIntersecting)return;
+        observer.unobserve(entry.target);
+        pending.push(entry.target);
+      });
+      if(pending.length&&!frame)frame=requestAnimationFrame(flush);
+    },{threshold:0.04,rootMargin:'0px 0px -24px 0px'});
+    targets.concat(legacy).forEach(function(element){observer.observe(element);});
+    if(reduced.addEventListener)reduced.addEventListener('change',function(event){if(event.matches)showAll();});
+  }catch(error){showAll();}
 })();
+
 </script>
 <script>
 // Cached album geometry keeps scroll frames free of forced layout reads.
@@ -1257,11 +1262,15 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 </script>
 
 <script id="services-interaction">
+
 // Five native-scroll scenes. Controls never intercept the page's wheel/touch scrolling.
 (function(){
   var section=document.getElementById('services');
   if(!section)return;
   var scene=section.querySelector('.services-scene');
+  var header=section.querySelector('.services-header');
+  var shell=section.querySelector('.services-shell');
+  var cubeViewport=section.querySelector('.services-cube-viewport');
   var tablist=section.querySelector('.services-tabs');
   var tabs=Array.prototype.slice.call(section.querySelectorAll('.services-tab'));
   var panels=Array.prototype.slice.call(section.querySelectorAll('.services-panel'));
@@ -1279,7 +1288,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   var reduced=window.matchMedia('(prefers-reduced-motion:reduce)');
   var mobile=window.matchMedia('(max-width:600px)');
   var active=0,shown=0,requested=0,manualTarget=null,queued=null,turning=false,animation=null;
-  var frame=0,measureFrame=0,step=1,sectionTop=0,sectionHeight=0,unpinned=false,backdropActive=-1;
+  var frame=0,measureFrame=0,step=1,sectionTop=0,sectionHeight=0,scrollStart=0,unpinned=false,scrollDriven=true,backdropActive=-1,layoutWidth=0,layoutHeight=0;
   function clamp(value){return Math.max(0,Math.min(panels.length-1,value));}
   function setPanelState(panel,selected){
     panel.setAttribute('aria-hidden',String(!selected));
@@ -1316,7 +1325,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   }
   function finishTurn(index){
     placeSettled(index);
-    if(manualTarget===index){manualTarget=null;requested=index;}
+    if(manualTarget===index&&!unpinned&&Math.abs(window.scrollY-(sectionTop+index*step))<3){manualTarget=null;requested=index;}
     var pending=queued;queued=null;
     if(pending!==null&&pending!==shown)turnTo(pending);
   }
@@ -1341,24 +1350,24 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
     animation=cube.animate([
       {transform:'translateZ(calc(-1 * var(--services-depth))) rotateX(0deg)'},
       {transform:'translateZ(calc(-1 * var(--services-depth))) rotateX('+(direction*90)+'deg)'}
-    ],{duration:900,easing:'cubic-bezier(.22,.61,.36,1)',fill:'forwards'});
+    ],{duration:mobile.matches?500:900,easing:'cubic-bezier(.22,.61,.36,1)',fill:'forwards'});
     animation.onfinish=function(){if(animation)animation.cancel();animation=null;finishTurn(index);};
   }
   function stageAtScroll(){
-    var progress=(window.scrollY-sectionTop)/step;
+    var progress=(window.scrollY-scrollStart)/step;
     return clamp(Math.round(progress));
   }
   function renderScroll(){
     frame=0;
-    if(unpinned)return;
+    if(!scrollDriven)return;
     var index=stageAtScroll();
-    if(manualTarget!==null&&Math.abs(window.scrollY-(sectionTop+manualTarget*step))<2)manualTarget=null;
+    if(!unpinned&&manualTarget!==null&&Math.abs(window.scrollY-(sectionTop+manualTarget*step))<2)manualTarget=null;
     if(manualTarget===null)requested=index;
     else index=manualTarget;
     if(index!==active||turning)turnTo(index);
   }
   function queueScroll(){
-    if(unpinned)return;
+    if(!scrollDriven)return;
     var y=window.scrollY;
     if(y+window.innerHeight<sectionTop-200||y>sectionTop+sectionHeight+200){
       if(turning){queued=null;placeSettled(stageAtScroll());showBackdrop(shown);}
@@ -1368,17 +1377,41 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   }
   function measure(){
     var previousUnpinned=unpinned;
-    unpinned=reduced.matches||mobile.matches||window.innerHeight<640;
+    var currentHeight=window.innerHeight;
+    // Ignore mobile address-bar height changes; orientation and large resizes still remeasure.
+    if(!mobile.matches||Math.abs(window.innerWidth-layoutWidth)>1||Math.abs(currentHeight-layoutHeight)>140){
+      layoutWidth=window.innerWidth;layoutHeight=currentHeight;
+    }
+    var viewportHeight=mobile.matches?layoutHeight:currentHeight;
+    // Measure only when layout changes; scroll frames use the cached geometry.
+    var sceneStyle=window.getComputedStyle(scene);
+    var headerStyle=header?window.getComputedStyle(header):null;
+    var padding=(parseFloat(sceneStyle.paddingTop)||0)+(parseFloat(sceneStyle.paddingBottom)||0);
+    var headerSize=header?header.offsetHeight+(parseFloat(headerStyle.marginTop)||0)+(parseFloat(headerStyle.marginBottom)||0):0;
+    var requiredHeight=padding+headerSize+(shell?shell.offsetHeight:0)+24;
+    var phoneFits=mobile.matches&&viewportHeight>=Math.max(680,requiredHeight);
+    unpinned=reduced.matches||(mobile.matches?!phoneFits:viewportHeight<640);
+    scrollDriven=!reduced.matches&&(!unpinned||mobile.matches);
     section.classList.toggle('services-reduced',reduced.matches);
     section.classList.toggle('services-unpinned',unpinned);
+    section.classList.toggle('services-mobile-flow',mobile.matches&&unpinned&&!reduced.matches);
     tablist.setAttribute('aria-orientation',mobile.matches?'horizontal':'vertical');
     var sceneHeight=scene.offsetHeight;
-    step=Math.max(1,sceneHeight*.75);
     sectionTop=section.getBoundingClientRect().top+window.scrollY;
+    // A tall phone uses only ~2.36 screens for all five stages, with normal page scrolling.
+    step=Math.max(1,mobile.matches?viewportHeight*.34:sceneHeight*.75);
+    scrollStart=sectionTop;
     sectionHeight=sceneHeight+(unpinned?0:step*(panels.length-1));
     if(!unpinned)section.style.setProperty('--services-scroll-height',sectionHeight+'px');
+    else section.style.removeProperty('--services-scroll-height');
+    // Short phones keep natural page flow; the passing card still reacts to scrolling.
+    if(mobile.matches&&unpinned&&!reduced.matches&&cubeViewport){
+      var cardTop=cubeViewport.getBoundingClientRect().top+window.scrollY;
+      scrollStart=cardTop-viewportHeight*.72;
+      step=Math.max(1,(cubeViewport.offsetHeight+viewportHeight*.47)/Math.max(1,panels.length-1));
+    }
     if(reduced.matches||previousUnpinned!==unpinned){queued=null;placeSettled(active);showBackdrop(active);}
-    if(!unpinned)queueScroll();
+    if(scrollDriven)queueScroll();
   }
   function queueMeasure(){if(!measureFrame)measureFrame=window.requestAnimationFrame(function(){measureFrame=0;measure();});}
   function choose(index,focusTab){
@@ -1405,18 +1438,38 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   section.querySelectorAll('[data-service-direction]').forEach(function(button){
     button.addEventListener('click',function(){choose(requested+Number(button.getAttribute('data-service-direction')),false);});
   });
-  function useScrollSelection(){manualTarget=null;requested=unpinned?active:stageAtScroll();}
+  function useScrollSelection(){manualTarget=null;requested=scrollDriven?stageAtScroll():active;}
+  // Horizontal touch gestures change cards; vertical gestures remain native page scrolling.
+  if(cubeViewport){
+    var swipeStart=null;
+    cubeViewport.addEventListener('touchstart',function(event){
+      if(!mobile.matches||event.touches.length!==1){swipeStart=null;return;}
+      swipeStart={x:event.touches[0].clientX,y:event.touches[0].clientY};
+    },{passive:true});
+    cubeViewport.addEventListener('touchend',function(event){
+      if(!swipeStart||!event.changedTouches.length)return;
+      var dx=event.changedTouches[0].clientX-swipeStart.x;
+      var dy=event.changedTouches[0].clientY-swipeStart.y;
+      swipeStart=null;
+      if(Math.abs(dx)>=48&&Math.abs(dx)>Math.abs(dy)*1.35)choose(requested+(dx<0?1:-1),false);
+    },{passive:true});
+    cubeViewport.addEventListener('touchcancel',function(){swipeStart=null;},{passive:true});
+  }
   window.addEventListener('wheel',useScrollSelection,{passive:true});
   window.addEventListener('touchstart',useScrollSelection,{passive:true});
   window.addEventListener('keydown',function(event){if(event.key==='PageDown'||event.key==='PageUp'||event.key===' '||event.key==='Escape')useScrollSelection();});
   window.addEventListener('scroll',queueScroll,{passive:true});
-  window.addEventListener('resize',queueMeasure,{passive:true});
+  window.addEventListener('resize',function(){
+    if(mobile.matches&&Math.abs(window.innerWidth-layoutWidth)<=1&&Math.abs(window.innerHeight-layoutHeight)<=140)return;
+    queueMeasure();
+  },{passive:true});
   if(reduced.addEventListener)reduced.addEventListener('change',queueMeasure);
   if(mobile.addEventListener)mobile.addEventListener('change',queueMeasure);
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(queueMeasure);
   section.classList.add('services-ready');
   placeSettled(0);showBackdrop(0);measure();
 })();
+
 </script>
 
 <script id="nav-interaction">
@@ -1432,6 +1485,8 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   var savedScroll={x:0,y:0};
   var savedStyles=null;
   var locked=false;
+  var menuMotion=window.matchMedia('(prefers-reduced-motion:reduce)');
+  var closing=false,closeAnimation=null,closeTimer=0,closeRestoreFocus=true;
   function setActive(id){
     links.forEach(function(link){
       if(link.getAttribute('href')==='#'+id)link.setAttribute('aria-current','location');
@@ -1484,14 +1539,35 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
     var active=dialog.querySelector('.nav-overlay-link[aria-current="location"]')||links[0];
     if(active)active.focus({preventScroll:true});
   }
-  function closeMenu(restoreFocus){
+  function cancelCloseMotion(){
+    closing=false;
+    window.clearTimeout(closeTimer);closeTimer=0;
+    var motion=closeAnimation;closeAnimation=null;
+    if(motion)motion.cancel();
+  }
+  function completeClose(restoreFocus){
+    cancelCloseMotion();
     if(dialog.open)dialog.close();
     finishClose(restoreFocus!==false);
+  }
+  function closeMenu(restoreFocus){
+    // Links keep their native navigation immediately after restoring scroll.
+    if(restoreFocus===false){completeClose(false);return;}
+    if(closing)return;
+    if(!dialog.open||menuMotion.matches||!dialog.animate){completeClose(restoreFocus);return;}
+    closing=true;closeRestoreFocus=restoreFocus!==false;
+    closeAnimation=dialog.animate([
+      {opacity:1,transform:'translateY(0)'},
+      {opacity:0,transform:'translateY(-8px)'}
+    ],{duration:160,easing:'cubic-bezier(.4,0,1,1)',fill:'forwards'});
+    closeAnimation.onfinish=function(){completeClose(closeRestoreFocus);};
+    closeTimer=window.setTimeout(function(){completeClose(closeRestoreFocus);},260);
   }
   toggle.addEventListener('click',openMenu);
   closeButton.addEventListener('click',function(){closeMenu(true);});
   dialog.addEventListener('cancel',function(event){event.preventDefault();closeMenu(true);});
-  dialog.addEventListener('close',function(){if(!dialog.open)finishClose(true);});
+  dialog.addEventListener('close',function(){if(!dialog.open){cancelCloseMotion();finishClose(true);}});
+  if(menuMotion.addEventListener)menuMotion.addEventListener('change',function(){if(menuMotion.matches&&closing)completeClose(closeRestoreFocus);});
   dialog.querySelectorAll('a[href]').forEach(function(link){
     link.addEventListener('click',function(){
       var href=link.getAttribute('href');
@@ -1517,6 +1593,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 })();
 </script>
 <script id="spots-interaction">
+
 // One set of destination cards, rotated after each step for a seamless, clone-free loop.
 (function(){
   var section=document.getElementById('spots');
@@ -1640,13 +1717,22 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
     else if(event.key==='Home')destination=0;
     else if(event.key==='End')destination=cards.length-1;
     else return;
+    focused=true;updateAutoplay();
     event.preventDefault();request(destination);
     if(event.target.classList.contains('spots-dot'))dots[destination].focus({preventScroll:true});
   });
   section.addEventListener('pointerenter',function(event){if(event.pointerType==='mouse'){hovered=true;updateAutoplay();}});
   section.addEventListener('pointerleave',function(event){if(event.pointerType==='mouse'){hovered=false;updateAutoplay();}});
-  section.addEventListener('focusin',function(){focused=true;updateAutoplay();});
-  section.addEventListener('focusout',function(){window.setTimeout(function(){focused=section.contains(document.activeElement);updateAutoplay();},0);});
+  function keyboardFocusInside(){
+    var el=document.activeElement;
+    if(!el||!section.contains(el))return false;
+    try{return el.matches(':focus-visible');}catch(_){return true;}
+  }
+  section.addEventListener('focusin',function(){focused=keyboardFocusInside();updateAutoplay();});
+  section.addEventListener('focusout',function(){window.setTimeout(function(){focused=keyboardFocusInside();updateAutoplay();},0);});
+  section.addEventListener('pointerdown',function(event){
+    if(event.pointerType==='touch'||event.pointerType==='pen'){focused=false;updateAutoplay();}
+  },{passive:true});
   document.addEventListener('visibilitychange',function(){if(document.hidden&&busy)jumpTo(target);updateAutoplay();});
   function measure(){
     resizeFrame=0;
@@ -1751,8 +1837,9 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   cachedViewportWidth=viewport.clientWidth;cachedCardWidth=cards[0].getBoundingClientRect().width||cachedViewportWidth/4;
   jumpTo(0);updateVisibility();updateAutoplay();
 })();
+
 </script>
-<script id="studio-review-behavior" src="studio-review.js?v=20261120-perf1"></script>
+<script id="studio-review-behavior" src="studio-review.js?v=20261120-motion1"></script>
 </body>
 </html>
 

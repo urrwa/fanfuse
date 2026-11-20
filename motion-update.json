@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-20",
+  "fixes": [
+    "Reboundentranceobserverto55actualpagecomponents",
+    "Restoredphone3Dscrolltransitionswithshortnativepinonfittingscreens",
+    "Shortphonesretainflowwithscroll-drivenstages",
+    "Passivehorizontalservicecardswipe",
+    "AnimatedFAQheightwithrapid-togglecleanup",
+    "Animatedmenuclosewithnativeanchor/focus/scrollrestoration",
+    "Touchcarouselcontrolsresumewhilekeyboardfocuspauses",
+    "VisibleProcessframesontouchscreens",
+    "Singleheaderoffsetforanchorlinks"
+  ],
+  "validated_viewports": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      768,
+      1024
+    ]
+  ],
+  "regression_checks": 24,
+  "scroll_frame_layout_reads": 0,
+  "unchanged_stage_dom_writes": 0,
+  "reduced_motion_respected": true,
+  "new_media_downloads": 0,
+  "copy_unchanged": true,
+  "browser_checks": {
+    "phone_scroll_changes_card": true,
+    "short_phone_flow_changes_card": true,
+    "tablet_scroll_changes_card": true,
+    "process_cards_registered": 5,
+    "faq_open_close": true,
+    "menu_escape_restore": true,
+    "menu_anchor_unlock": true,
+    "horizontal_overflow": false
+  }
+}

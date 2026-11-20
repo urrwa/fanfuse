@@ -3,6 +3,38 @@
   'use strict';
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+  var faqAnimations = new WeakMap();
+  function setFaqState(item, open) {
+    var button = item.querySelector('.fq');
+    var answer = item.querySelector('.fa');
+    if (!button || !answer) return;
+    var start = answer.hidden ? 0 : answer.getBoundingClientRect().height;
+    var previous = faqAnimations.get(answer);
+    if (previous) previous.cancel();
+    item.classList.toggle('open', open);
+    button.setAttribute('aria-expanded', String(open));
+    answer.hidden = false;
+    answer.style.maxHeight = 'none';
+    answer.style.height = 'auto';
+    var end = open ? answer.scrollHeight : 0;
+    if (reduced.matches || !answer.animate) {
+      answer.hidden = !open;
+      answer.style.height = '';
+      return;
+    }
+    answer.style.height = open ? 'auto' : '0px';
+    var animation = answer.animate([
+      {height:start+'px',opacity:start ? 1 : 0},
+      {height:end+'px',opacity:open ? 1 : 0}
+    ], {duration:230,easing:'cubic-bezier(.22,.61,.36,1)'});
+    faqAnimations.set(answer, animation);
+    animation.onfinish = function () {
+      if (faqAnimations.get(answer) !== animation) return;
+      faqAnimations.delete(answer);
+      answer.hidden = !open;
+      answer.style.height = '';
+    };
+  }
   document.querySelectorAll('.fitem').forEach(function (item, index) {
     var button = item.querySelector('.fq');
     var answer = item.querySelector('.fa');
@@ -18,19 +50,11 @@
     var icon = button.querySelector('.ftog');
     if (icon) icon.setAttribute('aria-hidden', 'true');
     button.addEventListener('click', function () {
-      var open = button.getAttribute('aria-expanded') === 'true';
-      document.querySelectorAll('.fitem').forEach(function (other) {
-        other.classList.remove('open');
-        var q = other.querySelector('.fq');
-        var a = other.querySelector('.fa');
-        if (q) q.setAttribute('aria-expanded', 'false');
-        if (a) a.hidden = true;
+      var open = button.getAttribute('aria-expanded') !== 'true';
+      document.querySelectorAll('.fitem.open').forEach(function (other) {
+        if (other !== item) setFaqState(other, false);
       });
-      if (!open) {
-        item.classList.add('open');
-        button.setAttribute('aria-expanded', 'true');
-        answer.hidden = false;
-      }
+      setFaqState(item, open);
     });
   });
 

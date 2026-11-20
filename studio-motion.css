@@ -1,0 +1,38 @@
+/* Short, compositor-only entrances on the actual page components. */
+html.motion-ready .motion-enter{opacity:0;transform:translate3d(0,18px,0);transition:opacity .5s ease,transform .6s cubic-bezier(.22,.61,.36,1);transition-delay:var(--motion-delay,0ms)}
+html.motion-ready .motion-enter.in{opacity:1;transform:none}
+html.motion-ready .motion-enter.motion-animating{will-change:opacity,transform}
+html.motion-ready #how .how-card.motion-enter{opacity:0;transform:translate3d(0,18px,0)}
+html.motion-ready #how .how-card.motion-enter.in{opacity:1;transform:none}
+/* Height is measured only when an answer is opened or closed. */
+.fitem .fa{max-height:none!important;transition:none;overflow:hidden}
+.fitem .fa[hidden]{display:none}
+@media(max-width:900px),(hover:none){
+  #how .how-card.in .how-card-img::before,#how .how-card.in .how-card-img::after,#how .how-card.in .how-brk-tr,#how .how-card.in .how-brk-bl{opacity:.65}
+  .nav-cta:active,.outlined-btn:active,.tier-btn:active,.footer-apply:active,.services-arrow:active,.services-tab:active,.spots-arrow:active,.spots-dot:active,.fq:active{opacity:.72}
+}
+@media(prefers-reduced-motion:reduce){
+  html.motion-ready .motion-enter,html.motion-ready #how .how-card.motion-enter{opacity:1!important;transform:none!important;transition:none!important;will-change:auto}
+}
+
+/* Touch press feedback uses controls and colour; no image zoom or scroll work. */
+@media(hover:none) and (pointer:coarse){
+ .nav-cta:active,.outlined-btn:active,.tier-btn:active,.btn-secondary:active{border-color:var(--accent);background:rgba(213,177,129,.12);color:#fff}
+ .nav-menu:active,.nav-close:active,.nav-overlay-link:active,.nav-footer-link:active{color:var(--accent)}
+ #services .services-arrow:active,#spots .spots-arrow:active,#spots .spots-autoplay:not(:disabled):active{border-color:var(--accent);background:rgba(213,177,129,.12);color:var(--accent)}
+ #services .services-tab:active::after,#spots .spots-dot:active::after{background:#fff}
+ .film-card:active .film-play,#spots .spot-film:active .spot-play{background:rgba(213,177,129,.2);border-color:#fff}
+ .fq:active .fq-txt{color:var(--accent)}
+ .footer-apply:active,.btn-primary:active{background:#ebcda6;border-color:#ebcda6;color:#15110a}
+ .footer-column a:active,.footer-bottom a:active,.footer-call:active{color:#efc994}
+}
+
+/* Mobile scene turns match the shorter phone scroll sequence. */
+@media(max-width:600px){
+ #services{--services-turn-time:500ms}
+ #services .services-cube-viewport{touch-action:pan-y}
+}
+
+/* Native anchors use one header offset, rather than adding two offsets. */
+html{scroll-padding-top:86px}section[id]{scroll-margin-top:0!important}
+@media(max-width:600px){html{scroll-padding-top:80px}}
