@@ -1,0 +1,132 @@
+{
+  "prepared_at": "2026-11-20T11:14:47.968Z",
+  "image_count": 20,
+  "images": [
+    {
+      "file": "real-hero.webp",
+      "bytes": 102344,
+      "sha256": "52e831d658f4649eb005fac469ee09c8679ac750c5948b08a7ab467a6ee18ffd"
+    },
+    {
+      "file": "real-test-shoot.webp",
+      "bytes": 196812,
+      "sha256": "217e764126cb44d0fa35e4b2e70d0cc636ecc4a0dea1c60bcb468f4b9294c387"
+    },
+    {
+      "file": "real-apply.webp",
+      "bytes": 144448,
+      "sha256": "612a7cf095ada0826bba635c8883a44b85ae33593e4cd84a405c5ec74e210689"
+    },
+    {
+      "file": "real-strategy.webp",
+      "bytes": 124728,
+      "sha256": "c813b1e851f5c42e2f33bbfd8f2d12b00ff5f05be8cf9c18c6f81dd2f426f61a"
+    },
+    {
+      "file": "real-partnership.webp",
+      "bytes": 221610,
+      "sha256": "34ecfdcfffeded40c798985c17c04da2d5f6759e05e69a27a0f660f429cf33c0"
+    },
+    {
+      "file": "real-production.webp",
+      "bytes": 182970,
+      "sha256": "baddae6fc3563d6d3a125403b62f3b48d0c4acad7520aeedb4737fdf5c11018f"
+    },
+    {
+      "file": "real-spot-dubai.webp",
+      "bytes": 83030,
+      "sha256": "d8563ea0fe7fc98db45e909e52791da8a9c368e593906c50b1081b4c794eba5f"
+    },
+    {
+      "file": "real-spot-miami.webp",
+      "bytes": 138820,
+      "sha256": "766b0eb4d4493235c4226c2a8841bb209a9f49e94af56679c3ac11c9331479af"
+    },
+    {
+      "file": "real-spot-bali.webp",
+      "bytes": 109450,
+      "sha256": "9a7548b86f0b49ba2a5672b9589fc4e6964fde0d1fc32f808f7f488352e92023"
+    },
+    {
+      "file": "real-spot-marbella.webp",
+      "bytes": 146030,
+      "sha256": "6896edc7c859f60171594d071f4bc12ad6b7d7c4dd1742e90692f0bc1f886998"
+    },
+    {
+      "file": "real-spot-barcelona.webp",
+      "bytes": 101402,
+      "sha256": "6270049d54f7a9c120c6f9189f0e0cc3338613d89ada2fef5bcbdd8c99107735"
+    },
+    {
+      "file": "real-spot-costa-rica.webp",
+      "bytes": 70108,
+      "sha256": "db60f9a5add41936455eadee02eab3c869c5d2900e3d3b748628a1f450d9a07d"
+    },
+    {
+      "file": "real-spot-puerto-vallarta.webp",
+      "bytes": 104688,
+      "sha256": "4ede0baaf44907b583b90f464192ce17f6491c8fec8f951bc93de48ea4c850cc"
+    },
+    {
+      "file": "real-spot-mallorca.webp",
+      "bytes": 97110,
+      "sha256": "500c8803e8c8096dae2b05df0d762f775ef270b6b57f728c20ff805ed3dd9c0e"
+    },
+    {
+      "file": "real-spot-elenite.webp",
+      "bytes": 186840,
+      "sha256": "6dd83c47bfad43a4a4c0f4127354d53a41dda7143861846c3b3d74f0f0988e5b"
+    },
+    {
+      "file": "real-spot-ibiza.webp",
+      "bytes": 83420,
+      "sha256": "bc603789f8fa3975359e945eca40969ff8b21771a29a5bf4619e4ba09a312b52"
+    },
+    {
+      "file": "real-spot-bodrum.webp",
+      "bytes": 138346,
+      "sha256": "c1f16b2729c52108a2616681ace111bcbcf8bba6afdff82645a53360454b53c9"
+    },
+    {
+      "file": "real-spot-st-tropez.webp",
+      "bytes": 133718,
+      "sha256": "72598dd29c3827627b2a0b326018e8218f4beb0bc70d9a1a55326220321c00c8"
+    },
+    {
+      "file": "real-spot-valencia.webp",
+      "bytes": 194516,
+      "sha256": "3d2c7e3a8784953d7f89a5cbbe640665d72db1d410cd6a98b6e88adde37f485e"
+    },
+    {
+      "file": "real-footer.webp",
+      "bytes": 25564,
+      "sha256": "10d4b102129a68edefead78e53d07a92fae4d10a9f8198e08105d112f7cde9bb"
+    }
+  ],
+  "hero_video": {
+    "source_film": "original-film-dubai.mp4",
+    "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+    "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+    "start_frame": 576,
+    "end_frame_exclusive": 744,
+    "source_frame_rate": "24000/1001",
+    "duration_seconds": 7.007,
+    "crop_xywh": [
+      480,
+      0,
+      1440,
+      810
+    ],
+    "file": "hero-real.mp4",
+    "width": 1440,
+    "height": 810,
+    "codec": "H.264",
+    "pixel_format": "yuv420p",
+    "audio": false,
+    "faststart": true,
+    "bytes": 2861202,
+    "sha256": "2115398402e12d5f302ad2b18f2f1a6c7681f8c9a440cf0d542771747787cc9d",
+    "provenance_note": "No AI generation was used for these outputs. This is an extraction provenance record, not verification of identity, age, licensing, release status, or ownership. The Dubai and Ibiza source films carry STOCK VIDEO title cards; these outputs cannot be represented as original commissioned or no-stock footage."
+  },
+  "provenance_note": "Photographic stills and a video excerpt from the existing user-requested destination film collection. Real filmed models; no generative editing. Full source films contain stock-video title cards; no commissioned, exclusive or no-stock ownership claim is made."
+}

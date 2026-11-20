@@ -1,0 +1,210 @@
+{
+  "prepared_at": "2026-11-20",
+  "project": "FanFuse Studios",
+  "imagery_type": "Real filmed model stills extracted from existing destination films linked by fanfuse.ai and supplied for this project.",
+  "provenance_note": "No AI generation was used for these outputs. This is an extraction provenance record, not verification of identity, age, licensing, release status, or ownership. The Dubai and Ibiza source films carry STOCK VIDEO title cards; these outputs cannot be represented as original commissioned or no-stock footage.",
+  "selection_note": "Only clean interior frames without title cards, download text, visible watermarks, explicit nudity or intimate body focus selected. Professional fashion and resort context. No crew, laptop, planning or business interactions were fabricated.",
+  "images": [
+    {
+      "role": "hero",
+      "file": "real-hero.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 102344,
+      "sha256": "52e831d658f4649eb005fac469ee09c8679ac750c5948b08a7ab467a6ee18ffd",
+      "source_film": "original-film-dubai.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+      "source_frame_zero_based": 576,
+      "source_time_seconds": 24.024,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        480,
+        0,
+        1920,
+        810
+      ],
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "50% 50%",
+        "mobile": "22% 42%"
+      },
+      "description": "Real filmed adult model in opaque swimwear standing in a pool; clean face/profile and open water on the right."
+    },
+    {
+      "role": "footer",
+      "file": "real-footer.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 25564,
+      "sha256": "10d4b102129a68edefead78e53d07a92fae4d10a9f8198e08105d112f7cde9bb",
+      "source_film": "original-film-dubai.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+      "source_frame_zero_based": 240,
+      "source_time_seconds": 10.01,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        480,
+        0,
+        1920,
+        810
+      ],
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "50% 50%",
+        "mobile": "20% 40%"
+      },
+      "description": "Real filmed adult model in a flowing opaque neutral dress on a Dubai sand dune; left-third model, uncluttered right sky and dune for footer text."
+    },
+    {
+      "role": "apply",
+      "file": "real-apply.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 144448,
+      "sha256": "612a7cf095ada0826bba635c8883a44b85ae33593e4cd84a405c5ec74e210689",
+      "source_film": "original-film-valencia.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08",
+      "source_sha256": "f293039d4fd98ca55cbef8ef699a4a7baed12d8e46be629fb44ca2af529160ff",
+      "source_frame_zero_based": 816,
+      "source_time_seconds": 34.034,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "50% 45%",
+        "mobile": "50% 45%"
+      },
+      "description": "Real filmed adult model in an opaque mirrored halterneck resort costume, front-facing on a beach."
+    },
+    {
+      "role": "test-shoot",
+      "file": "real-test-shoot.webp",
+      "width": 2048,
+      "height": 1080,
+      "bytes": 196812,
+      "sha256": "217e764126cb44d0fa35e4b2e70d0cc636ecc4a0dea1c60bcb468f4b9294c387",
+      "source_film": "original-film-marbella.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_",
+      "source_sha256": "cb34c1c1c11cd3ab6c7f6e899896decbb20b3a90b902480c25988fac725ef699",
+      "source_frame_zero_based": 336,
+      "source_time_seconds": 14.014,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        2048,
+        1080
+      ],
+      "crop_xyxy": null,
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "50% 45%",
+        "mobile": "52% 45%"
+      },
+      "description": "Real filmed adult model beauty portrait against turquoise pool tiles. A campaign still, not a documented test-shoot or behind-the-scenes activity."
+    },
+    {
+      "role": "strategy",
+      "file": "real-strategy.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 124728,
+      "sha256": "c813b1e851f5c42e2f33bbfd8f2d12b00ff5f05be8cf9c18c6f81dd2f426f61a",
+      "source_film": "original-film-dubai.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+      "source_frame_zero_based": 624,
+      "source_time_seconds": 26.026,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "72% 48%",
+        "mobile": "75% 48%"
+      },
+      "description": "Real filmed adult model fashion profile by window blinds. A campaign still, not a claim of a strategy meeting."
+    },
+    {
+      "role": "production",
+      "file": "real-production.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 182970,
+      "sha256": "baddae6fc3563d6d3a125403b62f3b48d0c4acad7520aeedb4737fdf5c11018f",
+      "source_film": "original-film-dubai.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy",
+      "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+      "source_frame_zero_based": 480,
+      "source_time_seconds": 20.02,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "50% 30%",
+        "mobile": "43% 25%"
+      },
+      "description": "Real filmed group of adult women in flowing opaque colorful dresses during a desert fashion campaign."
+    },
+    {
+      "role": "partnership",
+      "file": "real-partnership.webp",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 221610,
+      "sha256": "34ecfdcfffeded40c798985c17c04da2d5f6759e05e69a27a0f660f429cf33c0",
+      "source_film": "original-film-ibiza.mp4",
+      "source_url": "https://drive.google.com/uc?export=download&id=1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih",
+      "source_sha256": "c1b55910e88a8259e24142d97965199312d9c6c9fbccf1fd977501bf7542d7fd",
+      "source_frame_zero_based": 144,
+      "source_time_seconds": 6.006,
+      "source_frame_rate": "24000/1001",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "editing": "Single original-film frame; optional crop; WebP compression only. No generative editing, compositing, face/body alteration or additional retouching.",
+      "object_position": {
+        "desktop": "60% 45%",
+        "mobile": "60% 45%"
+      },
+      "description": "Two real filmed adult models in opaque swimwear seated at a resort. A campaign still, not a documented business partnership meeting."
+    }
+  ],
+  "hero_video_recommendation": {
+    "source_file": "original-film-dubai.mp4",
+    "source_sha256": "c77a9f9ca68f7943a0d277a7f5f1b8100622034f873c1d5c563b2a62e65e3b52",
+    "start_frame": 576,
+    "end_frame_exclusive": 744,
+    "start_seconds": 24.024,
+    "end_seconds": 31.031,
+    "duration_seconds": 7.007,
+    "note": "A contiguous clean section of the original Dubai edit containing pool/profile/beauty shots. It includes the source film cuts and is not one uninterrupted camera shot. No video encoding performed for this task.",
+    "poster_file": "real-hero.webp",
+    "safe_fallback_short_shot": {
+      "start_seconds": 23.8,
+      "end_seconds": 25.2,
+      "note": "Approximate single pool shot only; precise cut refinement required before a seamless loop claim."
+    }
+  }
+}
