@@ -1,6 +1,6 @@
 /* A single native photo behind the invitation, fading to a solid navigation area. */
 .studio-footer{position:relative;isolation:isolate;padding:0;border-top:1px solid rgba(232,221,202,.15);--footer-scene-height:430px;background:#050606;color:#f4f1eb;overflow:hidden}
-.studio-footer::before{content:'';position:absolute;inset:0 0 auto;height:var(--footer-scene-height);z-index:-2;background:#0b0a08 url('unique-q-footer.webp') 50% 50%/cover no-repeat;pointer-events:none}
+.studio-footer::before{content:'';position:absolute;inset:0 0 auto;height:var(--footer-scene-height);z-index:-2;background:#0b0a08 none 50% 50%/cover no-repeat;pointer-events:none}
 .footer-scene-shade{position:absolute;inset:0 0 auto;height:var(--footer-scene-height);z-index:-1;background:linear-gradient(180deg,rgba(3,5,5,.30) 0%,rgba(3,5,5,.48) 38%,rgba(3,5,5,.78) 70%,#050606 100%);pointer-events:none}
 .studio-footer #cta{padding:104px 32px 92px;background:none;text-align:center;overflow:visible;scroll-margin-top:80px}
 .studio-footer #cta::before{display:none}
@@ -47,3 +47,6 @@
 .studio-footer::before{background-position:50% 0%}
 @media(min-width:901px){.studio-footer #cta{padding-left:54%;padding-right:max(48px,calc((100vw - 1104px)/2));text-align:left}.footer-invitation h2,.footer-invitation-copy{margin-left:0;margin-right:0}.footer-invitation h2{max-width:18ch}.footer-invitation-copy{max-width:42ch}.footer-call{margin-left:0}}
 @media(max-width:900px){.studio-footer::before{height:340px;background-position:50% 10%}.studio-footer #cta{padding-top:335px;padding-bottom:56px}.studio-footer .footer-scene-shade{height:100%;background:linear-gradient(180deg,rgba(3,5,5,.08) 0px,rgba(3,5,5,.10) 180px,#050606 340px,#050606 100%)}}
+
+/* Load the decorative photograph only as its section approaches. */
+.studio-footer.media-ready::before{background-image:url('fast-footer.webp')}

@@ -9,14 +9,16 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fanfuse Studios — Your world. Your next chapter.">
 <meta property="og:description" content="Cinematic production, intentional positioning and meaningful partnerships for women creators.">
-<meta property="og:image" content="https://fanfusee.vercel.app/unique-q-hero.webp">
+<meta property="og:image" content="https://fanfusee.vercel.app/fast-hero-loop-poster.webp">
 <meta property="og:url" content="https://fanfusee.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="unique-q-hero.webp" fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+(function(){if(['','#hero','#stats','#problem'].indexOf(location.hash)===-1)return;[['fast-hero-loop-poster.webp','(min-width:601px)'],['fast-hero-loop-mobile-poster.webp','(max-width:600px)']].forEach(function(asset){var link=document.createElement('link');link.rel='preload';link.as='image';link.href=asset[0];link.media=asset[1];link.fetchPriority='high';document.head.appendChild(link);});})();
+</script>
+<link rel="preload" as="font" href="font-manrope-latin.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="font-bodoni-moda-latin.woff2" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="studio-fonts.css?v=20261120-perf1">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--accent:#D4AF7A;--border:rgba(255,255,255,0.12);--content:1200px;--display:clamp(36px,4.2vw,56px)}
@@ -512,14 +514,13 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
   footer{padding:40px 24px}
 }
 </style>
-<link rel="stylesheet" href="studio-polish.css?v=20261120-unique-hd">
-<link rel="stylesheet" href="studio-footer.css?v=20261120-unique-hd">
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="studio-editorial.css?v=20261120-unique-hd">
+<link rel="stylesheet" href="studio-polish.css?v=20261120-perf1">
+<link rel="stylesheet" href="studio-footer.css?v=20261120-perf1">
+<link rel="stylesheet" href="studio-editorial.css?v=20261120-perf1">
 <style id="studio-safety">
 html:not(.motion-ready) .reveal,html:not(.motion-ready) .reveal-scale,html:not(.motion-ready) .curtain{opacity:1;transform:none}
 html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
-.bg-vid-wrap{background:#15120e url('unique-q-hero.webp') center/cover no-repeat}
+.bg-vid-wrap{background:#15120e center/cover no-repeat}.hero-media-ready .bg-vid-wrap{background-image:url('fast-hero-loop-poster.webp')}
 .bg-vid{opacity:0;transition:opacity .6s}.bg-vid.video-playing{opacity:1}
 .hero-motion-toggle{position:absolute;right:max(24px,calc((100vw - 1104px)/2));bottom:30px;z-index:3;min-height:44px;padding:9px 14px;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.4);font:500 12px/1.4 'Inter',sans-serif;cursor:pointer;backdrop-filter:blur(8px)}
 .hero-motion-toggle[hidden]{display:none}.hero-motion-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
@@ -532,15 +533,21 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 @media(max-width:600px){.hero-motion-toggle{bottom:24px;right:24px}.hero-bottom{padding-bottom:92px}.studio-earnings-note{text-align:left}.hero-cta-label{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html,body{scroll-behavior:auto!important}.reveal,.reveal-scale,.curtain{opacity:1!important;transform:none!important;transition:none!important}.bg-vid{transition:none}.bsl-t,.btn-primary-arr{transition:none!important}}
 </style>
+<style id="scroll-performance">
+/* Reduce large composited surfaces while preserving native scrolling and the card animation. */
+.bg-fade{transition:none}
+.background-covered .bg-vid-wrap,.background-covered .bg-fade{visibility:hidden}
+#nav.scrolled{background:rgba(0,0,0,.94);backdrop-filter:none;-webkit-backdrop-filter:none}
+.step,.tier,.tcard,.hero-motion-toggle{backdrop-filter:none;-webkit-backdrop-filter:none}
+#how .how-sticky-title{will-change:auto}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#about">Skip to content</a>
 
 <!-- FIXED VIDEO BG -->
 <div class="bg-vid-wrap">
-  <video class="bg-vid" id="heroVid" autoplay muted loop playsinline preload="metadata" poster="unique-q-hero.webp" aria-hidden="true">
-    <source src="unique-q-hero.mp4" type="video/mp4">
-  </video>
+  <video class="bg-vid" id="heroVid" muted loop playsinline preload="none" data-desktop-src="fast-hero-loop-desktop-v2.mp4" data-mobile-src="fast-hero-loop-mobile-v2.mp4" aria-hidden="true"></video>
   <div class="bg-vid-scrim"></div>
 </div>
 <div class="bg-fade"></div>
@@ -642,7 +649,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
 <!-- ── 4. ABOUT ── -->
 <section id="about" class="section-dark"><div class="section-inner studio-editorial-grid">
-    <figure class="studio-visual"><img src="unique-q-about.webp" alt="Fashion portrait framed by tropical leaves" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"><figcaption class="studio-caption">Cinematic production. A more intentional presence.</figcaption></figure>
+    <figure class="studio-visual"><img src="fast-about.webp" alt="Fashion portrait framed by tropical leaves" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-about-960w.webp 960w, fast-about-1440w.webp 1440w, fast-about.webp 1920w" sizes="(max-width:700px) 135vw, (max-width:900px) 95vw, 100vw"><figcaption class="studio-caption">Cinematic production. A more intentional presence.</figcaption></figure>
     <div><p class="eyebrow">The studio</p><h2 class="display-heading">A world of possibility.<br><em>A brand that is yours.</em></h2><p class="section-body" style="margin-top:24px">We bring production, positioning and partnerships together for women ready to take their content further.</p><p class="body-copy" style="margin-top:20px">From a first test shoot to a carefully planned destination campaign, you bring your personality. We help shape the story.</p><a href="#services" class="outlined-btn"><span class="outlined-btn-txt">Discover the studio</span></a></div>
   </div></section>
 
@@ -650,11 +657,11 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 <section id="services" class="section-dark" aria-labelledby="services-heading">
   <div class="services-scene">
     <div class="services-backdrops" aria-hidden="true">
-      <div class="services-backdrop" style="background-image:url('unique-q-service-1.webp');--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
-      <div class="services-backdrop" style="background-image:url('unique-q-service-2.webp');--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
-      <div class="services-backdrop" style="background-image:url('unique-q-service-3.webp');--real-focal-desktop:65% 45%;--real-focal-mobile:65% 45%"></div>
-      <div class="services-backdrop" style="background-image:url('unique-q-service-4.webp');--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%"></div>
-      <div class="services-backdrop" style="background-image:url('unique-q-service-5.webp');--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
+      <div class="services-backdrop" data-bg="fast-service-1.webp" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
+      <div class="services-backdrop" data-bg="fast-service-2.webp" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
+      <div class="services-backdrop" data-bg="fast-service-3.webp" style="--real-focal-desktop:65% 45%;--real-focal-mobile:65% 45%"></div>
+      <div class="services-backdrop" data-bg="fast-service-4.webp" style="--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%"></div>
+      <div class="services-backdrop" data-bg="fast-service-5.webp" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"></div>
     </div>
     <header class="services-header">
       <p class="eyebrow">What we do</p>
@@ -742,7 +749,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
     <article id="how-01" class="how-card">
       <div class="how-card-img">
-        <img src="unique-q-process-apply.webp" alt="Model in mirrored resort styling on a beach" loading="lazy" style="--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%" width="1920" height="1080">
+        <img src="fast-process-apply.webp" alt="Model in mirrored resort styling on a beach" loading="lazy" style="--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%" width="1920" height="1080" decoding="async" srcset="fast-process-apply-960w.webp 960w, fast-process-apply-1440w.webp 1440w, fast-process-apply.webp 1920w" sizes="(max-width:900px) 95vw, 58vw">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -757,7 +764,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
     <article id="how-02" class="how-card">
       <div class="how-card-img">
-        <img src="unique-q-process-test-shoot.webp" alt="Model beside turquoise pool tiles" loading="lazy" style="--real-focal-desktop:50% 45%;--real-focal-mobile:52% 45%" width="2048" height="1080">
+        <img src="fast-process-test-shoot.webp" alt="Model beside turquoise pool tiles" loading="lazy" style="--real-focal-desktop:50% 45%;--real-focal-mobile:52% 45%" width="2048" height="1080" decoding="async" srcset="fast-process-test-shoot-960w.webp 960w, fast-process-test-shoot-1440w.webp 1440w, fast-process-test-shoot.webp 2048w" sizes="(max-width:900px) 95vw, 58vw">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -772,7 +779,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
     <article id="how-03" class="how-card">
       <div class="how-card-img">
-        <img src="unique-q-process-strategy.webp" alt="Fashion model beside window blinds" loading="lazy" style="--real-focal-desktop:72% 48%;--real-focal-mobile:75% 48%" width="1920" height="1080">
+        <img src="fast-process-strategy.webp" alt="Fashion model beside window blinds" loading="lazy" style="--real-focal-desktop:72% 48%;--real-focal-mobile:75% 48%" width="1920" height="1080" decoding="async" srcset="fast-process-strategy-960w.webp 960w, fast-process-strategy-1440w.webp 1440w, fast-process-strategy.webp 1920w" sizes="(max-width:900px) 95vw, 58vw">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -787,7 +794,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
     <article id="how-04" class="how-card">
       <div class="how-card-img">
-        <img src="unique-q-process-production.webp" alt="Models in colorful dresses during a desert fashion shoot" loading="lazy" style="--real-focal-desktop:50% 30%;--real-focal-mobile:43% 25%" width="1920" height="1080">
+        <img src="fast-process-production.webp" alt="Models in colorful dresses during a desert fashion shoot" loading="lazy" style="--real-focal-desktop:50% 30%;--real-focal-mobile:43% 25%" width="1920" height="1080" decoding="async" srcset="fast-process-production-960w.webp 960w, fast-process-production-1440w.webp 1440w, fast-process-production.webp 1920w" sizes="(max-width:900px) 165vw, 90vw">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -802,7 +809,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
     <article id="how-05" class="how-card">
       <div class="how-card-img">
-        <img src="unique-q-process-partnership.webp" alt="Two models in swimwear seated at a resort" loading="lazy" style="--real-focal-desktop:60% 45%;--real-focal-mobile:60% 45%" width="1920" height="1080">
+        <img src="fast-process-partnership.webp" alt="Two models in swimwear seated at a resort" loading="lazy" style="--real-focal-desktop:60% 45%;--real-focal-mobile:60% 45%" width="1920" height="1080" decoding="async" srcset="fast-process-partnership-960w.webp 960w, fast-process-partnership-1440w.webp 1440w, fast-process-partnership.webp 1920w" sizes="(max-width:900px) 95vw, 58vw">
         <span class="how-brk-tr" aria-hidden="true"></span>
         <span class="how-brk-bl" aria-hidden="true"></span>
       </div>
@@ -900,55 +907,55 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
   <div class="spots-viewport" tabindex="0" aria-label="Destination films" aria-describedby="spots-help">
     <div class="spots-track">
       <button class="spot-film" type="button" data-spot-index="0" data-spot-name="Dubai" data-local-src="film-dubai.mp4" data-drive-id="1m9iJ899wXC1gZygqlw1u0wg93xUJF7oy" aria-label="Play Dubai film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-dubai.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:54% 50%;--real-focal-mobile:54% 50%">
+        <img src="fast-spot-dubai.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:54% 50%;--real-focal-mobile:54% 50%" decoding="async" srcset="fast-spot-dubai-960w.webp 960w, fast-spot-dubai-1440w.webp 1440w, fast-spot-dubai.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Dubai</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="1" data-spot-name="Miami" data-local-src="film-miami.mp4" data-drive-id="1xeP3WibcsJOJRdqscJqp7PnXPCz98Ns2" aria-label="Play Miami film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-miami.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:60% 50%;--real-focal-mobile:60% 50%">
+        <img src="fast-spot-miami.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:60% 50%;--real-focal-mobile:60% 50%" decoding="async" srcset="fast-spot-miami-960w.webp 960w, fast-spot-miami-1440w.webp 1440w, fast-spot-miami.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Miami</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="2" data-spot-name="Bali" data-local-src="film-bali.mp4" data-drive-id="14pW_hiqAi9cAakGwpQX3cQzsnVQFpIcM" aria-label="Play Bali film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-bali.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:32% 50%;--real-focal-mobile:32% 50%">
+        <img src="fast-spot-bali.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:32% 50%;--real-focal-mobile:32% 50%" decoding="async" srcset="fast-spot-bali-960w.webp 960w, fast-spot-bali-1440w.webp 1440w, fast-spot-bali.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bali</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="3" data-spot-name="Marbella" data-local-src="film-marbella.mp4" data-drive-id="1zZ3W4rShIaZ4kPu1s_maYxmFkkag8Rq_" aria-label="Play Marbella film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-marbella.webp" alt="" loading="lazy" decoding="async" width="2048" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%">
+        <img src="fast-spot-marbella.webp" alt="" loading="lazy" width="2048" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-spot-marbella-960w.webp 960w, fast-spot-marbella-1440w.webp 1440w, fast-spot-marbella.webp 2048w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Marbella</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="4" data-spot-name="Barcelona" data-local-src="film-barcelona.mp4" data-drive-id="1u5chk-BdQmFJcn5l7VGz-C1urNkAbpG1" aria-label="Play Barcelona film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-barcelona.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:76% 50%;--real-focal-mobile:76% 50%">
+        <img src="fast-spot-barcelona.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:76% 50%;--real-focal-mobile:76% 50%" decoding="async" srcset="fast-spot-barcelona-960w.webp 960w, fast-spot-barcelona-1440w.webp 1440w, fast-spot-barcelona.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Barcelona</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="5" data-spot-name="Costa Rica" data-local-src="film-costa-rica.mp4" data-drive-id="1DkFNjV0D9fOy5JqQQvFZp-gwO4InrTP1" aria-label="Play Costa Rica film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-costa-rica.webp" alt="" loading="lazy" decoding="async" width="1280" height="720" style="--real-focal-desktop:62% 50%;--real-focal-mobile:62% 50%">
+        <img src="fast-spot-costa-rica.webp" alt="" loading="lazy" width="1280" height="720" style="--real-focal-desktop:62% 50%;--real-focal-mobile:62% 50%" decoding="async" srcset="fast-spot-costa-rica-960w.webp 960w, fast-spot-costa-rica.webp 1280w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Costa Rica</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="6" data-spot-name="Puerto Vallarta" data-local-src="film-puerto-vallarta.mp4" data-drive-id="1bwuJyjOFRdTh2C1iyooqlJ-q7nN1HIl_" aria-label="Play Puerto Vallarta film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-puerto-vallarta.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:64% 50%;--real-focal-mobile:64% 50%">
+        <img src="fast-spot-puerto-vallarta.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:64% 50%;--real-focal-mobile:64% 50%" decoding="async" srcset="fast-spot-puerto-vallarta-960w.webp 960w, fast-spot-puerto-vallarta-1440w.webp 1440w, fast-spot-puerto-vallarta.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Puerto Vallarta</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="7" data-spot-name="Mallorca" data-local-src="film-mallorca.mp4" data-drive-id="1XtK6BqZvuGHvHU5-pQbXBSA8ZftAP0Y7" aria-label="Play Mallorca film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-mallorca.webp" alt="" loading="lazy" decoding="async" width="2048" height="1080" style="--real-focal-desktop:40% 50%;--real-focal-mobile:40% 50%">
+        <img src="fast-spot-mallorca.webp" alt="" loading="lazy" width="2048" height="1080" style="--real-focal-desktop:40% 50%;--real-focal-mobile:40% 50%" decoding="async" srcset="fast-spot-mallorca-960w.webp 960w, fast-spot-mallorca-1440w.webp 1440w, fast-spot-mallorca.webp 2048w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Mallorca</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="8" data-spot-name="Elenite" data-local-src="film-elenite.mp4" data-drive-id="1tqLgdiXOkcYVhOWB75-7j6aalyTlCsi1" aria-label="Play Elenite film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-elenite.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:37% 50%;--real-focal-mobile:37% 50%">
+        <img src="fast-spot-elenite.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:37% 50%;--real-focal-mobile:37% 50%" decoding="async" srcset="fast-spot-elenite-960w.webp 960w, fast-spot-elenite-1440w.webp 1440w, fast-spot-elenite.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Elenite</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="9" data-spot-name="Ibiza" data-local-src="film-ibiza.mp4" data-drive-id="1C-U_gbR1pJOa-HMgChO6Mem4rRY8jkih" aria-label="Play Ibiza film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-ibiza.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:29% 50%;--real-focal-mobile:29% 50%">
+        <img src="fast-spot-ibiza.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:29% 50%;--real-focal-mobile:29% 50%" decoding="async" srcset="fast-spot-ibiza-960w.webp 960w, fast-spot-ibiza-1440w.webp 1440w, fast-spot-ibiza.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Ibiza</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="10" data-spot-name="Bodrum" data-local-src="film-bodrum.mp4" data-drive-id="1YWWaN47sim35ZVafP9c7H4Nhek-qGwHJ" aria-label="Play Bodrum film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-bodrum.webp" alt="" loading="lazy" decoding="async" width="2048" height="1080" style="--real-focal-desktop:40% 50%;--real-focal-mobile:40% 50%">
+        <img src="fast-spot-bodrum.webp" alt="" loading="lazy" width="2048" height="1080" style="--real-focal-desktop:40% 50%;--real-focal-mobile:40% 50%" decoding="async" srcset="fast-spot-bodrum-960w.webp 960w, fast-spot-bodrum-1440w.webp 1440w, fast-spot-bodrum.webp 2048w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Bodrum</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="11" data-spot-name="St Tropez" data-local-src="film-st-tropez.mp4" data-drive-id="1zTYmJZ_snvIM3qpGa8uZ1SaqhOEqSKnM" aria-label="Play St Tropez film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-st-tropez.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:45% 50%;--real-focal-mobile:45% 50%">
+        <img src="fast-spot-st-tropez.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:45% 50%;--real-focal-mobile:45% 50%" decoding="async" srcset="fast-spot-st-tropez-960w.webp 960w, fast-spot-st-tropez-1440w.webp 1440w, fast-spot-st-tropez.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">St Tropez</span></span>
       </button>
       <button class="spot-film" type="button" data-spot-index="12" data-spot-name="Valencia" data-local-src="film-valencia.mp4" data-drive-id="1oCvgVWPlPHErWk07UtrVuGI-ZnFmlu08" aria-label="Play Valencia film" aria-haspopup="dialog" aria-controls="spots-player">
-        <img src="unique-q-spot-valencia.webp" alt="" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:52% 50%;--real-focal-mobile:52% 50%">
+        <img src="fast-spot-valencia.webp" alt="" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:52% 50%;--real-focal-mobile:52% 50%" decoding="async" srcset="fast-spot-valencia-960w.webp 960w, fast-spot-valencia-1440w.webp 1440w, fast-spot-valencia.webp 1920w" sizes="(max-width:600px) 230vw, (max-width:1000px) 130vw, 70vw">
         <span class="spot-film-content"><span class="spot-play" aria-hidden="true"><svg viewBox="0 0 18 22"><path d="M2 1 17 11 2 21Z"/></svg></span><span class="spot-film-name">Valencia</span></span>
       </button>
     </div>
@@ -991,9 +998,9 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 <section id="lifestyle" class="section-dark"><div class="section-inner">
     <div class="split-layout section-heading-row"><div><p class="eyebrow">The creator life</p><h2 class="display-heading">Go somewhere new.<br><em>Make it your own.</em></h2></div><p class="section-body">Beautiful places. A considered production. More space to be yourself on camera.</p></div>
     <div class="studio-feature-grid">
-      <article class="studio-feature"><img src="unique-q-feature-1.webp" alt="Aerial view of a group riding along a tropical beach" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"><div class="studio-feature-copy"><p class="studio-kicker">On location</p><h3>A world beyond your feed.</h3><p>Destination shoots shaped around your identity and creative direction.</p></div></article>
-      <article class="studio-feature"><img src="unique-q-feature-2.webp" alt="Dubai towers rising into the blue sky" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:75% 50%;--real-focal-mobile:75% 50%"><div class="studio-feature-copy"><p class="studio-kicker">In good hands</p><h3>Show up as yourself.</h3><p>Direction, camera and editing brought together around your story.</p></div></article>
-      <article class="studio-feature"><img src="unique-q-feature-3.webp" alt="Sailboats across a turquoise Mediterranean cove" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"><div class="studio-feature-copy"><p class="studio-kicker">With intention</p><h3>Build something lasting.</h3><p>Positioning and partnership support that look beyond a single post.</p></div></article>
+      <article class="studio-feature"><img src="fast-feature-1.webp" alt="Aerial view of a group riding along a tropical beach" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-feature-1-960w.webp 960w, fast-feature-1-1440w.webp 1440w, fast-feature-1.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">On location</p><h3>A world beyond your feed.</h3><p>Destination shoots shaped around your identity and creative direction.</p></div></article>
+      <article class="studio-feature"><img src="fast-feature-2.webp" alt="Dubai towers rising into the blue sky" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:75% 50%;--real-focal-mobile:75% 50%" decoding="async" srcset="fast-feature-2-960w.webp 960w, fast-feature-2-1440w.webp 1440w, fast-feature-2.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">In good hands</p><h3>Show up as yourself.</h3><p>Direction, camera and editing brought together around your story.</p></div></article>
+      <article class="studio-feature"><img src="fast-feature-3.webp" alt="Sailboats across a turquoise Mediterranean cove" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-feature-3-960w.webp 960w, fast-feature-3-1440w.webp 1440w, fast-feature-3.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">With intention</p><h3>Build something lasting.</h3><p>Positioning and partnership support that look beyond a single post.</p></div></article>
     </div>
   </div></section>
 
@@ -1032,9 +1039,9 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 <section id="showcase" class="section-dark"><div class="section-inner">
     <div class="split-layout section-heading-row"><div><p class="eyebrow">Selected films</p><h2 class="display-heading">A feeling.<br><em>Beautifully captured.</em></h2></div><p class="section-body">Explore films from the featured destination collection.</p></div>
     <div class="film-grid">
-      <button class="film-card" type="button" data-film-spot="Dubai" aria-label="Play selected Dubai film"><img src="unique-q-film-dubai.webp" alt="Models in black resort styling beside palms" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Dubai</span><strong>Golden hour, elevated.</strong><small>Watch destination film</small></span></button>
-      <button class="film-card" type="button" data-film-spot="Bali" aria-label="Play selected Bali film"><img src="unique-q-film-bali.webp" alt="Model in white resort styling at a tropical infinity pool" loading="lazy" decoding="async" width="1920" height="1080" style="--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Bali</span><strong>A slower kind of story.</strong><small>Watch destination film</small></span></button>
-      <button class="film-card" type="button" data-film-spot="Marbella" aria-label="Play selected Marbella film"><img src="unique-q-film-marbella.webp" alt="Model resting beside turquoise pool tiles" loading="lazy" decoding="async" width="2048" height="1080" style="--real-focal-desktop:63% 50%;--real-focal-mobile:63% 50%"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Marbella</span><strong>The Mediterranean mood.</strong><small>Watch destination film</small></span></button>
+      <button class="film-card" type="button" data-film-spot="Dubai" aria-label="Play selected Dubai film"><img src="fast-film-dubai.webp" alt="Models in black resort styling beside palms" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-film-dubai-960w.webp 960w, fast-film-dubai-1440w.webp 1440w, fast-film-dubai.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Dubai</span><strong>Golden hour, elevated.</strong><small>Watch destination film</small></span></button>
+      <button class="film-card" type="button" data-film-spot="Bali" aria-label="Play selected Bali film"><img src="fast-film-bali.webp" alt="Model in white resort styling at a tropical infinity pool" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 45%;--real-focal-mobile:50% 45%" decoding="async" srcset="fast-film-bali-960w.webp 960w, fast-film-bali-1440w.webp 1440w, fast-film-bali.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Bali</span><strong>A slower kind of story.</strong><small>Watch destination film</small></span></button>
+      <button class="film-card" type="button" data-film-spot="Marbella" aria-label="Play selected Marbella film"><img src="fast-film-marbella.webp" alt="Model resting beside turquoise pool tiles" loading="lazy" width="2048" height="1080" style="--real-focal-desktop:63% 50%;--real-focal-mobile:63% 50%" decoding="async" srcset="fast-film-marbella-960w.webp 960w, fast-film-marbella-1440w.webp 1440w, fast-film-marbella.webp 2048w" sizes="(max-width:700px) 150vw, 70vw"><span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg></span><span class="film-card-copy"><span class="studio-kicker">Marbella</span><strong>The Mediterranean mood.</strong><small>Watch destination film</small></span></button>
     </div>
   </div></section>
 
@@ -1133,16 +1140,24 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 </div><!-- end page-wrap -->
 
 <script>
-// Nav scroll
-window.addEventListener('scroll',function(){
-  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
-  var scrollY = window.scrollY;
-  var vh = window.innerHeight;
-  var fadeStart = vh * 0.6;
-  var fadeEnd = vh * 1.8;
-  var progress = Math.min(1, Math.max(0, (scrollY - fadeStart) / (fadeEnd - fadeStart)));
-  document.querySelector('.bg-fade').style.opacity = progress;
-});
+// Batch chrome updates once per frame; do not mutate layout on every raw scroll event.
+(function(){
+  var nav=document.getElementById('nav'),fade=document.querySelector('.bg-fade');
+  var frame=0,height=Math.max(1,window.innerHeight),lastScrolled=null,lastFade=-1,lastCovered=null;
+  function paint(){
+    frame=0;
+    var y=window.scrollY,scrolled=y>50;
+    var progress=Math.round(Math.min(1,Math.max(0,(y-height*.6)/(height*1.2)))*1000)/1000;
+    if(nav&&scrolled!==lastScrolled){nav.classList.toggle('scrolled',scrolled);lastScrolled=scrolled;}
+    if(fade&&progress!==lastFade){fade.style.opacity=String(progress);lastFade=progress;}
+    var covered=progress===1;
+    if(covered!==lastCovered){document.body.classList.toggle('background-covered',covered);lastCovered=covered;}
+  }
+  function queue(){if(!frame)frame=window.requestAnimationFrame(paint);}
+  window.addEventListener('scroll',queue,{passive:true});
+  window.addEventListener('resize',function(){height=Math.max(1,window.innerHeight);queue();},{passive:true});
+  paint();
+})();
 </script>
 <script>
 (function(){
@@ -1197,35 +1212,47 @@ window.addEventListener('scroll',function(){
 })();
 </script>
 <script>
-// Albums section: fade sticky title as gallery scrolls over it
+// Cached album geometry keeps scroll frames free of forced layout reads.
 (function(){
-  var title = document.getElementById('how-title-block');
-  var section = document.getElementById('how');
-  var firstCard = document.getElementById('how-01');
-  if(!title || !section || !firstCard) return;
-  var smallScreen = window.matchMedia('(max-width:900px)');
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion:reduce)');
-  var scheduled = false;
-  function updateTitle(){
-    scheduled = false;
-    if(smallScreen.matches || reducedMotion.matches){
-      title.style.opacity = '1';
-      return;
+  var title=document.getElementById('how-title-block'),section=document.getElementById('how'),firstCard=document.getElementById('how-01');
+  if(!title||!section||!firstCard)return;
+  var smallScreen=window.matchMedia('(max-width:900px)'),reducedMotion=window.matchMedia('(prefers-reduced-motion:reduce)');
+  var frame=0,measureFrame=0,near=true,lastOpacity=-1,naturalTop=0,cardTop=0,titleHeight=1,stickyTop=100,endTop=0;
+  function paint(){
+    frame=0;
+    var opacity=1;
+    if(!smallScreen.matches&&!reducedMotion.matches){
+      var y=window.scrollY;
+      var top=Math.min(Math.max(naturalTop-y,stickyTop),endTop-y);
+      var start=top+titleHeight*.85,end=top+titleHeight*.15;
+      opacity=1-Math.min(1,Math.max(0,(start-(cardTop-y))/Math.max(1,start-end)));
+      opacity=Math.round(opacity*1000)/1000;
     }
-    var titleRect = title.getBoundingClientRect();
-    var cardTop = firstCard.getBoundingClientRect().top;
-    var fadeStart = titleRect.top + titleRect.height * 0.85;
-    var fadeEnd = titleRect.top + titleRect.height * 0.15;
-    var progress = (fadeStart - cardTop) / Math.max(1, fadeStart - fadeEnd);
-    title.style.opacity = String(1 - Math.min(1, Math.max(0, progress)));
+    if(opacity!==lastOpacity){title.style.opacity=String(opacity);lastOpacity=opacity;}
   }
-  function scheduleUpdate(){
-    if(!scheduled){ scheduled = true; window.requestAnimationFrame(updateTitle); }
+  function queue(){if(near&&!frame)frame=window.requestAnimationFrame(paint);}
+  function measure(){
+    measureFrame=0;
+    var sectionStyle=window.getComputedStyle(section),titleStyle=window.getComputedStyle(title),y=window.scrollY;
+    var top=section.getBoundingClientRect().top+y;
+    titleHeight=title.offsetHeight||1;
+    naturalTop=top+(parseFloat(sectionStyle.paddingTop)||0);
+    endTop=top+section.offsetHeight-(parseFloat(sectionStyle.paddingBottom)||0)-titleHeight;
+    cardTop=firstCard.getBoundingClientRect().top+y;
+    stickyTop=parseFloat(titleStyle.top)||100;
+    paint();
   }
-  window.addEventListener('scroll', scheduleUpdate, {passive:true});
-  window.addEventListener('resize', scheduleUpdate);
-  if(reducedMotion.addEventListener) reducedMotion.addEventListener('change', scheduleUpdate);
-  updateTitle();
+  function queueMeasure(){if(!measureFrame)measureFrame=window.requestAnimationFrame(measure);}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){near=entries[0].isIntersecting;title.style.willChange=near&&!smallScreen.matches?'opacity':'auto';if(near)queueMeasure();},{rootMargin:'300px 0px'}).observe(section);
+  }
+  if('ResizeObserver' in window)new ResizeObserver(queueMeasure).observe(document.body);
+  window.addEventListener('scroll',queue,{passive:true});
+  window.addEventListener('resize',queueMeasure,{passive:true});
+  if(smallScreen.addEventListener)smallScreen.addEventListener('change',queueMeasure);
+  if(reducedMotion.addEventListener)reducedMotion.addEventListener('change',queueMeasure);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(queueMeasure);
+  queueMeasure();
 })();
 </script>
 
@@ -1252,7 +1279,7 @@ window.addEventListener('scroll',function(){
   var reduced=window.matchMedia('(prefers-reduced-motion:reduce)');
   var mobile=window.matchMedia('(max-width:600px)');
   var active=0,shown=0,requested=0,manualTarget=null,queued=null,turning=false,animation=null;
-  var frame=0,step=1,sectionTop=0,unpinned=false;
+  var frame=0,measureFrame=0,step=1,sectionTop=0,sectionHeight=0,unpinned=false,backdropActive=-1;
   function clamp(value){return Math.max(0,Math.min(panels.length-1,value));}
   function setPanelState(panel,selected){
     panel.setAttribute('aria-hidden',String(!selected));
@@ -1273,12 +1300,12 @@ window.addEventListener('scroll',function(){
     if(previousButton)previousButton.disabled=index===0;
     if(nextButton)nextButton.disabled=index===panels.length-1;
   }
-  function showBackdrop(index){backdrops.forEach(function(background,i){background.style.opacity=i===index?'1':'0';});}
+  function showBackdrop(index){if(index===backdropActive)return;backdropActive=index;backdrops.forEach(function(background,i){background.style.opacity=i===index?'1':'0';});}
   function placeSettled(index){
     if(animation){animation.cancel();animation=null;}
     cube.classList.remove('is-turning');
     cube.style.transform=reduced.matches?'none':'translateZ(calc(-1 * var(--services-depth))) rotateX(0deg)';
-    panels.forEach(function(panel){panel.hidden=true;setPanelState(panel,false);bank.appendChild(panel);});
+    panels.forEach(function(panel,i){panel.hidden=i!==index;setPanelState(panel,i===index);if(i!==index&&panel.parentNode!==bank)bank.appendChild(panel);});
     front.appendChild(panels[index]);
     panels[index].hidden=false;
     next.setAttribute('aria-hidden','true');next.inert=true;
@@ -1295,8 +1322,8 @@ window.addEventListener('scroll',function(){
   }
   function turnTo(index){
     index=clamp(index);
-    if(turning){queued=index;return;}
-    if(index===shown){updateControls(index);return;}
+    if(turning){queued=index===active?null:index;return;}
+    if(index===shown)return;
     if(reduced.matches){placeSettled(index);showBackdrop(index);return;}
     turning=true;
     var direction=index>shown?1:-1;
@@ -1327,26 +1354,39 @@ window.addEventListener('scroll',function(){
     var index=stageAtScroll();
     if(manualTarget!==null&&Math.abs(window.scrollY-(sectionTop+manualTarget*step))<2)manualTarget=null;
     if(manualTarget===null)requested=index;
+    else index=manualTarget;
     if(index!==active||turning)turnTo(index);
   }
-  function queueScroll(){if(!frame)frame=window.requestAnimationFrame(renderScroll);}
+  function queueScroll(){
+    if(unpinned)return;
+    var y=window.scrollY;
+    if(y+window.innerHeight<sectionTop-200||y>sectionTop+sectionHeight+200){
+      if(turning){queued=null;placeSettled(stageAtScroll());showBackdrop(shown);}
+      return;
+    }
+    if(!frame)frame=window.requestAnimationFrame(renderScroll);
+  }
   function measure(){
     var previousUnpinned=unpinned;
-    unpinned=reduced.matches||window.innerHeight<640;
+    unpinned=reduced.matches||mobile.matches||window.innerHeight<640;
     section.classList.toggle('services-reduced',reduced.matches);
     section.classList.toggle('services-unpinned',unpinned);
     tablist.setAttribute('aria-orientation',mobile.matches?'horizontal':'vertical');
-    step=Math.max(1,window.innerHeight*.75);
+    var sceneHeight=scene.offsetHeight;
+    step=Math.max(1,sceneHeight*.75);
     sectionTop=section.getBoundingClientRect().top+window.scrollY;
-    section.style.setProperty('--services-scroll-height',(scene.offsetHeight+step*(panels.length-1))+'px');
+    sectionHeight=sceneHeight+(unpinned?0:step*(panels.length-1));
+    if(!unpinned)section.style.setProperty('--services-scroll-height',sectionHeight+'px');
     if(reduced.matches||previousUnpinned!==unpinned){queued=null;placeSettled(active);showBackdrop(active);}
     if(!unpinned)queueScroll();
   }
+  function queueMeasure(){if(!measureFrame)measureFrame=window.requestAnimationFrame(function(){measureFrame=0;measure();});}
   function choose(index,focusTab){
     requested=clamp(index);
     manualTarget=requested;
     if(focusTab)tabs[requested].focus({preventScroll:true});
-    if(unpinned){turnTo(requested);return;}
+    turnTo(requested);
+    if(unpinned)return;
     var top=sectionTop+requested*step;
     window.scrollTo({top:top,behavior:reduced.matches?'instant':'smooth'});
     if(Math.abs(window.scrollY-top)<2)turnTo(requested);
@@ -1370,9 +1410,10 @@ window.addEventListener('scroll',function(){
   window.addEventListener('touchstart',useScrollSelection,{passive:true});
   window.addEventListener('keydown',function(event){if(event.key==='PageDown'||event.key==='PageUp'||event.key===' '||event.key==='Escape')useScrollSelection();});
   window.addEventListener('scroll',queueScroll,{passive:true});
-  window.addEventListener('resize',measure);
-  if(reduced.addEventListener)reduced.addEventListener('change',measure);
-  if(mobile.addEventListener)mobile.addEventListener('change',measure);
+  window.addEventListener('resize',queueMeasure,{passive:true});
+  if(reduced.addEventListener)reduced.addEventListener('change',queueMeasure);
+  if(mobile.addEventListener)mobile.addEventListener('change',queueMeasure);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(queueMeasure);
   section.classList.add('services-ready');
   placeSettled(0);showBackdrop(0);measure();
 })();
@@ -1493,11 +1534,11 @@ window.addEventListener('scroll',function(){
   var playerLink=section.querySelector('.spots-player-link');
   if(!viewport||!track||cards.length!==dots.length||!cards.length||!dialog)return;
   var reduced=window.matchMedia('(prefers-reduced-motion:reduce)');
-  var active=0,target=0,busy=false,direction=0,autoTimer=0,finishTimer=0,startFrame=0;
+  var active=0,target=0,busy=false,direction=0,autoTimer=0,finishTimer=0,startFrame=0,resizeFrame=0,cachedCardWidth=0,cachedViewportWidth=0;
   var userPaused=false,hovered=false,focused=false,inView=false,pointerHeld=false,modalOpen=false;
   var pointer=null,suppressClickUntil=0,opener=null,openerIndex=0,savedScroll=null,savedStyles=null;
   function wrap(index){return (index%cards.length+cards.length)%cards.length;}
-  function cardWidth(){return cards[0].getBoundingClientRect().width||viewport.clientWidth/4;}
+  function cardWidth(){return cachedCardWidth||cachedViewportWidth/4||1;}
   function stopAuto(){window.clearTimeout(autoTimer);autoTimer=0;}
   function isPaused(){return userPaused||reduced.matches||hovered||focused||!inView||document.hidden||pointerHeld||modalOpen;}
   function scheduleAuto(){
@@ -1512,7 +1553,7 @@ window.addEventListener('scroll',function(){
     scheduleAuto();
   }
   function updateCards(){
-    var visibleCount=Math.min(cards.length,Math.ceil(viewport.clientWidth/cardWidth()-.01));
+    var visibleCount=Math.min(cards.length,Math.ceil(cachedViewportWidth/cardWidth()-.01));
     var visible=Array.prototype.slice.call(track.children,0,visibleCount);
     var restoreCardFocus=null;
     cards.forEach(function(card){
@@ -1568,14 +1609,15 @@ window.addEventListener('scroll',function(){
       track.insertBefore(track.lastElementChild,track.firstElementChild);
       track.style.transform='translate3d('+(-distance)+'px,0,0)';
     }else track.style.transform='translate3d(0,0,0)';
-    track.getBoundingClientRect();
     track.classList.add('is-sliding');
     startFrame=window.requestAnimationFrame(function(){
-      startFrame=0;
-      if(!busy)return;
-      track.style.transition='transform 500ms cubic-bezier(.22,.61,.36,1)';
-      track.style.transform=direction<0?'translate3d(0,0,0)':'translate3d('+(-distance)+'px,0,0)';
-      finishTimer=window.setTimeout(finishStep,560);
+      startFrame=window.requestAnimationFrame(function(){
+        startFrame=0;
+        if(!busy)return;
+        track.style.transition='transform 500ms cubic-bezier(.22,.61,.36,1)';
+        track.style.transform=direction<0?'translate3d(0,0,0)':'translate3d('+(-distance)+'px,0,0)';
+        finishTimer=window.setTimeout(finishStep,560);
+      });
     });
   }
   function request(index){
@@ -1606,8 +1648,15 @@ window.addEventListener('scroll',function(){
   section.addEventListener('focusin',function(){focused=true;updateAutoplay();});
   section.addEventListener('focusout',function(){window.setTimeout(function(){focused=section.contains(document.activeElement);updateAutoplay();},0);});
   document.addEventListener('visibilitychange',function(){if(document.hidden&&busy)jumpTo(target);updateAutoplay();});
-  function measure(){if(busy)jumpTo(target);else updateCards();updateAutoplay();}
-  window.addEventListener('resize',measure);
+  function measure(){
+    resizeFrame=0;
+    var width=viewport.clientWidth;
+    if(width===cachedViewportWidth)return;
+    cachedViewportWidth=width;cachedCardWidth=cards[0].getBoundingClientRect().width||width/4;
+    if(busy)jumpTo(target);else updateCards();
+    updateAutoplay();
+  }
+  window.addEventListener('resize',function(){if(!resizeFrame)resizeFrame=window.requestAnimationFrame(measure);},{passive:true});
   if(reduced.addEventListener)reduced.addEventListener('change',function(){jumpTo(target);updateAutoplay();});
   function updateVisibility(){var rect=section.getBoundingClientRect();inView=rect.bottom>0&&rect.top<window.innerHeight;updateAutoplay();}
   if('IntersectionObserver' in window){
@@ -1699,10 +1748,11 @@ window.addEventListener('scroll',function(){
     if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closePlayer();
   });
   section.classList.add('spots-ready');
+  cachedViewportWidth=viewport.clientWidth;cachedCardWidth=cards[0].getBoundingClientRect().width||cachedViewportWidth/4;
   jumpTo(0);updateVisibility();updateAutoplay();
 })();
 </script>
-<script id="studio-review-behavior" src="studio-review.js?v=20261120-unique-hd"></script>
+<script id="studio-review-behavior" src="studio-review.js?v=20261120-perf1"></script>
 </body>
 </html>
 

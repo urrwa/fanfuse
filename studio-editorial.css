@@ -19,17 +19,21 @@ body{font-family:'Manrope','Inter',sans-serif;line-height:1.8}
 @media(max-width:600px){.hero-headline{font-size:clamp(38px,10.2vw,45px);max-width:16ch;line-height:1.08}.display-heading{font-size:clamp(34px,9vw,40px)}#services .services-main-title{font-size:34px}#how .how-title{font-size:clamp(36px,9vw,42px)}.footer-invitation h2{font-size:clamp(34px,9vw,40px)}.hero-desc{font-size:15px;line-height:1.8}}
 
 /* Focal points are recorded with each extracted destination frame. */
-img[src^="real-"],img[src^="unique-q-"]{object-position:var(--real-focal-desktop,50% 50%)}
+img[src^="real-"],img[src^="fast-"]{object-position:var(--real-focal-desktop,50% 50%)}
 #how .how-card-img img{object-position:var(--real-focal-desktop,50% 50%)!important}
 #services .services-backdrop{background-position:var(--real-focal-desktop,50% 50%)!important;background-size:cover}
 .bg-vid,.bg-vid-wrap{object-position:50% 50%;background-position:50% 50%}
-@media(max-width:900px){img[src^="real-"],img[src^="unique-q-"]{object-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))}#how .how-card-img img{object-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))!important}#services .services-backdrop{background-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))!important}.bg-vid{object-position:22% 42%}.bg-vid-wrap{background-position:22% 42%}}
+@media(max-width:900px){img[src^="real-"],img[src^="fast-"]{object-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))}#how .how-card-img img{object-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))!important}#services .services-backdrop{background-position:var(--real-focal-mobile,var(--real-focal-desktop,50% 50%))!important}.bg-vid{object-position:22% 42%}.bg-vid-wrap{background-position:22% 42%}}
 
 /* Keep native source dimensions as layout hints; the card aspect ratios control display. */
-.studio-feature>img[src^="real-"],.film-card>img[src^="real-"],.studio-feature>img[src^="unique-q-"],.film-card>img[src^="unique-q-"]{height:auto}
+.studio-feature>img[src^="real-"],.film-card>img[src^="real-"],.studio-feature>img[src^="fast-"],.film-card>img[src^="fast-"]{height:auto}
 body .bg-vid-wrap{background-position:50% 50%}
 @media(max-width:900px){body .bg-vid-wrap{background-position:22% 42%}}
 
 /* Preserve native photograph detail instead of adding a second zoom on top of cover crops. */
 #services .services-backdrop,#services .services-backdrop:first-child,#services .services-backdrop:nth-child(2),#services .services-backdrop:nth-child(3),#services .services-backdrop:nth-child(4),#services .services-backdrop:nth-child(5){background-size:cover!important;transform:none!important}
 #how .how-card:hover .how-card-img img,#spots .spot-film:hover img,.studio-visual:hover img,.studio-feature:hover>img,.film-card:hover>img{transform:none}
+
+/* A portrait source on phones avoids stretching a wide movie into a tall screen. */
+#heroVid{object-position:50% 50%!important}.bg-vid-wrap.media-dormant{visibility:hidden}
+@media(max-width:600px){body.hero-media-ready .bg-vid-wrap{background-image:url('fast-hero-loop-mobile-poster.webp');background-position:50% 50%!important}}

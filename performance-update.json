@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-20",
+  "before": {
+    "hero_video_bytes": 9487271,
+    "hero_poster_bytes": 1190722,
+    "native_photo_bytes": 8880010
+  },
+  "after": {
+    "desktop_video_bytes": 1204294,
+    "mobile_video_bytes": 720015,
+    "desktop_poster_bytes": 247708,
+    "mobile_poster_bytes": 78516,
+    "native_photo_bytes": 4770190
+  },
+  "photo_placements": 32,
+  "unique_photo_placements": 32,
+  "changes": [
+    "RAFscrollhandlers/cachedgeometry/changedonlywrites",
+    "Phonesnativepageflowwithservicecubecontrols",
+    "Herooffscreen/hidden/modalpauseanddeeplinksourcegating",
+    "Nolatewindow.loadhashjump",
+    "Lazyservice/footerbackgrounds",
+    "Carouselwarmuponlynearviewport",
+    "Responsiveimagewidthscovercroppedportraitslots",
+    "SelfhostedWOFF2font-display:swap"
+  ],
+  "browser_checks": {
+    "desktop_playing": "1600x900 readyState4,currentTimeadvancing",
+    "mobile_playing": "720x1080 readyState4,currentTimeadvancing",
+    "pause_control": true,
+    "offscreen_video_paused": true,
+    "home_service_footer_spots_requests": false,
+    "direct_footer_hero_requests": false,
+    "mobile_horizontal_overflow": false
+  },
+  "source_note": "Same real destination collection; nativephotos1920/2048x1080exceptCostaRica1280x720. Mobilehero720x1080isnativecrop, notupscale. Clean50framepoolshotforward/reverse, noflashcuts."
+}

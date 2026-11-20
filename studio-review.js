@@ -34,119 +34,163 @@
     });
   });
 
+  // The poster paints first; only load a movie while its background is visible.
   var video = document.getElementById('heroVid');
+  var hero = document.getElementById('hero');
+  var videoWrap = document.querySelector('.bg-vid-wrap');
   var videoToggle = document.querySelector('.hero-motion-toggle');
-  var userPaused = reduced.matches;
-  var failed = false;
+  var connection = navigator.connection;
+  var userPaused = reduced.matches || Boolean(connection && connection.saveData);
+  var heroVisible = false;
+  var sourceLoaded = false;
+  var playbackUnlocked = ['','#hero','#stats','#problem'].indexOf(location.hash) !== -1;
+  var playbackFailed = false;
+  var modalOpen = false;
+  var portrait = window.matchMedia('(max-width:600px)');
   function syncToggle() {
     if (!videoToggle || !video) return;
-    videoToggle.hidden = failed || video.readyState < 2;
-    videoToggle.textContent = video.paused ? 'Play film' : 'Pause film';
-    videoToggle.setAttribute('aria-label', video.paused ? 'Play background video' : 'Pause background video');
-    videoToggle.setAttribute('aria-pressed', String(!video.paused));
+    videoToggle.hidden = !heroVisible;
+    var playing = !video.paused && !playbackFailed;
+    videoToggle.textContent = playing ? 'Pause film' : 'Play film';
+    videoToggle.setAttribute('aria-label', playing ? 'Pause background video' : 'Play background video');
+    videoToggle.setAttribute('aria-pressed', String(playing));
+  }
+  function loadVideo() {
+    if (sourceLoaded || !video) return;
+    video.src = portrait.matches ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+    sourceLoaded = true;
+    video.preload = 'auto';
+    video.load();
   }
   function tryPlay() {
-    if (!video || userPaused || failed || document.hidden) return;
-    var result = video.play();
-    if (result && result.catch) result.catch(function () { syncToggle(); });
+    if (!playbackUnlocked || !video || !heroVisible || userPaused || playbackFailed || document.hidden || modalOpen) return;
+    loadVideo();
+    var attempt = video.play();
+    if (attempt && attempt.catch) attempt.catch(function () { syncToggle(); });
   }
-  if (video) {
+  function pauseVideo() { if (video) video.pause(); syncToggle(); }
+  if (video && hero) {
     video.muted = true;
     video.defaultMuted = true;
     video.addEventListener('playing', function () {
+      playbackFailed = false;
       video.classList.add('video-playing');
-      syncToggle();
+      if (!heroVisible || document.hidden || modalOpen) pauseVideo();
+      else syncToggle();
     });
     video.addEventListener('pause', syncToggle);
-    video.addEventListener('canplay', function () { syncToggle(); tryPlay(); });
-    function usePoster() {
-      failed = true;
+    video.addEventListener('canplay', tryPlay);
+    video.addEventListener('error', function () {
+      playbackFailed = true;
       video.classList.remove('video-playing');
-      video.pause();
-      syncToggle();
-    }
-    video.addEventListener('error', usePoster);
-    var source = video.querySelector('source');
-    if (source) source.addEventListener('error', usePoster);
+      pauseVideo();
+    });
     if (videoToggle) videoToggle.addEventListener('click', function () {
-      userPaused = !video.paused;
-      if (userPaused) video.pause();
-      else {
-        // An explicit Play gesture is allowed even with reduced motion enabled.
-        var result = video.play();
-        if (result && result.catch) result.catch(usePoster);
-      }
+      if (!video.paused) { userPaused = true; pauseVideo(); return; }
+      userPaused = false;
+      playbackUnlocked = true;
+      if (playbackFailed) { playbackFailed = false; sourceLoaded = false; }
+      tryPlay();
       syncToggle();
     });
-    function motionPreference() {
-      userPaused = reduced.matches;
-      if (userPaused) video.pause();
-      else tryPlay();
+    function setHeroVisible(visible) {
+      heroVisible = visible;
+      if (visible && playbackUnlocked) document.body.classList.add('hero-media-ready');
+      if (videoWrap) videoWrap.classList.toggle('media-dormant', !visible);
+      if (visible) tryPlay(); else pauseVideo();
       syncToggle();
     }
-    if (reduced.addEventListener) reduced.addEventListener('change', motionPreference);
-    if (reduced.matches) {
-      video.autoplay = false;
-      video.pause();
-    } else tryPlay();
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) video.pause();
-      else tryPlay();
-    });
-    // Avoid decoding a background movie behind the opaque lower sections.
     if ('IntersectionObserver' in window) {
-      var hero = document.getElementById('hero');
       new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) tryPlay();
-        else video.pause();
-      }, { rootMargin: '60% 0px' }).observe(hero);
+        setHeroVisible(entries[0].isIntersecting);
+      }, {rootMargin:'80% 0px'}).observe(hero);
+    } else setHeroVisible(hero.getBoundingClientRect().bottom > -innerHeight * .8);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) pauseVideo(); else tryPlay();
+    });
+    window.addEventListener('pagehide', pauseVideo);
+    window.addEventListener('pageshow', tryPlay);
+    if (reduced.addEventListener) reduced.addEventListener('change', function () {
+      userPaused = reduced.matches;
+      if (userPaused) pauseVideo(); else tryPlay();
+    });
+    function syncModal() {
+      modalOpen = Boolean(document.querySelector('dialog[open]'));
+      if (modalOpen) pauseVideo(); else tryPlay();
     }
+    document.querySelectorAll('dialog').forEach(function (dialog) {
+      new MutationObserver(syncModal).observe(dialog, {attributes:true,attributeFilter:['open']});
+    });
     syncToggle();
+    if (!playbackUnlocked) setTimeout(function () {
+      playbackUnlocked = true;
+      var rect = hero.getBoundingClientRect();
+      setHeroVisible(rect.bottom > -innerHeight * .8 && rect.top < innerHeight * 1.8);
+    }, 300);
   }
 
-  // Account for service-scene sizing, web fonts and images before settling a deep link.
-  var userMoved = false;
-  var settling = false;
-  function stopSettling() { userMoved = true; }
-  window.addEventListener('wheel', stopSettling, { passive: true });
-  window.addEventListener('touchstart', stopSettling, { passive: true });
-  window.addEventListener('keydown', function (event) {
-    if (['PageUp', 'PageDown', 'Home', 'End', 'ArrowUp', 'ArrowDown', ' '].indexOf(event.key) !== -1) stopSettling();
+  // Decorate upcoming sections before they enter view, without loading the whole page.
+  function whenNear(element, callback, margin) {
+    if (!element) return;
+    if (!('IntersectionObserver' in window)) { callback(); return; }
+    var observer = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      observer.disconnect();
+      callback();
+    }, {rootMargin:margin || '1000px 0px'});
+    observer.observe(element);
+  }
+  var services = document.getElementById('services');
+  whenNear(services, function () {
+    services.querySelectorAll('[data-bg]').forEach(function (background) {
+      background.style.backgroundImage = 'url("' + background.dataset.bg + '")';
+    });
+  }, '1200px 0px');
+  var footer = document.getElementById('studio-footer');
+  whenNear(footer, function () { footer.classList.add('media-ready'); });
+  var spots = document.getElementById('spots');
+  if (spots) whenNear(spots, function () {
+    function warmVisibleCards() {
+      Array.prototype.slice.call(spots.querySelectorAll('.spot-film'), 0, 5).forEach(function (card) {
+        var image = card.querySelector('img');
+        if (image) image.loading = 'eager';
+      });
+    }
+    warmVisibleCards();
+    var track = spots.querySelector('.spots-track');
+    if (track) new MutationObserver(warmVisibleCards).observe(track, {childList:true});
   });
-  function settleHash() {
-    if (userMoved || settling || !location.hash) return;
+
+  // Correct an initial deep link once, never after a late movie/image load.
+  var userMoved = false;
+  var settled = false;
+  function stopSettling() { userMoved = true; }
+  window.addEventListener('wheel', stopSettling, {passive:true});
+  window.addEventListener('touchstart', stopSettling, {passive:true});
+  window.addEventListener('pointerdown', stopSettling, {passive:true});
+  window.addEventListener('keydown', function (event) {
+    if (['PageUp','PageDown','Home','End','ArrowUp','ArrowDown',' '].indexOf(event.key) !== -1) stopSettling();
+  });
+  function settleHashOnce() {
+    if (settled) return;
+    settled = true;
+    if (userMoved || !location.hash) return;
     var id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
     var target = document.getElementById(id);
     if (!target) return;
-    settling = true;
-    var nav = document.getElementById('nav');
-    var top = window.scrollY + target.getBoundingClientRect().top - (nav ? nav.getBoundingClientRect().height + 16 : 80);
-    window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
-    requestAnimationFrame(function () { settling = false; });
+    requestAnimationFrame(function () {
+      if (userMoved) return;
+      var nav = document.getElementById('nav');
+      var top = scrollY + target.getBoundingClientRect().top - (nav ? nav.offsetHeight + 16 : 80);
+      window.scrollTo({top:Math.max(0,top),behavior:'instant'});
+    });
   }
   if (location.hash) {
-    requestAnimationFrame(function () { requestAnimationFrame(settleHash); });
-    window.addEventListener('load', function () {
-      settleHash();
-      if (document.fonts && document.fonts.ready) document.fonts.ready.then(settleHash);
-    }, { once: true });
+    setTimeout(settleHashOnce, 200);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(settleHashOnce);
   }
-  window.addEventListener('hashchange', function () { userMoved = false; requestAnimationFrame(settleHash); });
-
-  // Give the next carousel image an early network slot without eager-loading the whole page.
-  var spots = document.getElementById('spots');
-  if (spots) {
-    var warmImages = function () {
-      Array.prototype.slice.call(spots.querySelectorAll('.spot-film'), 0, 5).forEach(function (card) {
-        var img = card.querySelector('img');
-        if (img) img.loading = 'eager';
-      });
-    };
-    warmImages();
-    var track = spots.querySelector('.spots-track');
-    if (track && 'MutationObserver' in window) new MutationObserver(warmImages).observe(track, { childList: true });
-  }
+  window.addEventListener('hashchange', stopSettling);
 })();
 
 (function(){document.querySelectorAll('[data-footer-spot]').forEach(function(link){link.addEventListener('click',function(){var label='Show '+link.getAttribute('data-footer-spot');var dot=Array.prototype.find.call(document.querySelectorAll('#spots .spots-dot'),function(button){return button.getAttribute('aria-label')===label;});if(dot)dot.click();});});})();
