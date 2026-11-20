@@ -1,0 +1,34 @@
+/* Creator life: an editorial photo grid with hover, focus and tap disclosures. */
+#lifestyle .creator-life-heading{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;margin:0 auto 3.25rem;max-width:48rem}
+#lifestyle .creator-life-heading .eyebrow{margin-bottom:1.15rem}
+#lifestyle .creator-life-heading .display-heading{font-size:clamp(2.4rem,4.8vw,3.8rem);line-height:1.12;letter-spacing:-.045em;max-width:22ch;margin:0}
+#lifestyle .creator-life-heading .section-body{font-size:1rem;line-height:1.7;max-width:42ch;margin:1.4rem auto 0}
+#lifestyle .creator-life-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,clamp(20rem,26vw,21rem));gap:.875rem}
+#lifestyle .creator-life-card{position:relative;min-width:0;overflow:hidden;isolation:isolate;background:#111413;border:1px solid rgba(255,255,255,.13);border-radius:1.35rem;display:flex;flex-direction:column;justify-content:space-between;padding:1.75rem;transition:border-color .35s ease}
+#lifestyle .creator-life-card:nth-child(1){grid-column:1 / span 2;grid-row:1}
+#lifestyle .creator-life-card:nth-child(2){grid-column:3;grid-row:1}
+#lifestyle .creator-life-card:nth-child(3){grid-column:4;grid-row:1 / span 2}
+#lifestyle .creator-life-card:nth-child(4){grid-column:1;grid-row:2}
+#lifestyle .creator-life-card:nth-child(5){grid-column:2 / span 2;grid-row:2}
+#lifestyle .creator-life-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--creator-focal,50% 50%);z-index:-3;display:block}
+#lifestyle .creator-life-card::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(0,0,0,.64),rgba(0,0,0,.02) 48%,rgba(0,0,0,.8));pointer-events:none}
+#lifestyle .creator-life-card::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.64;background:linear-gradient(rgba(5,8,7,.65),rgba(5,8,7,.82)),repeating-linear-gradient(90deg,transparent 0,transparent calc(12.5% - 1px),rgba(255,255,255,.1) calc(12.5% - 1px),rgba(255,255,255,.1) 12.5%);transition:opacity .35s ease;pointer-events:none}
+#lifestyle .creator-life-card-head{position:relative;padding-right:1.6rem;pointer-events:none}
+#lifestyle .creator-life-kicker{font-family:'Inter',sans-serif;font-size:.75rem;line-height:1.4;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75);margin:0 0 .8rem}
+#lifestyle .creator-life-title{font-family:'Syne',sans-serif;font-size:clamp(1.45rem,2.2vw,1.85rem);font-weight:400;line-height:1.15;letter-spacing:-.045em;color:#f6f4ef;margin:0;max-width:21ch;transition:color .3s ease}
+#lifestyle .creator-life-detail{position:relative;font-family:'Inter',sans-serif;font-size:1rem;line-height:1.65;color:#e5e4e0;max-width:35ch;margin:2rem 0 0;transition:opacity .3s ease,transform .35s ease,visibility .35s;pointer-events:none}
+#lifestyle .creator-life-toggle{position:absolute;inset:0;border:0;background:transparent;color:inherit;padding:0;cursor:pointer;z-index:2;border-radius:inherit}
+#lifestyle .creator-life-toggle:focus-visible{outline:2px solid var(--gold,#d7b57c);outline-offset:-5px}
+#lifestyle .creator-life-plus{position:absolute;top:1.65rem;right:1.45rem;color:#e8e5de;font-family:'Inter',sans-serif;font-weight:300;font-size:1.65rem;line-height:1;transition:transform .3s ease,color .3s ease}
+#lifestyle .creator-life-toggle[hidden]{display:none}
+#lifestyle.creator-life-enhanced .creator-life-card::after{opacity:0}
+#lifestyle.creator-life-enhanced .creator-life-detail{opacity:0;visibility:hidden;transform:translateY(.8rem)}
+#lifestyle .creator-life-card.is-open{border-color:rgba(215,181,124,.66)}
+#lifestyle.creator-life-enhanced .creator-life-card.is-open::after{opacity:1}
+#lifestyle.creator-life-enhanced .creator-life-card.is-open .creator-life-detail{opacity:1;visibility:visible;transform:none}
+#lifestyle .creator-life-card.is-open .creator-life-title,#lifestyle .creator-life-card.is-open .creator-life-plus{color:var(--gold,#d7b57c)}
+#lifestyle .creator-life-card.is-open .creator-life-plus{transform:rotate(45deg)}
+@media(max-width:1000px){#lifestyle .creator-life-card{padding:1.4rem}#lifestyle .creator-life-plus{top:1.35rem;right:1.15rem}#lifestyle .creator-life-title{font-size:1.45rem}#lifestyle .creator-life-detail{font-size:1rem;line-height:1.55}}
+@media(max-width:1000px){#lifestyle .creator-life-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:19rem}#lifestyle .creator-life-card:nth-child(n){grid-column:auto;grid-row:auto}#lifestyle .creator-life-card:nth-child(1),#lifestyle .creator-life-card:nth-child(5){grid-column:1 / -1}#lifestyle .creator-life-card:nth-child(3){grid-column:2;grid-row:2 / span 2}#lifestyle .creator-life-heading{margin-bottom:2.5rem}}
+@media(max-width:600px){#lifestyle .creator-life-heading{align-items:flex-start;text-align:left;margin-bottom:2rem}#lifestyle .creator-life-heading .display-heading{font-size:clamp(2rem,8.5vw,2.65rem);max-width:20ch}#lifestyle .creator-life-heading .section-body{margin:1.15rem 0 0;font-size:1rem}#lifestyle .creator-life-grid{grid-template-columns:1fr;grid-auto-rows:21rem;gap:.8rem}#lifestyle .creator-life-card:nth-child(n){grid-column:auto;grid-row:auto}#lifestyle .creator-life-card{padding:1.6rem;border-radius:1rem}#lifestyle .creator-life-photo{object-position:var(--creator-focal-mobile,var(--creator-focal,50% 50%))}#lifestyle .creator-life-title{font-size:1.65rem;max-width:18ch}#lifestyle .creator-life-plus{top:1.5rem;right:1.35rem}#lifestyle .creator-life-kicker{font-size:.75rem;margin-bottom:.65rem}#lifestyle .creator-life-detail{max-width:32ch}}
+@media(prefers-reduced-motion:reduce){#lifestyle .creator-life-card,#lifestyle .creator-life-card::after,#lifestyle .creator-life-title,#lifestyle .creator-life-detail,#lifestyle .creator-life-plus{transition:none!important}#lifestyle .creator-life-detail{transform:none!important}}

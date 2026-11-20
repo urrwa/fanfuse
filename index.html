@@ -518,6 +518,7 @@ footer{padding:48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.7
 <link rel="stylesheet" href="studio-footer.css?v=20261120-motion1">
 <link rel="stylesheet" href="studio-editorial.css?v=hero-dubai-v3-b939c482">
 <link rel="stylesheet" href="studio-motion.css?v=20261120-motion1">
+<link rel="stylesheet" href="studio-creator-life.css?v=a2a9bfcdb6">
 <style id="studio-safety">
 html:not(.motion-ready) .reveal,html:not(.motion-ready) .reveal-scale,html:not(.motion-ready) .curtain{opacity:1;transform:none}
 html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
@@ -996,14 +997,41 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 </section>
 
 <!-- ── 8. THE LIFESTYLE ── -->
-<section id="lifestyle" class="section-dark"><div class="section-inner">
-    <div class="split-layout section-heading-row"><div><p class="eyebrow">The creator life</p><h2 class="display-heading">Go somewhere new.<br><em>Make it your own.</em></h2></div><p class="section-body">Beautiful places. A considered production. More space to be yourself on camera.</p></div>
-    <div class="studio-feature-grid">
-      <article class="studio-feature"><img src="fast-feature-1.webp" alt="Aerial view of a group riding along a tropical beach" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-feature-1-960w.webp 960w, fast-feature-1-1440w.webp 1440w, fast-feature-1.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">On location</p><h3>A world beyond your feed.</h3><p>Destination shoots shaped around your identity and creative direction.</p></div></article>
-      <article class="studio-feature"><img src="fast-feature-2.webp" alt="Dubai towers rising into the blue sky" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:75% 50%;--real-focal-mobile:75% 50%" decoding="async" srcset="fast-feature-2-960w.webp 960w, fast-feature-2-1440w.webp 1440w, fast-feature-2.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">In good hands</p><h3>Show up as yourself.</h3><p>Direction, camera and editing brought together around your story.</p></div></article>
-      <article class="studio-feature"><img src="fast-feature-3.webp" alt="Sailboats across a turquoise Mediterranean cove" loading="lazy" width="1920" height="1080" style="--real-focal-desktop:50% 50%;--real-focal-mobile:50% 50%" decoding="async" srcset="fast-feature-3-960w.webp 960w, fast-feature-3-1440w.webp 1440w, fast-feature-3.webp 1920w" sizes="(max-width:700px) 150vw, 70vw"><div class="studio-feature-copy"><p class="studio-kicker">With intention</p><h3>Build something lasting.</h3><p>Positioning and partnership support that look beyond a single post.</p></div></article>
-    </div>
-  </div></section>
+<section id="lifestyle" class="section-dark" aria-labelledby="creator-life-heading"><div class="section-inner">
+  <div class="creator-life-heading section-heading-row"><p class="eyebrow">The creator life</p><h2 id="creator-life-heading" class="display-heading">Go somewhere new.<br><em>Make it your own.</em></h2><p class="section-body">Beautiful places. A considered production. More space to be yourself on camera.</p></div>
+  <div class="creator-life-grid">
+    <article class="creator-life-card" data-creator-card>
+      <img class="creator-life-photo" src="creator-life-1.webp" srcset="creator-life-1-960w.webp 960w, creator-life-1.webp 1920w" sizes="(min-width:601px) and (max-width:1000px) calc(100vw - 80px), 600px" alt="Woman in red resort styling on a quiet beach beside a weathered rock" style="--creator-focal:50% 45%;--creator-focal-mobile:50% 45%" loading="lazy" decoding="async" width="1920" height="1080">
+      <div class="creator-life-card-head"><p class="creator-life-kicker">On location</p><h3 class="creator-life-title" id="creator-life-title-1">A world beyond your feed.</h3></div>
+      <button class="creator-life-toggle" type="button" aria-labelledby="creator-life-title-1" aria-expanded="false" aria-controls="creator-life-detail-1" hidden><span class="creator-life-plus" aria-hidden="true">+</span></button>
+      <p class="creator-life-detail" id="creator-life-detail-1">Destination shoots shaped around your identity and creative direction.</p>
+    </article>
+    <article class="creator-life-card" data-creator-card>
+      <img class="creator-life-photo" src="creator-life-2.webp" srcset="creator-life-2-960w.webp 960w, creator-life-2.webp 1920w" sizes="600px" alt="Dubai Marina towers framed by a woman's raised hands in the sunlight" style="--creator-focal:55% 45%;--creator-focal-mobile:55% 45%" loading="lazy" decoding="async" width="1920" height="1080">
+      <div class="creator-life-card-head"><p class="creator-life-kicker">Your presence</p><h3 class="creator-life-title" id="creator-life-title-2">Show up as yourself.</h3></div>
+      <button class="creator-life-toggle" type="button" aria-labelledby="creator-life-title-2" aria-expanded="false" aria-controls="creator-life-detail-2" hidden><span class="creator-life-plus" aria-hidden="true">+</span></button>
+      <p class="creator-life-detail" id="creator-life-detail-2">A considered look. Direction that lets your personality lead.</p>
+    </article>
+    <article class="creator-life-card" data-creator-card>
+      <img class="creator-life-photo" src="creator-life-3.webp" srcset="creator-life-3-960w.webp 960w, creator-life-3.webp 1920w" sizes="(max-width:600px) 600px, 1220px" alt="Woman in a white knit beach cover-up looking toward the sea" style="--creator-focal:49% 40%;--creator-focal-mobile:49% 40%" loading="lazy" decoding="async" width="1920" height="1080">
+      <div class="creator-life-card-head"><p class="creator-life-kicker">Behind the lens</p><h3 class="creator-life-title" id="creator-life-title-3">Your story. In motion.</h3></div>
+      <button class="creator-life-toggle" type="button" aria-labelledby="creator-life-title-3" aria-expanded="false" aria-controls="creator-life-detail-3" hidden><span class="creator-life-plus" aria-hidden="true">+</span></button>
+      <p class="creator-life-detail" id="creator-life-detail-3">From the first idea to the final cut, we bring your creative direction to life.</p>
+    </article>
+    <article class="creator-life-card" data-creator-card>
+      <img class="creator-life-photo" src="creator-life-4.webp" srcset="creator-life-4-960w.webp 960w, creator-life-4.webp 1920w" sizes="600px" alt="Two women sharing a quiet moment at a tropical resort pool" style="--creator-focal:45% 45%;--creator-focal-mobile:45% 45%" loading="lazy" decoding="async" width="1920" height="1080">
+      <div class="creator-life-card-head"><p class="creator-life-kicker">Between takes</p><h3 class="creator-life-title" id="creator-life-title-4">Create with room to breathe.</h3></div>
+      <button class="creator-life-toggle" type="button" aria-labelledby="creator-life-title-4" aria-expanded="false" aria-controls="creator-life-detail-4" hidden><span class="creator-life-plus" aria-hidden="true">+</span></button>
+      <p class="creator-life-detail" id="creator-life-detail-4">A new setting. A fresh perspective. Space to find your rhythm.</p>
+    </article>
+    <article class="creator-life-card" data-creator-card>
+      <img class="creator-life-photo" src="creator-life-5.webp" srcset="creator-life-5-960w.webp 960w, creator-life-5.webp 1920w" sizes="(min-width:601px) and (max-width:1000px) calc(100vw - 80px), 600px" alt="Woman beside a whitewashed Mediterranean wall overlooking blue water" style="--creator-focal:55% 45%;--creator-focal-mobile:55% 45%" loading="lazy" decoding="async" width="1920" height="1080">
+      <div class="creator-life-card-head"><p class="creator-life-kicker">Beyond the trip</p><h3 class="creator-life-title" id="creator-life-title-5">Build something lasting.</h3></div>
+      <button class="creator-life-toggle" type="button" aria-labelledby="creator-life-title-5" aria-expanded="false" aria-controls="creator-life-detail-5" hidden><span class="creator-life-plus" aria-hidden="true">+</span></button>
+      <p class="creator-life-detail" id="creator-life-detail-5">A growing body of work, a clearer identity and partnerships with purpose.</p>
+    </article>
+  </div>
+</div></section>
 
 <!-- ── 9. TESTIMONIALS ── -->
 <section id="testimonials" class="section-dark">
@@ -1170,7 +1198,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
     '#about .studio-visual','#about .studio-editorial-grid>div','#services .services-header',
     '#how .how-heading-eyebrow','#how .how-title','#how .how-intro','#how .how-card',
     '.section-inner>.eyebrow','.section-heading-row','#testimonials .display-heading',
-    '.tier','#spots .spots-header','.studio-feature','.tcard','.film-card',
+    '.tier','#spots .spots-header','.creator-life-card','.tcard','.film-card',
     '#partners .split-layout>div','.fitem',
     '.footer-invitation h2','.footer-invitation-copy','.footer-apply','.footer-brand','.footer-column'
   ];
@@ -1840,6 +1868,7 @@ html{scroll-padding-top:90px}section[id]{scroll-margin-top:90px}
 
 </script>
 <script id="studio-review-behavior" src="studio-review.js?v=20261120-motion1"></script>
+<script src="studio-creator-life.js?v=9fdb8b2622" defer></script>
 </body>
 </html>
 
