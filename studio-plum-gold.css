@@ -1,0 +1,99 @@
+/* Champagne gold and warm plum. Layout, photographs and approved film stay intact. */
+:root{--paper:#4f3d4b;--ink:#fcf5ef;--sage:#d3b184;--sage-soft:#705667;--accent:#d3b184;--gold:#d3b184;--gold-light:#e4caa5;--button-ink:#302531;--plum-card:#624d5c;--plum-raised:#705667;--border:#896e80;--studio-muted:#e0d0d9;--studio-soft:#cbb8c4;--studio-surface:#624d5c}
+html,body{background:var(--paper);color:var(--ink)}
+::selection{background:var(--gold);color:var(--button-ink)}
+.section-body,.body-copy,.studio-caption,.studio-trust-note,.studio-earnings-note{color:var(--studio-muted)}
+#nav{background:rgba(79,61,75,.3);border-color:rgba(228,202,165,.4);color:var(--ink)}
+#nav.scrolled{background:rgba(79,61,75,.98);color:var(--ink);border-color:rgba(211,177,132,.28);box-shadow:0 8px 30px rgba(35,18,30,.12)}
+#nav .nav-cta,#nav.scrolled .nav-cta,#hero .hero-cta,#services .services-cta,#studio-footer .footer-apply{background:var(--gold);border-color:var(--gold);color:var(--button-ink)}
+#nav .nav-cta:hover,#nav.scrolled .nav-cta:hover,#hero .hero-cta:hover,#hero .hero-cta:active,#services .services-cta:hover,#services .services-cta:active,#studio-footer .footer-apply:hover,#studio-footer .footer-apply:active{background:var(--gold-light);border-color:var(--gold-light);color:var(--button-ink)}
+#hero .hero-cta-label{color:var(--button-ink)}
+#hero .hero-label{border-color:rgba(228,202,165,.6);background:rgba(79,61,75,.2);color:#fcf5ef}
+#hero .hero-motion-toggle{background:rgba(79,61,75,.86);color:var(--gold-light);border:1px solid rgba(228,202,165,.38)}
+.nav-overlay,.nav-overlay-header{background:var(--paper);color:var(--ink)}
+.nav-overlay .nav-logo,.nav-close,.nav-overlay-link,.nav-footer-link{color:var(--ink)}
+.nav-overlay-link:hover,.nav-overlay-link[aria-current]{color:var(--gold-light)}
+#stats .stats-grid{background:var(--plum-card);border-color:rgba(211,177,132,.28);box-shadow:0 18px 45px rgba(35,18,30,.09)}
+#stats .stat-cell+.stat-cell::before{background:rgba(228,202,165,.22)}
+#stats .stat-label{color:var(--gold-light)}
+#stats .stat-desc{color:var(--studio-muted)}
+#problem .prob-card,#problem .prob-card:last-child{background:var(--plum-card);border-color:rgba(211,177,132,.24)}
+#problem .prob-icon{background:#7a606f;color:var(--gold-light)}
+#problem .prob-title{color:var(--ink)}
+#problem .prob-desc{color:var(--studio-muted)}
+#about .studio-visual{background:var(--plum-card)}
+#about .outlined-btn{background:transparent;border-color:#ba987c;color:var(--gold-light)}
+#about .outlined-btn-txt{color:inherit}
+#about .outlined-btn:hover,#about .outlined-btn:active{background:var(--gold);border-color:var(--gold);color:var(--button-ink)}
+#services{background:var(--paper);color:var(--ink)}
+#services .services-backdrops{background:#7b6675}
+#services .services-main-title em{color:#eddbbf}
+#services .services-face,#services .services-panel,#services .services-footer{background:var(--plum-card);color:var(--ink);border-color:rgba(211,177,132,.32)}
+#services .services-cap{background:#806173;border-color:#b18d9e}
+#services .services-panel-title{color:var(--ink)}
+#services .services-panel-number,#services .services-progress{color:var(--gold-light)}
+#services .services-panel-description{color:var(--studio-muted)}
+#services .services-footer{border-top-color:rgba(228,202,165,.2)}
+#services .services-arrow{background:#755d6b;border-color:#a08697;color:var(--gold-light)}
+#services .services-arrow:hover,#services .services-arrow:active{background:#866b7a;border-color:var(--gold);color:var(--gold-light)}
+#services .services-tab[aria-selected="true"]::after{background:var(--gold)}
+#services .services-tab:focus-visible{outline-color:var(--gold-light)}
+#how{background:var(--paper);color:var(--ink)}
+#how .how-heading-eyebrow,#how .how-title em{color:var(--gold)}
+#how .how-heading-eyebrow::before{background:var(--gold)}
+#how .how-title,#how .how-name{color:var(--ink)}
+#how .how-intro{color:var(--studio-muted)}
+#how .how-card-img{background:var(--plum-card)}
+#how .how-tag{color:var(--gold-light)}
+#how .how-tag+.how-tag::before{color:#c8a9b9}
+#how .how-step-num{background:var(--gold);color:var(--button-ink)}
+#tiers .tier{background:var(--plum-card);border-color:rgba(211,177,132,.3);color:var(--ink)}
+#tiers .tier.featured{background:var(--plum-raised);border-color:var(--gold)}
+#tiers .tier:hover{background:#6c5364;border-color:var(--gold)}
+#tiers .tier.featured:hover{background:#795e70}
+#tiers .tier-tag{color:var(--gold-light)}
+#tiers .tier-name,#tiers .tier-price{color:var(--ink)}
+#tiers .tier-price sub,#tiers .tier-period,#tiers .tier-perks li{color:var(--studio-muted)}
+#tiers .tier-divider{background:rgba(228,202,165,.2)}
+#tiers .tier-perks li::before{color:var(--gold-light)}
+#tiers .tier-btn{background:transparent;border-color:#bc9c89;color:var(--gold-light)}
+#tiers .tier.featured .tier-btn,#tiers .tier-btn:hover,#tiers .tier-btn:active{background:var(--gold);border-color:var(--gold);color:var(--button-ink)}
+#tiers .tier-btn-txt{color:inherit}
+#spots .spot-film{background:var(--plum-card)}
+#spots .spots-arrow,#spots .spots-autoplay{background:var(--plum-card);color:var(--gold-light);border-color:#a38596}
+#spots .spots-arrow:hover,#spots .spots-autoplay:hover,#spots .spots-autoplay:active,#spots .spots-arrow:active{background:var(--plum-raised);color:var(--gold-light);border-color:var(--gold)}
+#spots .spots-arrow:disabled{background:#584451;color:#ad98a6}
+#spots .spots-dot::after{background:#b99bab}
+#spots .spots-dot[aria-current="true"]::after{background:var(--gold)}
+#lifestyle .creator-life-card{background:var(--plum-card);border-color:rgba(211,177,132,.3)}
+#lifestyle .creator-life-card::after{background:rgba(98,77,92,.97)}
+#lifestyle .creator-life-card.is-open{border-color:var(--gold)}
+#lifestyle .creator-life-card.is-open .creator-life-title,#lifestyle:not(.creator-life-enhanced) .creator-life-title{color:var(--ink)}
+#lifestyle .creator-life-card.is-open .creator-life-plus,#lifestyle .creator-life-card.is-open .creator-life-kicker,#lifestyle:not(.creator-life-enhanced) .creator-life-kicker{color:var(--gold-light)}
+#lifestyle .creator-life-card.is-open .creator-life-detail,#lifestyle:not(.creator-life-enhanced) .creator-life-detail{color:var(--studio-muted)}
+#lifestyle .creator-life-toggle:focus-visible{outline-color:var(--gold-light)}
+#testimonials .tcard{background:var(--plum-card)}
+#testimonials .tcard:first-child{background:var(--plum-raised)}
+#testimonials .tcard::before{color:var(--gold-light)}
+#testimonials .tquote,#testimonials .tauthor{color:var(--ink)}
+#testimonials .trole{color:var(--studio-muted)}
+#showcase .film-play{background:var(--gold);color:var(--button-ink)}
+#showcase .film-card:hover .film-play{background:var(--gold-light);color:var(--button-ink)}
+#partners .split-layout{background:var(--plum-raised)}
+#partners .studio-sectors span{background:rgba(211,177,132,.09);color:var(--gold-light);border-color:rgba(228,202,165,.38)}
+#partners .studio-trust-note{color:var(--studio-muted)}
+#faq .fitem{background:var(--plum-card);border-color:rgba(211,177,132,.25)}
+#faq .fq-txt{color:var(--ink)}
+#faq .ftog,#faq .fq:hover .fq-txt{color:var(--gold-light)}
+#faq .fa-inner{color:var(--studio-muted)}
+#studio-footer{background:var(--paper);color:var(--ink)}
+#studio-footer::before{background-color:var(--plum-raised)}
+#studio-footer .footer-scene-shade{background:linear-gradient(90deg,rgba(49,28,43,.02),rgba(49,28,43,.04) 38%,rgba(49,28,43,.58) 72%,rgba(49,28,43,.7))}
+#studio-footer .footer-invitation h2 em{color:var(--gold-light)}
+#studio-footer .footer-wordmark,#studio-footer .footer-column h3{color:var(--ink)}
+#studio-footer .footer-wordmark span{color:var(--gold-light)}
+#studio-footer .footer-brand p,#studio-footer .footer-column a,#studio-footer .footer-bottom a{color:var(--studio-muted)}
+#studio-footer .footer-location,#studio-footer .footer-partner-note,#studio-footer .footer-bottom,#studio-footer .footer-media-note{color:var(--studio-soft)}
+#studio-footer .footer-column a:hover,#studio-footer .footer-bottom a:hover{color:var(--gold-light);text-decoration-color:var(--gold)}
+#studio-footer a:focus-visible{outline-color:var(--gold-light)}
+@media(max-width:800px){#studio-footer .footer-scene-shade{background:linear-gradient(180deg,rgba(49,28,43,.01),rgba(49,28,43,.03) 29%,rgba(49,28,43,.38) 55%,rgba(49,28,43,.8))}}
